@@ -1,0 +1,40 @@
+*{box-sizing: border-box;}
+
+:root{
+    --bg: white;
+    --amaranth:#DD0426;
+    --imperialred:#f02d3a;
+    --spacecadet:#273043;
+    --lighseagreen:#26b6ad;
+    --title:'Signika Negative', sans-serif;
+    --regular:'Yanone Kaffeesatz', sans-serif;;
+}
+body{
+    display: flex;
+}
+
+.titres{
+    font-family: var(--title);
+    color: var(--amaranth);
+    text-transform: uppercase;
+}
+
+.bubbles{
+    display: grid;
+    gap: 24px;
+    width: 100%;
+}
+
+.nouvelles_bubbles{
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: var(--lighseagreen);
+}
+
+.titres_bubbles{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
