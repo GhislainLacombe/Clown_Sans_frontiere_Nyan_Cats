@@ -166,14 +166,14 @@ body {
 //trish: footer
 .sponsor {
   width: 100%;
-  max-width: 900px;
+  max-width: 500px;
   height: 100%;
   padding: 0;
   margin: 0 auto;
   //background-color: red;
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(6, minmax(50px, 1fr));
+  grid-template-columns: repeat(6, minmax(25px, 1fr));
   grid-template-areas:
     "a a b b c c"
     "d d d e e e";
