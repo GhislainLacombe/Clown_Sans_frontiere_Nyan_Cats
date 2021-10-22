@@ -265,12 +265,32 @@ bottom: 0;
       margin-bottom: 0;
       margin-top: auto;
       > .icone {
-        background-color: green;
         width: 40px;
         height: 40px;
         align-self: end;
+        > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
     }
   }
+}
+
+.vimeo {
+  background-color: black;
+}
+.ig {
+  background-color: pink;
+}
+.fb {
+  background-color: blue;
+}
+.yt {
+  background-color: red;
+}
+.twt {
+  background-color: lightblue;
 }
 
 .hide_above {
