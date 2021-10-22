@@ -133,6 +133,7 @@ body {
     min-width: 700px;
     width: 300px;
     margin-bottom: 50px;
+    cursor: pointer;
       .word {
         width: 100%;
       }
@@ -376,6 +377,7 @@ bottom: 0;
         transition-duration: 0.5s;
         transition-timing-function: ease;
         margin: 20px;
+        cursor: pointer;
       }
 
       .gradient1{

@@ -1,4 +1,6 @@
 import './styles.scss'
+import './styles__nouvelles.scss'
+
 
 
   // init Swiper:
