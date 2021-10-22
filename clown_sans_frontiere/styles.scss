@@ -32,8 +32,9 @@ body {
   margin:  0 auto;
   margin-bottom: 20px;
   text-transform: uppercase;
-  
-  
+  > a {
+    text-decoration: none;
+  }
 }
 
 .word {
@@ -124,10 +125,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .code {
-  &__trish {
-  }
-}
+
   .word_wrapper {
     position: relative;
     min-width: 700px;
