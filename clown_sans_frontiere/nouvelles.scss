@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+.nouvelles{
+
+.container {
+  background-color: var(--secondary--15);
+  color: var(--secondary);
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  height: 100%;
+  width: 100%;
+}
+
+.col-3 {
+  background-color: var(--green);
+  color: var(--green-dark);
+}
+
+.col-6 {
+  background-color: var(--blue);
+  color: var(--blue-dark);
+}
+
+.card{
+    height: 350vh;
+    border-radius: 0px;
+}
+
+.card-header{
+  background-color: #273043;
+  color: white;
+  font-family:'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5em;
+  
+}
+
+
+}
