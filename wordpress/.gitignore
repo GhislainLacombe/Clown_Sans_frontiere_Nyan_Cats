@@ -1,0 +1,28 @@
+# Ignore this:
+*.txt
+*.png
+*.jpg
+*.gif
+*.json
+*.mo
+*.po
+# Ignore these files
+coverage/
+wp-admin/
+wp-includes/
+wp-content/coverage/
+wp-content/languages/
+wp-content/plugins/
+wp-content/upgrade/
+wp-content/uploads/
+# Except for the themes directories:
+
+!wordpress/
+!wordpress/*/
+!wordpress/*/wp-content/
+!wordpress/*/wp-content/themes/
+!wordpress/*/wp-content/themes/*
+!wordpress/*/wp-content/themes/*/*
+!wordpress/*/wp-content/themes/*/*/*
+!wordpress/*/wp-content/themes/*/*/*/*
+!wordpress/*/wp-content/themes/*/*/*/*/*
