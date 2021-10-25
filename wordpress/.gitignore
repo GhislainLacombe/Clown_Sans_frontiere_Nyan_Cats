@@ -10,11 +10,7 @@
 coverage/
 wp-admin/
 wp-includes/
-wp-content/coverage/
-wp-content/languages/
-wp-content/plugins/
-wp-content/upgrade/
-wp-content/uploads/
+
 # Except for the themes directories:
 
 !wordpress/
