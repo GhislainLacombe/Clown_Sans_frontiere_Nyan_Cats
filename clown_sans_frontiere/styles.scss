@@ -441,6 +441,8 @@ bottom: 0;
   
 }
 
+
+
 .col { max-width: 450px;
 margin: 30px;}
 
@@ -489,7 +491,31 @@ margin: 30px;}
   filter: drop-shadow(0 1.5mm 0.1em var(--basicblue))
 }
 
-.row {
-  
+
+section{
+width: 100%;
 }
-//
+
+
+// Nouvelle // 
+.hero__nouvelle{
+  width: 100vw;
+  height: 50vh;
+  background-color: var(--spacecadet);
+}
+
+.titres__nouvelle{
+  justify-content: center;
+  font-family: var(--title);
+  color: var(--spacecadet);
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 4.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  width: 100%;
+}
