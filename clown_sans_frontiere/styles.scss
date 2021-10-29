@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 /*Nav*/ 
@@ -20,8 +19,7 @@
   color: white;
 }
 
-/* MENU
-----------------------------------------*/
+/* MENU ----------------------------------------*/
 mark {
   background-color: transparent;
   color: #2b2d42;
@@ -41,14 +39,12 @@ mark:hover {
 
 .nav-link {
   font-size: 16px;
-  /*padding: 10px;
-  margin: 10px 20px auto;*/
-  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  margin: 10px 20px auto;
+  font-family: 'Signika Negative', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: #2b2d42;
-  
- 
 }
 
 .nav{
@@ -72,7 +68,7 @@ mark:hover {
   color: #ffffff;
   padding: 10px 22px;
   border-radius: 46px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   text-decoration-line: none;
   font-size: 18px;
   font-weight: 600;
@@ -117,8 +113,6 @@ nav img:hover {
   text-align: center;
 }
 
-
-
 //trish: animation
 
 * {box-sizing: border-box;}
@@ -131,7 +125,7 @@ body {
   padding: 0;
   font-size: 12px;
   text-align: center;
-  display: flex;
+  
   align-items: center;
   flex-wrap: wrap;
   position: relative;
@@ -353,19 +347,32 @@ bottom: 0;
         padding: 0;
         margin: 0;
         width: 225px;
+        > li{
+          a {
+          text-decoration: none;
+          color: #273043;
+        }
+        } 
      }
    }
   
     &__logo {
       > .logo {
+        position: relative;
         display: flex;
         align-self: center;
         //background-color: red;
         width: 120px;
         height: 120px;
-        > img {
+        > a {
           width: 100%;
+          padding: 0;
+          margin: 0;
+             > img {
+            width: 100%;
         }
+        }
+
       }
     }
 
@@ -386,26 +393,15 @@ bottom: 0;
           display: block;
           width: 100%;
           height: 100%;
+          >img {
+            position: relative;
+            width: 100%;
+          }
         }
     }
   }
 }
 
-.vimeo {
-  background-color: black;
-}
-.ig {
-  background-color: pink;
-}
-.fb {
-  background-color: blue;
-}
-.yt {
-  background-color: red;
-}
-.twt {
-  background-color: lightblue;
-}
 
 .hide_above {
   display: none;
@@ -480,6 +476,7 @@ bottom: 0;
         padding: 0;
       }
 
+      
       .nouvelles .swiper {
         padding: 30px;
         width: 80%;
@@ -527,6 +524,7 @@ bottom: 0;
       }
 
 .nouvelles .swiper-button{
+      .nouvelles .swiper-button{
   color: var(--bg);
   top: 40%;
   filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
@@ -554,9 +552,7 @@ bottom: 0;
     font-size: 4.5em;
     font-weight: bold;
     text-align: center;
-  
 }
-
 
 
 .col { max-width: 450px;
@@ -618,22 +614,75 @@ width: 100%;
   width: 100vw;
   height: 50vh;
   background-color: var(--spacecadet);
+  display: flex;
+}
+
+.image__nouvelle{
+ margin: auto;
+ width: 25%;
+ border-width: 5px;
+ border-color: var(--basicblue);
+ border-style: solid;
 }
 
 .titres__nouvelle{
-  justify-content: center;
   font-family: var(--title);
   color: var(--spacecadet);
   text-transform: uppercase;
   margin-top: 30px;
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-weight: bold;
-  text-align: center;
   padding: 50px;
+  text-align: left;
+  margin-left: 40px;
 }
 
-.container {
+.container__nouvelle__hero {
+  position: relative;
   width: 100%;
+  height: 50%;
+
+}
+
+.ligne__nouvelle{
+  position: absolute;
+  width: 10em;
+  height: 0.3em;
+  background-color: var(--amaranth);
+  transform: translateX(5em) translateY(9.2em)
+  
+}
+
+.nouvelle__pied{
+  margin: auto;
+  width: 90%;
+  height: 2px;
+  background-color: var(--spacecadet);
+}
+
+.texte__debut{
+  color: var(--lighseagreen)
+}
+.nouvelle__apercu{
+  margin: auto;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--spacecadet);
+  margin-top: 40px;
+}
+
+.nouvelle__apercu .card{
+    width: 30vw;
+    height: 45vh;
+    margin: auto;
+}
+
+.plus__bouton{
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  border: none;
+  margin-top: 0.5vh;
 }
 
 /* becca */
@@ -642,24 +691,33 @@ width: 100%;
   display: flex;
   align-self: center;
   height: auto;
-  width: 100%;
-  margin: 20px 5px;
-}
+  width: 90%;
+  margin: 0 auto;
+  
+  }
 
 .img-heros {
   display: flex;
   align-self: center;
   height: auto;
-  width: 100%;
-  margin: 20px 5px;
+  width: 90%;
+  margin: 0 auto;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px #f02d3a;
+  box-shadow: 7px 7px 7px #f02d3a;
 }
 
 .donner-heros {
   position: relative;
-  height: 60%;
+  height: 65%;
   margin-left: 4%;
+  align-self: left;
+  text-align: left;
+
+}
+
+.bt-donner{ 
+  text-align: left;
+  padding: 30px;
 }
 
 //Ghislain
@@ -903,5 +961,4 @@ width: 100%;
     background-color: white;
     margin-top: 5px;
   }
-  
-}
+}}
