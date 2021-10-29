@@ -41,8 +41,8 @@ mark:hover {
 
 .nav-link {
   font-size: 16px;
-  padding: 10px;
-  margin: 10px 20px auto;
+  /*padding: 10px;
+  margin: 10px 20px auto;*/
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -480,13 +480,13 @@ bottom: 0;
         padding: 0;
       }
 
-      .swiper {
+      .nouvelles .swiper {
         padding: 30px;
         width: 80%;
         height: 100%;
       }
 
-      .swiper-slide {
+      .nouvelles .swiper-slide {
         text-align: center;
         font-size: 18px;
         font-family: var(--title);
@@ -526,7 +526,7 @@ bottom: 0;
         background-image: linear-gradient(#26b6ad, #ea89b2);
       }
 
-.swiper-button{
+.nouvelles .swiper-button{
   color: var(--bg);
   top: 40%;
   filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
@@ -534,7 +534,7 @@ bottom: 0;
   
 }
 
-.swiper-slide:hover{
+.nouvelles .swiper-slide:hover{
     transform: scale(1.1);
 }
 
@@ -660,4 +660,248 @@ width: 100%;
   position: relative;
   height: 60%;
   margin-left: 4%;
+}
+
+//Ghislain
+
+
+/*:root {
+    --swiper-navigation-size: 15px;
+}*/
+
+.bgGradient {
+    background: linear-gradient(0deg, white, #23d5ab, #23d5ab);
+    height: 100vh;
+  width:100%;
+  position: relative;
+}
+
+.gridOrganisme {
+  display: grid;
+  gap: 10px;
+  padding: 10%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width:100%;
+  justify-items: end;
+  grid-template-areas:
+    ". . . title title title "
+    "hero hero hero description description description"
+    "hero hero hero description description description"
+    ". . . . . information";
+}
+
+.titleOrganisme{
+  font-size: 48px;
+  color: white;
+  font-weight: regular;
+  font-family: Yanone Kaffeesatz;
+  grid-area: title;
+  position: relative;
+  justify-self: flex-start;
+}
+
+.heroOrganisme {
+  grid-area: hero;
+  position: relative;
+  width:100%;
+  text-align: center;
+  display: inline-block;
+  overflow:hidden;
+}
+
+.heroOrganisme .size-swiper {
+  width:100%;
+  height:75%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.heroOrganisme .swiper-slide {
+    width:100%;
+  }
+
+.heroOrganisme .swiper-slide img {
+  width:100%;
+}
+
+.heroOrganisme .swiper-pagination-bullet-active { 
+  background-color: white; 
+}
+
+.heroOrganisme .swiper-pagination {
+  position: absolute;
+  bottom: 15px;
+}
+
+.heroOrganisme .swiper-button-prev {
+  color: white;
+  font-weight: bold;
+  width:15px;
+}
+
+.heroOrganisme .swiper-button-prev::after {
+  font-size: 15px;
+}
+
+.heroOrganisme .swiper-button-next {
+  color: white;
+  font-weight: bold;
+  width:15px;
+}
+
+.heroOrganisme .swiper-button-next::after {
+  font-size: 15px;
+}
+
+.descriptionOrganisme {
+  grid-area: description;
+  background-color: white;
+  border:solid black;
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  padding:10px;
+}
+.descriptionOrganisme1 {
+  font-size: 18px;
+  font-weight: regular;
+  font-family: Yanone Kaffeesatz;
+  text-transform: uppercase;
+}
+.descriptionOrganisme2 {
+  font-size: 18px;
+  font-weight: regular;
+  font-family: Yanone Kaffeesatz;
+}
+
+.informationOrganisme {
+  grid-area: information;
+  font-size: 20px;
+  color: blue;
+  font-weight: regular;
+  font-family: Yanone Kaffeesatz;
+  border: solid blue 2px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.service {
+  position: relative;
+  width: 100%;
+}
+
+.titleService{
+  font-size: 48px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Yanone Kaffeesatz;
+  position: relative;
+  text-align:center;
+  grid-area: titleS;
+}
+
+.gridService {
+  display: grid;
+  padding:2.5%;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  width:100%;
+  grid-template-areas:
+    "titleS titleS"
+    "saa ep";
+}
+
+.saaService {
+  grid-area: saa;
+  position: relative;
+  &__image {
+    width: 40vw;
+    height: 25vw;
+    border-radius: 15px;
+  }
+  
+  &__text{
+    font-size: 20px;
+    color: white;
+    font-weight: regular;
+    font-family: Yanone Kaffeesatz;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.epService {
+  grid-area: ep;
+  position: relative;
+  
+  &__image {
+    width: 40vw;
+    height: 25vw;
+    border-radius: 15px;
+  }
+  &__text{
+    font-size: 20px;
+    color: white;
+    font-weight: regular;
+    font-family: Yanone Kaffeesatz;
+    text-align: center;
+    position: absolute;
+    top : 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) { 
+  .gridOrganisme {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    width:100%;
+    grid-template-areas:
+      " title"
+      "hero"
+      "description"
+      "information";
+  }
+  .gridService {
+    display: grid;
+    
+    gap: 10px;
+    grid-template-columns: 1fr;
+    width:100%;
+    justify-items: center;
+    grid-template-areas:
+      "titleS"
+      "saa"
+      "ep";
+  }
+  .descriptionOrganisme {
+    grid-area: description;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .informationOrganisme {
+    color: transparent;
+    cursor: none;
+    border: solid transparent;
+  }
+  
+  .ligne {
+    width: 33%;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+  }
+  
 }
