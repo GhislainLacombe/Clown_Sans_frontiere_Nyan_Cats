@@ -43,7 +43,7 @@ mark:hover {
   font-size: 16px;
   padding: 10px;
   margin: 10px 20px auto;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: #2b2d42;
@@ -72,7 +72,7 @@ mark:hover {
   color: #ffffff;
   padding: 10px 22px;
   border-radius: 46px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   text-decoration-line: none;
   font-size: 18px;
   font-weight: 600;
@@ -636,28 +636,38 @@ width: 100%;
   width: 100%;
 }
 
-/* becca */
+/* becca héros */
+
+
 
 .gif-heros {
   display: flex;
   align-self: center;
   height: auto;
-  width: 100%;
-  margin: 20px 5px;
+  width: 90%;
+  margin: 20px 35px;
+ 
 }
 
 .img-heros {
   display: flex;
   align-self: center;
   height: auto;
-  width: 100%;
-  margin: 20px 5px;
+  width: 90%;
+  margin: 20px 0px;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px #f02d3a;
+  box-shadow: 7px 7px 7px #f02d3a;
 }
 
 .donner-heros {
   position: relative;
   height: 60%;
   margin-left: 4%;
+  align-self: left;
+  text-align: left;
 }
+
+.bt-donner{ 
+  text-align: left;
+}
+
