@@ -348,6 +348,12 @@ bottom: 0;
         padding: 0;
         margin: 0;
         width: 225px;
+        > li{
+          a {
+          text-decoration: none;
+          color: #273043;
+        }
+        } 
      }
    }
   
