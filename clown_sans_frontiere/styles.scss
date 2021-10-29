@@ -19,8 +19,7 @@
   color: white;
 }
 
-/* MENU
-----------------------------------------*/
+/* MENU ----------------------------------------*/
 mark {
   background-color: transparent;
   color: #2b2d42;
@@ -471,13 +470,14 @@ bottom: 0;
         padding: 0;
       }
 
-      .swiper {
+      
+      .nouvelles .swiper {
         padding: 30px;
         width: 80%;
         height: 100%;
       }
 
-      .swiper-slide {
+      .nouvelles .swiper-slide {
         text-align: center;
         font-size: 18px;
         font-family: var(--title);
@@ -517,7 +517,7 @@ bottom: 0;
         background-image: linear-gradient(#26b6ad, #ea89b2);
       }
 
-.swiper-button{
+      .nouvelles .swiper-button{
   color: var(--bg);
   top: 40%;
   filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
@@ -525,7 +525,7 @@ bottom: 0;
   
 }
 
-.swiper-slide:hover{
+.nouvelles .swiper-slide:hover{
     transform: scale(1.1);
 }
 
@@ -647,11 +647,36 @@ width: 100%;
 }
 
 .nouvelle__pied{
-  width: 100%;
-  height: 10px;
-  background-color: red;
+  margin: auto;
+  width: 90%;
+  height: 2px;
+  background-color: var(--spacecadet);
 }
 
+.texte__debut{
+  color: var(--lighseagreen)
+}
+.nouvelle__apercu{
+  margin: auto;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--spacecadet);
+  margin-top: 40px;
+}
+
+.nouvelle__apercu .card{
+    width: 30vw;
+    height: 45vh;
+    margin: auto;
+}
+
+.plus__bouton{
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  border: none;
+  margin-top: 0.5vh;
+}
 
 /* becca */
 
@@ -678,4 +703,5 @@ width: 100%;
   height: 60%;
   margin-left: 4%;
 }
+
 
