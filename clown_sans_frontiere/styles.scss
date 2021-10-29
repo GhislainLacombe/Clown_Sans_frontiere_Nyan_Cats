@@ -386,26 +386,15 @@ bottom: 0;
           display: block;
           width: 100%;
           height: 100%;
+          >img {
+            position: relative;
+            width: 100%;
+          }
         }
     }
   }
 }
 
-.vimeo {
-  background-color: black;
-}
-.ig {
-  background-color: pink;
-}
-.fb {
-  background-color: blue;
-}
-.yt {
-  background-color: red;
-}
-.twt {
-  background-color: lightblue;
-}
 
 .hide_above {
   display: none;
