@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 /*Nav*/ 
@@ -47,8 +46,6 @@ mark:hover {
   font-weight: 600;
   text-transform: uppercase;
   color: #2b2d42;
-  
- 
 }
 
 .nav{
@@ -116,8 +113,6 @@ nav img:hover {
 .nav-item {
   text-align: center;
 }
-
-
 
 //trish: animation
 
@@ -358,14 +353,21 @@ bottom: 0;
   
     &__logo {
       > .logo {
+        position: relative;
         display: flex;
         align-self: center;
         //background-color: red;
         width: 120px;
         height: 120px;
-        > img {
+        > a {
           width: 100%;
+          padding: 0;
+          margin: 0;
+             > img {
+            width: 100%;
         }
+        }
+
       }
     }
 
@@ -386,26 +388,15 @@ bottom: 0;
           display: block;
           width: 100%;
           height: 100%;
+          >img {
+            position: relative;
+            width: 100%;
+          }
         }
     }
   }
 }
 
-.vimeo {
-  background-color: black;
-}
-.ig {
-  background-color: pink;
-}
-.fb {
-  background-color: blue;
-}
-.yt {
-  background-color: red;
-}
-.twt {
-  background-color: lightblue;
-}
 
 .hide_above {
   display: none;
@@ -554,9 +545,7 @@ bottom: 0;
     font-size: 4.5em;
     font-weight: bold;
     text-align: center;
-  
 }
-
 
 
 .col { max-width: 450px;
@@ -618,43 +607,69 @@ width: 100%;
   width: 100vw;
   height: 50vh;
   background-color: var(--spacecadet);
+  display: flex;
+}
+
+.image__nouvelle{
+ margin: auto;
+ width: 25%;
+ border-width: 5px;
+ border-color: var(--basicblue);
+ border-style: solid;
 }
 
 .titres__nouvelle{
-  justify-content: center;
   font-family: var(--title);
   color: var(--spacecadet);
   text-transform: uppercase;
   margin-top: 30px;
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-weight: bold;
-  text-align: center;
   padding: 50px;
+  text-align: left;
+  margin-left: 40px;
 }
 
-.container {
+.container__nouvelle__hero {
+  position: relative;
   width: 100%;
+  height: 50%;
+
 }
 
-/* becca héros */
+.ligne__nouvelle{
+  position: absolute;
+  width: 10em;
+  height: 0.3em;
+  background-color: var(--amaranth);
+  transform: translateX(5em) translateY(9.2em)
+  
+}
+
+.nouvelle__pied{
+  width: 100%;
+  height: 10px;
+  background-color: red;
+}
 
 
+/* becca */
 
 .gif-heros {
   display: flex;
   align-self: center;
   height: auto;
-  width: 90%;
-  margin: 20px 35px;
- 
+  width: 100%;
+  
+  
 }
 
 .img-heros {
   display: flex;
   align-self: center;
   height: auto;
-  width: 90%;
-  margin: 20px 0px;
+  width: 100%;
+ 
   border-radius: 15px;
   box-shadow: 7px 7px 7px #f02d3a;
 }
