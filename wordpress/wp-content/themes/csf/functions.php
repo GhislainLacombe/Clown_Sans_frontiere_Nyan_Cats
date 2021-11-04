@@ -67,6 +67,17 @@ function wpbootstrap_enqueue_styles() {
 	wp_enqueue_style( 'my-style', get_template_directory_uri() . '/style.css');
 	}
 	add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
+
+	add_action( 'wp_enqueue_scripts', 'ls_scripts_styles', 20 );
+/**
+ * SwiperJS Scripts
+ */
+function ls_scripts_styles() {
+	wp_enqueue_style( 'swipercssbundle', get_stylesheet_directory_uri() . '/css/swiper-bundle.min.css' , array(), '6.4.11', 'all' );
+  	wp_enqueue_script( 'swiperjsbundle', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), '6.4.11', true );
+  	wp_enqueue_script( 'swiperinit', get_stylesheet_directory_uri() . '/js/swiper-bundle-init.js', array( 'swiperjsbundle' ), '1.0.0', true );  
+
+}
 	
 /* Appel de la fonction ajoutant les styles et scripts */
 

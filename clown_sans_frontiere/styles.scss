@@ -22,6 +22,10 @@
 
 /* MENU
 ----------------------------------------*/
+header {
+  width: 100%;
+}
+
 mark {
   background-color: transparent;
   color: #2b2d42;
@@ -32,11 +36,19 @@ mark:hover {
   color: #dd0426;
 }
 
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+  position: relative;
+  
+}
+
 .navbar-collapse {
   justify-content: space-between;
   align-items:space-between; 
- 
   
+  width: 100%;
+  position: relative;
 }
 
 .nav-link {
@@ -49,7 +61,8 @@ mark:hover {
   color: #2b2d42;
 }
 
-.nav{
+nav{
+  position: relative;
   width: 100%;
 }
 .nav-link:hover {
