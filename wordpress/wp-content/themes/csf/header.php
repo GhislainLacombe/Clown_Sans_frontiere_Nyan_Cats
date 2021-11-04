@@ -2,6 +2,7 @@
 	/*-----------------------------------------------------------------------------------*/
 	/* Affiche l'entête (Header) sur toutes vos pages
 	/*-----------------------------------------------------------------------------------*/
+  
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -33,6 +34,9 @@
 >
 
 <header>
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> --->
+
+		<!-- 
 	<h1>
 		<a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Affiche le nom du site ?></a>
 	</h1>
@@ -40,10 +44,61 @@
 	<nav>
 		<?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+			//wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+			
+		
 		?>
 	</nav>
+-->
+	<nav class="navbar navbar-expand-xl">
 
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <img src="https://imgur.com/Gzoy3k7.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-list"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#accueil">Accueil</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#nouvelles">Nouvelles</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#equipe">Équipe</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#apropos">À propos</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#histoire">Histoire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link donner" href="#donner">
+              FAITES UN DON
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#english">
+              <mark>EN</mark>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 	<?php 
 		// Affiche la description de site se trouvant dans "General Settings" dans l'admin WordPress
 		bloginfo( 'description' ); 

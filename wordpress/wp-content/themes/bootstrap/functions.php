@@ -47,7 +47,6 @@ function add_style_and_js()  {
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
 	wp_enqueue_style('default', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style('default', get_template_directory_uri() . '/styleVite.css');
 
 	/* Pour ajoutez une feuille de style supplémentaire, copier la ligne précédente et ajuster le chemin du fichier de façon relative vers votre nouveau fichier CSS */
 
@@ -62,12 +61,6 @@ function add_style_and_js()  {
 
 	/* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
 }
-function wpbootstrap_enqueue_styles() {
-	wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' );
-	wp_enqueue_style( 'my-style', get_template_directory_uri() . '/style.css');
-	}
-	add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
-	
-/* Appel de la fonction ajoutant les styles et scripts */
 
+/* Appel de la fonction ajoutant les styles et scripts */
 add_action('wp_enqueue_scripts', 'add_style_and_js'); 
