@@ -758,18 +758,22 @@ width: 100%;
 }*/
 
 .bgGradient {
-    background: linear-gradient(0deg, white, #23d5ab, #23d5ab);
-    height: 100vh;
-  width:100%;
+  background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(38, 182, 173, 0.5), #26B6AD);
+  height: 100%;
+  width: 100%;
   position: relative;
+  margin: 0;
 }
 
 .gridOrganisme {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
   display: grid;
   gap: 10px;
   padding: 10%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  width:100%;
+  width: 100%;
   justify-items: end;
   grid-template-areas:
     ". . . title title title "
@@ -786,20 +790,21 @@ width: 100%;
   grid-area: title;
   position: relative;
   justify-self: flex-start;
+  padding-bottom: 20px;
 }
 
 .heroOrganisme {
   grid-area: hero;
   position: relative;
-  width:100%;
+  width: 100%;
   text-align: center;
   display: inline-block;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .heroOrganisme .size-swiper {
   width:100%;
-  height:75%;
+  height:100%;
   border-radius: 15px;
   position: relative;
 }
@@ -809,7 +814,9 @@ width: 100%;
   }
 
 .heroOrganisme .swiper-slide img {
-  width:100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .heroOrganisme .swiper-pagination-bullet-active { 
@@ -824,7 +831,7 @@ width: 100%;
 .heroOrganisme .swiper-button-prev {
   color: white;
   font-weight: bold;
-  width:15px;
+  
 }
 
 .heroOrganisme .swiper-button-prev::after {
@@ -844,62 +851,89 @@ width: 100%;
 .descriptionOrganisme {
   grid-area: description;
   background-color: white;
-  border:solid black;
+  border: none;
   border-radius: 15px;
   position: relative;
   width: 100%;
-  padding:10px;
+  padding: 30px;
+  filter: drop-shadow(5px 5px 1px rgba(0,0,0,0.1));
+
+  //trish
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 60px;
+  
 }
 .descriptionOrganisme1 {
-  font-size: 18px;
-  font-weight: regular;
-  font-family: Yanone Kaffeesatz;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #273043;
+  font-size: 30px;
+  letter-spacing: -1px;
+ font-weight: 400;
   text-transform: uppercase;
+  padding: 10px 0px 15px 0px;
 }
 .descriptionOrganisme2 {
-  font-size: 18px;
-  font-weight: regular;
-  font-family: Yanone Kaffeesatz;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5;
+  color: #273043;
+  text-align: justify; //trish
 }
 
 .informationOrganisme {
+  background-color: white;
   grid-area: information;
-  font-size: 20px;
-  color: blue;
-  font-weight: regular;
+  font-size: 25px;
+  color: #3679e8;
+  font-weight: bold;
   font-family: Yanone Kaffeesatz;
-  border: solid blue 2px;
-  border-radius: 15px;
+  border: solid #3679e8 2px;
+  border-radius: 35px;
   position: relative;
   cursor: pointer;
   width: fit-content;
   text-align: center;
-  margin-top: 10px; 
+  margin-top: 10px;
+  padding: 10px 20px 5px 20px;
+  text-transform: uppercase;
+
+  //trish
+  min-width: 170px;
 }
 
 .service {
   position: relative;
   width: 100%;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }
 
 .titleService{
   font-size: 48px;
   text-align: center;
-  color: red;
+  color: #DD0426;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: Yanone Kaffeesatz;
+  font-family: 'Signika Negative', sans-serif;
   position: relative;
-  text-align:center;
+  text-align: center;
   grid-area: titleS;
+  padding-bottom: 20px;
 }
 
 .gridService {
   display: grid;
-  padding:2.5%;
+  margin: 0 auto;
+  padding: 0px 60px;
+  min-width: 700px;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
-  width:100%;
+  width: 90%;
   grid-template-areas:
     "titleS titleS"
     "saa ep";
@@ -909,20 +943,22 @@ width: 100%;
   grid-area: saa;
   position: relative;
   &__image {
-    width: 40vw;
-    height: 25vw;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
   }
   
   &__text{
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     font-weight: regular;
     font-family: Yanone Kaffeesatz;
     position: absolute;
     bottom: 15px;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
+    filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.3));
   }
 }
 .epService {
@@ -930,19 +966,23 @@ width: 100%;
   position: relative;
   
   &__image {
-    width: 40vw;
-    height: 25vw;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
   }
   &__text{
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     font-weight: regular;
     font-family: Yanone Kaffeesatz;
-    text-align: center;
+    text-align: right;
     position: absolute;
-    top : 15px;
+    bottom: 15px;
     width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+    filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.3));
   }
 }
 
@@ -983,6 +1023,7 @@ width: 100%;
     color: transparent;
     cursor: none;
     border: solid transparent;
+    display: none;
   }
   
   .ligne {
