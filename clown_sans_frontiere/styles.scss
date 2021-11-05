@@ -591,7 +591,7 @@ bottom: 0;
 .col { max-width: 450px;
 margin: 30px;}
 
-.card {
+.card .card__temoignage{
   filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
   border-radius: 15px;
   height: 650px;
@@ -640,26 +640,129 @@ section{
 width: 100%;
 }
 
+//FORMATAGE //
+h2 {
+  font-family: "Signika Negative", sans-serif;
+  color: #183e7d;
+  text-transform: uppercase;
+  font-size: 50px; 
+  margin-left: 3%; 
+  letter-spacing: -1px;
+  border-bottom: 3.5px solid #dd0426;
+  width: 350px; 
+  text-indent: 30%; 
+  font-weight: 700;
+  
+}
+
+ h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #f02d3a;
+  font-size: 40px; 
+   letter-spacing: -1px;
+  text-indent: 5%; 
+  font-weight: 400;
+   }
+
+h4 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #183e7d;
+  font-size: 40px; 
+  margin-left: 3%; 
+  letter-spacing: -1px;
+  font-weight: 400;
+}  
+
+
+p1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+p2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5; 
+}
+
+p3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5; 
+  color: #dd0426;
+  }
+
+
+
+mark{
+  font-weight: 400;
+  background-color: white;
+  color: #26b6ad;
+  }
+ul {
+  list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+  color: #26b6ad;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1.2em;
+  margin-left: -1em;
+}
+
 
 // Nouvelle // 
+
+
 .hero__nouvelle{
   width: 100vw;
   padding: 80px;
   background-color: var(--spacecadet);
-  display: flex;
+  display: flex; 
 }
 
-.image__nouvelle{
-  margin: auto;
-  width: 700%;
-  border-width: 5px;
-  border-color: var(--basicblue);
-  border-style: solid;
- }
+.nouvelle__description{
+  width: 70%;
+  text-align: justify;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
 
- .nouvelle-card{
-   width: 100%;
- }
+.card .card__details{
+  width: 50%;
+  
+}
+
+.card__body__details{
+  display: flex;
+  padding: 20px;
+}
+
+.card__desc__details{
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+
+.card .card__img__details{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
 
 .titres__nouvelle{
   justify-content: center;
@@ -673,21 +776,38 @@ width: 100%;
   padding: 50px;
 }
 
-.container__nouvelle__hero {
-  position: relative;
-  width: 100%;
-  height: 50%;
-
-}
-
 .ligne__nouvelle{
   position: absolute;
   width: 10em;
   height: 0.3em;
   background-color: var(--amaranth);
   transform: translateX(5em) translateY(9.2em)
+}
+
+.nouvelle__info{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 25px;
+  position: relative;
+  
   
 }
+
+.nouvelle__auteur{
+  margin-right: 40px;;
+}
+
+.nouvelle__date{
+  margin-right: 40px;;
+}
+
+.nouvelle__csf{
+  margin-right: 40px;;
+}
+
+
 
 .nouvelle__pied{
   margin: auto;
@@ -702,23 +822,52 @@ width: 100%;
 .nouvelle__apercu{
   margin: auto;
   width: 100%;
-  height: 60vh;
+  height: 100%;
   background-color: var(--spacecadet);
-  margin-top: 40px;
+  margin-top: 120px;
+  padding: 50px;
+  
 }
 
-.nouvelle__apercu .card{
-    width: 30vw;
-    height: 45vh;
-    margin: auto;
+
+.card__apercu__nouvelle{
+  width: 30vw;
+  height: 45vh;
+  margin: auto;
+    
+}
+
+.card__titles__apercu{
+  display: flex;
+
+}
+
+
+.nom__apercu1{
+  font-size: 30px;
+  padding-right: 35px;
+}
+
+.nom__apercu2{
+  font-size: 30px;
+  padding-right: 35px;
+  color: var(--amaranth)
+}
+
+.description__apercu{
+  text-align: justify
 }
 
 .plus__bouton{
-  background-color: white;
-  width: 100px;
-  height: 40px;
+  background-color: var(--lighseagreen);
+  width: 150px;
+  height: 60px;
   border: none;
   margin-top: 0.5vh;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 2em;
+  color: white;
 }
 
 /* becca */
