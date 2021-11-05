@@ -22,11 +22,7 @@
 	 Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
 	 Vous pouvez la déplacer si désiré, mais garder là. */
 ?>
-
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body 
@@ -112,5 +108,5 @@
 		bloginfo( 'description' ); 
 	?>
 </header>
-
-<main><!-- Débute le contenu principal de notre site -->
+<!--
+<main>ébute le contenu principal de notre site -->
