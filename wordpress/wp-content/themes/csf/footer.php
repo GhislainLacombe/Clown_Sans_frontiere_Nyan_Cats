@@ -9,7 +9,7 @@
 <footer>
 	<p>Développement web - Collège Montmorency - 2021</p>
 </footer>
-
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <?php wp_footer(); 
 /* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
 	 Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 

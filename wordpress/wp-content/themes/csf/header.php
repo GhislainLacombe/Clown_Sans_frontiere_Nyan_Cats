@@ -22,6 +22,11 @@
 	 Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
 	 Vous pouvez la déplacer si désiré, mais garder là. */
 ?>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 </head>
 
 <body 
