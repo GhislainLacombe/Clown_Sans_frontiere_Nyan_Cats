@@ -21,7 +21,7 @@
 }
 
 article{
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 /* MENU
@@ -260,7 +260,6 @@ body {
   .word_wrapper {
     position: relative;
     min-width: 700px;
-    width: 300px;
     margin-bottom: 50px;
     cursor: pointer;
       .word {
@@ -334,12 +333,10 @@ body {
 .pied-de-page {
   display: flex;
   flex-direction: column;
-  //position: fixed;
   left: 0;
 bottom: 0;
-  width: 100%;
+  width: 100vw;
   margin: 0;
-  //background-color: blue;
   height: auto;
 }
 
