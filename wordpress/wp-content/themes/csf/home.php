@@ -11,7 +11,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
+	
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 			<h2>
 				<?php the_title(); // Titre de la page ?>
@@ -251,7 +251,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <img src="https://freesvg.org/img/1302118210.png" alt="cursor" class="word__cursor">
     </a>
   </div>
-	</article>
+	
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
