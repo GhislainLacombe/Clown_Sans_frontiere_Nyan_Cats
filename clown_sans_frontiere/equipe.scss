@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-family: "Signika Negative", sans-serif;
+    color: #183e7d;
+    text-transform: uppercase;
+    font-size: 50px; 
+    margin-left: 3%; 
+    letter-spacing: -1px;
+    border-bottom: 3.5px solid #dd0426;
+    width: 350px; 
+    text-indent: 30%; 
+    font-weight: 700;
+    }
+  
+  
+   h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #f02d3a;
+    font-size: 40px; 
+     letter-spacing: -1px;
+    text-indent: 5%; 
+    font-weight: 400;
+  }  
+  
+  h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #183e7d;
+    font-size: 40px; 
+    margin-left: 3%; 
+    letter-spacing: -1px;
+    font-weight: 400;
+  }  
+  
+  
+  p1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  
+  p2 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    word-spacing: 3px;
+    line-height: 1.5; 
+  }
+  
+  p3 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    word-spacing: 3px;
+    line-height: 1.5; 
+    color: #dd0426;
+    }
+  
+  
+  
+  mark{
+    font-weight: 400;
+    background-color: white;
+    color: #26b6ad;
+    }
+  ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+      content: "\2022";
+    color: #26b6ad;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1.2em;
+    margin-left: -1em;
+  }
+  
+  .propos{
+  padding: 2% 8%; 
+  }
+  
+  .mission{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    word-spacing: 3px;
+    line-height: 1.5;
+   }
+  /* -------------  Section Header  ----------------- */
+  header {
+    height: 500px;
+    overflow: hidden;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .photo-groupe {
+    width:100%; 
+    max-height: 650px;
+    position: center;
+    overflow: hidden;
+    
+    
+  }
+  
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* -------------  Section Direction  ----------------- */
+  .direction {
+    padding: 20px; 
+  }
+  
+  .card-title-equipe {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #183e7d;
+    font-size: 40px;
+    margin-left: 3%;
+    letter-spacing: -1px;
+    font-weight: 400;
+  }
+  
+  .card-text-equipe {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  
+ 
+  .circle-sea-green {
+    background-color: #26b6ad;
+  }
+  
+  .circle-red {
+    background-color: #f02d3a;
+  }
+  .circle-navy {
+    background-color: #273043;
+  }
+  
+  .circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .circle:hover {
+    height: 170px;
+    width: 170px;
+  }
+  
+  
+  .card-img-top {
+    width: 100%;
+  }
+  
+  
+  .card__line {
+    width: 40%;
+    border-top: 1.5px solid #26b6ad;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .border__none {
+    border: none;
+  }
+  
+  
+  
+  /* -------------  Section Conseil d'admin  ----------------- */
+  
+  .conseil{
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px; 
+    
+  }
+  
+  
+  .card-title-equipe {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #26b6ad;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  
+  .card-sub-title-equipe {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #183e7d;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  .card-role-title-equipe {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #273043;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .card-text-equipe {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 1.2;
+  }
+  
+  .remerciements {
+    padding-right: 50px;
+    
+  }
+  
+  .merci-title {
+    font-family: 'Sassy Frass', cursive;
+    color: #183e7d;
+    font-size: 80px; 
+    margin-left: 3%; 
+    }  
+  
+  .merci-text {
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    word-spacing: 2px;
+    line-height: 1.5;
+     margin-left: 6%; 
+  }
