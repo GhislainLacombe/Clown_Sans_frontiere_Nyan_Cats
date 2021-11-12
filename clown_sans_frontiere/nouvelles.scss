@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
-.nouvelles{
+/*.nouvelles{
 
 .container {
   background-color: var(--secondary--15);
@@ -39,10 +39,155 @@
 }
 
 
-}
+}*/
 
 
 header{
   width: 100vw;
   position: relative;
+}
+
+html, body {
+  margin:0px;
+}
+h2 {
+ font-family: "Signika Negative", sans-serif;
+  color: #183e7d;
+  text-transform: uppercase;
+  font-size: 50px; 
+  margin-left: 3%; 
+  letter-spacing: -1px;
+  border-bottom: 3.5px solid #dd0426;
+  width: 20vw; 
+  text-indent: 5vw;
+  font-weight: 700;
+}
+
+ h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #f02d3a;
+  font-size: 40px; 
+  letter-spacing: -1px;
+  text-indent: 5vh; 
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #183e7d;
+  font-size: 30px; 
+  width: 100%;
+  text-indent: 15vh;
+  letter-spacing: -1px;
+  font-weight: 400;
+}  
+
+p1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+.titreNouvelle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  position: relative;
+  font-weight: 300;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5; 
+  margin: 0vh 15vh;
+  color: #26B6AD;
+}
+
+.nouvelle {
+  padding: 2% 8%;
+}
+
+.blueLine {
+  border-bottom: 2px solid #183e7d;
+  width: 84%; 
+  margin: auto;
+}
+
+.cartes {
+  width: 100%;
+  background-color: #3a5a90;
+  
+}
+
+.colNouvelle {
+  max-width: 350px;
+  padding: 30px;
+  margin:5px;
+  background-color: #273043;
+  border-radius: 15px;
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #183e7d;
+    cursor: pointer;
+  }
+  &:first-child{
+    background-color: #26B6AD;
+    
+    &:hover {
+    transform: scale(1.01);
+    background-color: #3ECDC4;
+    cursor: pointer;
+  }
+  }
+}
+
+.card-bodyNouvelle {
+  text-align: center;
+font-family: "Yanone Kaffeesatz", sans-serif;
+  
+}
+
+.alignment {
+  display: flex;
+  padding: 10px 0px 0px 0px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardNameArticle {
+  margin: 0px auto 0px 0px;
+  color: white;
+}
+
+.cardAuteur {
+  text-align: center;
+  background-color: #ececec;
+  padding: 5px 10px;
+  margin: 0px 5px;
+}
+
+.card-titleNouvelle {
+  font-size: 23px;
+  color: white;
+  border-left: 3px solid #DD0426;
+  padding: 0px 5px;
+}
+.card-textNouvelle {
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+}
+.card-img-topNouvelle {
+  width: 350px;
+  height: 250px;
+  border: 1px solid white;
+  padding: 1px;
+}
+.card-headerNouvelle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
