@@ -724,10 +724,12 @@ ul li::before {
 
 
 .hero__nouvelle{
-  width: 100vw;
+  width: 100%;
   padding: 80px;
   background-color: var(--spacecadet);
   display: flex; 
+  margin-top: 60px;
+  height: 20%;
 }
 
 .nouvelle__description{
@@ -841,7 +843,6 @@ ul li::before {
   display: flex;
 
 }
-
 
 .nom__apercu1{
   font-size: 30px;
@@ -1189,3 +1190,28 @@ ul li::before {
   }
   
 }
+
+
+// GHISLAIN //
+
+.titreNouvelle {
+  
+  color: #26B6AD;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5; 
+  word-spacing: 3px;
+  
+}
+
+.sousTitre{
+  font-size: 3.5em;
+}
+
+.blueLine {
+  border-bottom: 2px solid #183e7d;
+  width: 84%; 
+  margin: auto;
+}
+
