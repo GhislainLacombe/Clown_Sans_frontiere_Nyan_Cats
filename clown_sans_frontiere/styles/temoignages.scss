@@ -1,0 +1,46 @@
+.col { max-width: 450px;
+    margin: 30px;}
+    
+    .card .card__temoignage{
+      filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
+      border-radius: 15px;
+      height: 650px;
+    }
+    
+    .card-body{
+      text-align: center;
+      font-family: var(--regular);
+    }
+    
+    
+    .card-title{
+      font-size: 50px;
+    }
+    
+    .card-text{
+      font-size: 20px;
+    }
+    
+    .card-img-temoignage{
+      border-radius: 140px;
+      width: 250px;
+      height: 250px;
+    }
+    
+    .card-header-temoignage{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .cardshadow1{
+      filter: drop-shadow(0 1.5mm 0.1em var(--lighseagreen))
+    }
+    
+    .cardshadow2{
+      filter: drop-shadow(0 1.5mm 0.1em var(--amaranth))
+    }
+    
+    .cardshadow3{
+      filter: drop-shadow(0 1.5mm 0.1em var(--basicblue))
+    }

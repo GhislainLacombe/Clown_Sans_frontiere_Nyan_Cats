@@ -1,0 +1,235 @@
+//ACCUEIL//
+.nouvelles .swiper {
+  padding: 30px;
+  width: 80%;
+  height: 100%;
+}
+
+.nouvelles .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--title);
+  color: var(--bg);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 5px rgb(189, 189, 189);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.gradient1{
+  background-image: linear-gradient(#DD0426, #273043);
+}
+
+.gradient2{
+  background-image: linear-gradient(#F02D34, #E0FC5C);
+}
+
+.gradient3{
+  background-image: linear-gradient(#26b6ad, #ea89b2);
+}
+
+.nouvelles .swiper-button{
+color: var(--bg);
+top: 40%;
+filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
+
+
+}
+
+.nouvelles .swiper-slide:hover{
+transform: scale(1.1);
+}
+
+.nouvelles{
+position: relative;
+margin-bottom: 100px;
+display: flex;
+width: 100%;
+}
+
+.titres{
+justify-content: center;
+font-family: var(--title);
+color: var(--amaranth);
+text-transform: uppercase;
+margin-top: 30px;
+font-size: 4.5em;
+font-weight: bold;
+text-align: center;
+
+}
+
+
+
+.col { max-width: 450px;
+margin: 30px;}
+
+.card .card__temoignage{
+filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
+border-radius: 15px;
+height: 650px;
+}
+
+.card-body{
+text-align: center;
+font-family: var(--regular);
+}
+
+
+.card-title{
+font-size: 50px;
+}
+
+.card-text{
+font-size: 20px;
+}
+
+.card-img-top .Nouvelle{
+border-radius: 140px;
+width: 250px;
+height: 250px;
+}
+
+.card-header{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.cardshadow1{
+filter: drop-shadow(0 1.5mm 0.1em var(--lighseagreen))
+}
+
+.cardshadow2{
+filter: drop-shadow(0 1.5mm 0.1em var(--amaranth))
+}
+
+.cardshadow3{
+filter: drop-shadow(0 1.5mm 0.1em var(--basicblue))
+}
+
+
+section{
+width: 100%;
+}
+  //DÉTAILS NOUVELLES //
+
+  .titreNouvelle {
+  
+    color: #26B6AD;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5; 
+    word-spacing: 3px;
+    
+  }
+  
+  .sousTitre{
+    font-size: 3.5em;
+  }
+  
+  .blueLine {
+    border-bottom: 2px solid #183e7d;
+    width: 84%; 
+    margin: auto;
+  }
+  
+  //HUB NOUVELLES//
+  .cartes {
+    width: 100%;
+    background-color: #3a5a90;
+    
+  }
+  
+  .colNouvelle {
+    max-width: 350px;
+    padding: 30px;
+    margin:5px;
+    background-color: #273043;
+    border-radius: 15px;
+    display: inline-block;
+  
+    &:hover {
+      transform: scale(1.01);
+      background-color: #183e7d;
+      cursor: pointer;
+    }
+    &:first-child{
+      background-color: #26B6AD;
+      
+      &:hover {
+      transform: scale(1.01);
+      background-color: #3ECDC4;
+      cursor: pointer;
+    }
+    }
+  }
+  
+  .card-bodyNouvelle {
+    text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+    
+  }
+  
+  .alignment {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .cardNameArticle {
+    margin: 0px auto 0px 0px;
+    color: white;
+  }
+  
+  .cardAuteur {
+    text-align: center;
+    background-color: #ececec;
+    padding: 5px 10px;
+    margin: 0px 5px;
+  }
+  
+  .card-titleNouvelle {
+    font-size: 23px;
+    color: white;
+    border-left: 3px solid #DD0426;
+    padding: 0px 5px;
+  }
+  .card-textNouvelle {
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .card-img-topNouvelle {
+    width: 350px;
+    height: 250px;
+    border: 1px solid white;
+    padding: 1px;
+  }
+  .card-headerNouvelle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }

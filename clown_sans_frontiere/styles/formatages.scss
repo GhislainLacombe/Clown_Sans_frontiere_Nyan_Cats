@@ -1,0 +1,77 @@
+h2 {
+    font-family: "Signika Negative", sans-serif;
+    color: #183e7d;
+    text-transform: uppercase;
+    font-size: 50px; 
+    margin-left: 3%; 
+    letter-spacing: -1px;
+    border-bottom: 3.5px solid #dd0426;
+    width: 350px; 
+    text-indent: 30%; 
+    font-weight: 700;
+  }
+  
+   h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #f02d3a;
+    font-size: 40px; 
+     letter-spacing: -1px;
+    text-indent: 5%; 
+    font-weight: 400;
+     }
+  
+  h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #183e7d;
+    font-size: 40px; 
+    margin-left: 3%; 
+    letter-spacing: -1px;
+    font-weight: 400;
+  }  
+  
+  
+  p1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  
+  p2 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    word-spacing: 3px;
+    line-height: 1.5; 
+  }
+  
+  p3 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    word-spacing: 3px;
+    line-height: 1.5; 
+    color: #dd0426;
+    }
+  
+  
+  
+  mark{
+    font-weight: 400;
+    background-color: white;
+    color: #26b6ad;
+    }
+  ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+      content: "\2022";
+    color: #26b6ad;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1.2em;
+    margin-left: -1em;
+  }
+  

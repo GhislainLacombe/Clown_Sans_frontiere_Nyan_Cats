@@ -1,0 +1,29 @@
+
+@import "./styles/nouvelles.scss";
+@import "./styles/dons.scss";
+@import "./styles/erreur.scss";
+@import "./styles/footer.scss";
+@import "./styles/formatages.scss";
+@import "./styles/header.scss";
+@import "./styles/heros.scss";
+@import "./styles/services.scss";
+@import "./styles/swipers.scss";
+@import "./styles/equipe.scss";
+@import "./styles/temoignages.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+
+
+:root{
+    --bg: white;
+    --amaranth:#DD0426;
+    --imperialred:#f02d3a;
+    --spacecadet:#273043;
+    --lighseagreen: #26b6ad;
+    --basicblue: #3679E8;
+    --title:'Signika Negative', sans-serif;
+    --regular:'Yanone Kaffeesatz', sans-serif;
+}
+

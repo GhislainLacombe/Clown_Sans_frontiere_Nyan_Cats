@@ -1,818 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clown Sans Frontière</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-xl">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#home">
-            <img src="https://imgur.com/Gzoy3k7.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clowns Sans Frontières</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img src="https://imgur.com/Gzoy3k7.png" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#nouvelles">Nouvelles</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#equipe">Équipe</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">À propos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#histoire">Histoire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link donner" href="#donner"> FAITES UN DON </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#english">
+                <mark>EN</mark>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="heros">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img class="gif-heros" src="https://imgur.com/g1TBBfG.png" alt="gif-heros" />
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="img-heros" src="https://imgur.com/o4wrrf4.png" alt="img-heros" />
+        </div>
+        <div class="col-12 justify-content-left bt-donner">
+          <a href="//www.clownssansfrontieres.ca/donner/">
+            <img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="bi bi-list"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#accueil">Accueil</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#nouvelles">Nouvelles</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#equipe">Équipe</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#apropos">À propos</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#histoire">Histoire</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link donner" href="#donner"> FAITES UN DON </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#english">
-                  <mark>EN</mark>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="heros">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <img
-              class="gif-heros"
-              src="https://imgur.com/g1TBBfG.png"
-              alt="gif-heros"
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <img
-              class="img-heros"
-              src="https://imgur.com/o4wrrf4.png"
-              alt="img-heros"
-            />
-          </div>
-          <div class="col-12 justify-content-left bt-donner">
-            <a href="//www.clownssansfrontieres.ca/donner/">
-              <img
-                class="donner-heros"
-                href="#donner"
-                src="https://imgur.com/e7PMfzR.png"
-                alt="donner-heros"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </div>
-    <div class="bgGradient">
-      <div class="gridOrganisme">
-        <div class="titleOrganisme">
-          Qui sommes-nous?
-          <div class="ligne"></div>
-        </div>
-        <div class="heroOrganisme">
-          <!-- Slider here -->
-          <div class="swiper swiper-organisme size-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="https://www.clownssansfrontieres.ca/wp-content/uploads/2020/03/50267696_10156317738762739_3890001727377637376_o.jpg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://www.clownssansfrontieres.ca/wp-content/uploads/2014/04/CSF-MI-CHINE.jpg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://www.clownssansfrontieres.ca/wp-content/uploads/2018/10/12185472_10153724839153658_6740247252875028219_o-1024x576.jpg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://www.clownssansfrontieres.ca/wp-content/uploads/2019/09/4.DSC00850-768x543.jpg"
-                />
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <!-- end of slider -->
-        </div>
-        <div class="descriptionOrganisme">
-          <div class="descriptionOrganisme1">Notre Mission</div>
-          <div class="descriptionOrganisme2">
-            Depuis 1994, l’association artistique et humanitaire
-            ClownsSansFrontières organise des spectacles et des ateliers
-            gratuits pour ofrir un soutien moral et émotionnel aux populations
-            victimes de la guerre, de la misère ou de l’exclusion. Sans
-            discrimination politique, ethnique ou religieuse, les artistes
-            apportent des moments de rire et de rêve dans les camps de réfugiés,
-            les bidonvilles, les centres de détention pour mineurs, les
-            orphelinats, les communautés autochtones, les centres jeunesses et
-            autres lieux où la culture peine à respirer.
-          </div>
-        </div>
-        <div class="informationOrganisme">En savoir plus</div>
+  </div>
+  <div class="bgGradient">
+    <div class="gridOrganisme">
+      <div class="titleOrganisme">
+        Qui sommes-nous?
+        <div class="ligne"></div>
       </div>
-    </div>
-
-    <div class="service">
-      <h1 class="titres">Nos Services</h1>
-      <div class="gridService">
-        <div class="saaService">
-          <img
-            src="https://www.clownssansfrontieres.ca/wp-content/uploads/2014/04/CSF-milieu-scolaire-1024x413.jpg"
-            class="saaService__image"
-          />
-          <div class="saaService__text">Spectacles, animations et ateliers</div>
-        </div>
-        <div class="epService">
-          <img
-            src="https://www.clownssansfrontieres.ca/wp-content/uploads/2017/09/Katel_Le_Fustec_20170711_133500-1024x683.jpg"
-            class="epService__image"
-          />
-          <div class="epService__text">Exposition de photographies</div>
-        </div>
-      </div>
-    </div>
-
-    <section class="nouvelles" id="nouvelles">
-      <div class="container-fluid">
-        <h1 class="titres">Nouvelles</h1>
-        <div class="swiper mySwiper">
+      <div class="heroOrganisme">
+        <!-- Slider here -->
+        <div class="swiper swiper-organisme size-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide gradient1">
-              Plan de soutien aux organismes de coopération internationale
+            <div class="swiper-slide">
+              <img
+                src="https://www.clownssansfrontieres.ca/wp-content/uploads/2020/03/50267696_10156317738762739_3890001727377637376_o.jpg" />
             </div>
-            <div class="swiper-slide gradient2">
-              Communiqué pour publication immédiate
+            <div class="swiper-slide">
+              <img src="https://www.clownssansfrontieres.ca/wp-content/uploads/2014/04/CSF-MI-CHINE.jpg" />
             </div>
-            <div class="swiper-slide gradient3">
-              Journée Mondiale du nettoyage de notre planète
+            <div class="swiper-slide">
+              <img
+                src="https://www.clownssansfrontieres.ca/wp-content/uploads/2018/10/12185472_10153724839153658_6740247252875028219_o-1024x576.jpg" />
             </div>
-            <div class="swiper-slide gradient1">Appel à la mobilisation !</div>
-            <div class="swiper-slide gradient2">
-              Appel de Clowns Without Borders International (CWBI) à la
-              solidarité et au respect des droits humains aux frontières de
-              l’Union Européenne
-            </div>
-            <div class="swiper-slide gradient3">
-              HAÏTI « ON EST DANS UNE CRISE HUMANITAIRE »
-            </div>
-            <div class="swiper-slide gradient1">
-              ANNONCE : Projet de Coopération Québec-Haïti 2020
-            </div>
-            <div class="swiper-slide gradient2">
-              Retour en image sur les ateliers artistiques et culturels à
-              Kitcisakik
-            </div>
-            <div class="swiper-slide gradient3">
-              Retour en image sur notre soirée témoignage !
-            </div>
-            <div class="swiper-slide gradient1">
-              En piste! 16 jours d’activisme en Haïti
-            </div>
-            <div class="swiper-slide gradient2">
-              Clowns Sans Frontières lance sa 19e campagne Jour Nez!
-            </div>
-            <div class="swiper-slide gradient3">
-              Entrevue avec Katel Le Fustec sur les ondes de Radio Canada
-              International
+            <div class="swiper-slide">
+              <img src="https://www.clownssansfrontieres.ca/wp-content/uploads/2019/09/4.DSC00850-768x543.jpg" />
             </div>
           </div>
-          <div class="swiper-button swiper-button-next"></div>
-          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- end of slider -->
+      </div>
+      <div class="descriptionOrganisme">
+        <div class="descriptionOrganisme1">Notre Mission</div>
+        <div class="descriptionOrganisme2">
+          Depuis 1994, l’association artistique et humanitaire
+          ClownsSansFrontières organise des spectacles et des ateliers
+          gratuits pour ofrir un soutien moral et émotionnel aux populations
+          victimes de la guerre, de la misère ou de l’exclusion. Sans
+          discrimination politique, ethnique ou religieuse, les artistes
+          apportent des moments de rire et de rêve dans les camps de réfugiés,
+          les bidonvilles, les centres de détention pour mineurs, les
+          orphelinats, les communautés autochtones, les centres jeunesses et
+          autres lieux où la culture peine à respirer.
         </div>
       </div>
-    </section>
-    <section class="nouvelles" id="nouvelles">
-      <div class="container-fluid">
-        <h1 class="titres">Témoignages</h1>
-        <div class="row justify-content-center">
-          <div class="col">
-            <div class="card card__temoignage">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow1"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Kim</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card__temoignage">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow2"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Jeon</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card__temoignage">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow3"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Min</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="informationOrganisme">En savoir plus</div>
+    </div>
+  </div>
+
+  <div class="service">
+    <h1 class="titres">Nos Services</h1>
+    <div class="gridService">
+      <div class="saaService">
+        <img src="https://www.clownssansfrontieres.ca/wp-content/uploads/2014/04/CSF-milieu-scolaire-1024x413.jpg"
+          class="saaService__image" />
+        <div class="saaService__text">Spectacles, animations et ateliers</div>
       </div>
-    </section>
-
-    <!--- NOUVELLES-->
-    <!--- <section>-->
-
-    <div class="word_wrapper">
-      <a href="https://www.clownssansfrontieres.ca/donner/">
-        <div class="word word__one hide__small">
-          <h1>Donnez</h1>
-        </div>
-        <div class="word word__two hide__small">
-          <h1>Donnez</h1>
-        </div>
-        <div class="word word__three hide__small">
-          <h1>Donnez</h1>
-        </div>
-        <div class="word word__one hide__big">
-          <h1>Faites un don</h1>
-        </div>
-        <div class="word word__two hide__big">
-          <h1>Faites un don</h1>
-        </div>
-        <div class="word word__three hide__big">
-          <h1>Faites un don</h1>
-        </div>
+      <div class="epService">
         <img
-          src="https://freesvg.org/img/1302118210.png"
-          alt="cursor"
-          class="word__cursor"
-        />
-      </a>
+          src="https://www.clownssansfrontieres.ca/wp-content/uploads/2017/09/Katel_Le_Fustec_20170711_133500-1024x683.jpg"
+          class="epService__image" />
+        <div class="epService__text">Exposition de photographies</div>
+      </div>
     </div>
-    <!--Trish: footer-->
-    <div class="pied-de-page">
-      <div class="sponsor__wrapper">
-        <div class="sponsor">
-          <div class="sponsor__img a">
-            <img
-              src="https://pbs.twimg.com/profile_images/1147162075933941760/w5i6uC-7.png"
-              alt="Telus fondation"
-            />
+  </div>
+
+  <section class="nouvelles" id="nouvelles">
+    <div class="container-fluid">
+      <h1 class="titres">Nouvelles</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gradient1">
+            Plan de soutien aux organismes de coopération internationale
           </div>
-          <div class="sponsor__img b">
-            <img
-              src="http://www.desjardins.com/ressources/images/desjardins-facebook-generique.jpg"
-              alt="Desjardins"
-            />
+          <div class="swiper-slide gradient2">
+            Communiqué pour publication immédiate
           </div>
-          <div class="sponsor__img c">
-            <img
-              src="https://tohu-cdn.s3.ca-central-1.amazonaws.com/staging/files/TOHU_Logo-A_Jaune.jpg"
-              alt="Tohu"
-            />
+          <div class="swiper-slide gradient3">
+            Journée Mondiale du nettoyage de notre planète
           </div>
-          <div class="sponsor__img d">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/03/Minist%C3%A8re_des_Relations_internationales_et_de_la_Francophonie_%28Qu%C3%A9bec%29.svg/1200px-Minist%C3%A8re_des_Relations_internationales_et_de_la_Francophonie_%28Qu%C3%A9bec%29.svg.png"
-              alt="Quebec"
-            />
+          <div class="swiper-slide gradient1">Appel à la mobilisation !</div>
+          <div class="swiper-slide gradient2">
+            Appel de Clowns Without Borders International (CWBI) à la
+            solidarité et au respect des droits humains aux frontières de
+            l’Union Européenne
           </div>
-          <div class="sponsor__img e">
-            <img
-              src="https://www.canada.ca/content/dam/canada/tbs-sct/migration/hgw-cgf/oversight-surveillance/communications/fip-pcim/images/spec/T130-Canada.png"
-              alt="Canada"
-            />
+          <div class="swiper-slide gradient3">
+            HAÏTI « ON EST DANS UNE CRISE HUMANITAIRE »
+          </div>
+          <div class="swiper-slide gradient1">
+            ANNONCE : Projet de Coopération Québec-Haïti 2020
+          </div>
+          <div class="swiper-slide gradient2">
+            Retour en image sur les ateliers artistiques et culturels à
+            Kitcisakik
+          </div>
+          <div class="swiper-slide gradient3">
+            Retour en image sur notre soirée témoignage !
+          </div>
+          <div class="swiper-slide gradient1">
+            En piste! 16 jours d’activisme en Haïti
+          </div>
+          <div class="swiper-slide gradient2">
+            Clowns Sans Frontières lance sa 19e campagne Jour Nez!
+          </div>
+          <div class="swiper-slide gradient3">
+            Entrevue avec Katel Le Fustec sur les ondes de Radio Canada
+            International
           </div>
         </div>
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
       </div>
-      <div class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__logo hide_above">
-            <div class="logo">
-              <img src="https://i.imgur.com/zlLh1kK.png" alt="logo" />
+    </div>
+  </section>
+  <section class="nouvelles" id="nouvelles">
+    <div class="container-fluid">
+      <h1 class="titres">Témoignages</h1>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="card card__temoignage">
+            <div class="card-header card-header-temoignage">
+              <img src="https://thispersondoesnotexist.com/image" class="card-img-top card-img-temoignage cardshadow1" alt="image" />
             </div>
-          </div>
-          <div class="footer__contact">
-            <ul>
-              <li>514-495-1287</li>
-              <li>contact@clownssansfrontieres.ca</li>
-              <li>
-                <a href="https://goo.gl/maps/iH5Vkq1M3WKGAsa5A" target="_blank"
-                  >105 Ontario St E, Montreal, Quebec H2X1G9</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer__logo hide_below">
-            <div class="logo">
-              <a
-                href="https://www.clownssansfrontieres.ca/donner/"
-                target="_blank"
-                ><img src="https://i.imgur.com/zlLh1kK.png" alt="logo"
-              /></a>
-            </div>
-          </div>
-          <div class="footer__icone">
-            <div class="icone vimeo">
-              <a href="https://vimeo.com/user2650793" target="_blank"
-                ><img src="https://i.imgur.com/KYmiXWt.png" alt="vimeo"
-              /></a>
-            </div>
-            <div class="icone ig">
-              <a
-                href="https://www.instagram.com/clownssansfrontieres/?hl=fr-ca"
-                target="_blank"
-                ><img src="https://i.imgur.com/XTxkOex.png" alt="ig"
-              /></a>
-            </div>
-            <div class="icone fb">
-              <a
-                href="https://www.facebook.com/ClownsSansFrontieres/"
-                target="_blank"
-                ><img src="https://i.imgur.com/shaEfMy.png" alt="fb"
-              /></a>
-            </div>
-            <div class="icone yt">
-              <a
-                href="https://www.youtube.com/channel/UCQWUO8JZx69GPWRInazRPMw"
-                target="_blank"
-                ><img src="https://i.imgur.com/np6pULK.png" alt="yt"
-              /></a>
-            </div>
-            <div class="icone twt">
-              <a href="https://twitter.com/csf_canada" target="_blank"
-                ><img src="https://i.imgur.com/1GCUrIn.png" alt="twt"
-              /></a>
+            <div class="card-body">
+              <h5 class="card-title">Mr Kim</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+                libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+                condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+                leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+                tellus scelerisque non.
+              </p>
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card card__temoignage">
+            <div class="card-header card-header-temoignage">
+              <img src="https://thispersondoesnotexist.com/image" class="card-img-top card-img-temoignage cardshadow2" alt="image" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Mr Jeon</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+                libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+                condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+                leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+                tellus scelerisque non.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card__temoignage">
+            <div class="card-header card-header-temoignage">
+              <img src="https://thispersondoesnotexist.com/image" class="card-img-top card-img-temoignage cardshadow3" alt="image" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Mr Min</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+                libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+                condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+                leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+                tellus scelerisque non.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <!--- DETAILS NOUVELLE 1-->
+  </section>
 
-    <section>
-      <title >Hub de Nouvelles</title>
-        <h2>Nouvelles</h2>
-      <div class="nouvelle">
-        <div class="container__nouvelle__hero">
-        
-          <div class="hero__nouvelle">
-            <div class="container-fluid">
-              <div class="row justify-content-center">
-                <div class="col-8">
-                  <div class="card bg-primary card__details">
-                    <img
-                      src="https://image.shutterstock.com/image-vector/under-construction-industrial-sign-vector-260nw-333015377.jpg"
-                      class="card-img-top card__img__details"
-                    />
+  <!--- NOUVELLES-->
+  <!--- <section>-->
 
-                    <div class="card-body card__body__details">
-                      <h5 class="card-title card__title__details">
-                        Nom de l'article
-                      </h5>
-                      <p class="card-text card__desc__details">Catégorie</p>
-                      <p class="card-text card__desc__details">Fate</p>
-                    </div>
+  <div class="word_wrapper">
+    <a href="https://www.clownssansfrontieres.ca/donner/">
+      <div class="word word__one hide__small">
+        <h1>Donnez</h1>
+      </div>
+      <div class="word word__two hide__small">
+        <h1>Donnez</h1>
+      </div>
+      <div class="word word__three hide__small">
+        <h1>Donnez</h1>
+      </div>
+      <div class="word word__one hide__big">
+        <h1>Faites un don</h1>
+      </div>
+      <div class="word word__two hide__big">
+        <h1>Faites un don</h1>
+      </div>
+      <div class="word word__three hide__big">
+        <h1>Faites un don</h1>
+      </div>
+      <img src="https://freesvg.org/img/1302118210.png" alt="cursor" class="word__cursor" />
+    </a>
+  </div>
+  <!--Trish: footer-->
+  <div class="pied-de-page">
+    <div class="sponsor__wrapper">
+      <div class="sponsor">
+        <div class="sponsor__img a">
+          <img src="https://pbs.twimg.com/profile_images/1147162075933941760/w5i6uC-7.png" alt="Telus fondation" />
+        </div>
+        <div class="sponsor__img b">
+          <img src="http://www.desjardins.com/ressources/images/desjardins-facebook-generique.jpg" alt="Desjardins" />
+        </div>
+        <div class="sponsor__img c">
+          <img src="https://tohu-cdn.s3.ca-central-1.amazonaws.com/staging/files/TOHU_Logo-A_Jaune.jpg" alt="Tohu" />
+        </div>
+        <div class="sponsor__img d">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/03/Minist%C3%A8re_des_Relations_internationales_et_de_la_Francophonie_%28Qu%C3%A9bec%29.svg/1200px-Minist%C3%A8re_des_Relations_internationales_et_de_la_Francophonie_%28Qu%C3%A9bec%29.svg.png"
+            alt="Quebec" />
+        </div>
+        <div class="sponsor__img e">
+          <img
+            src="https://www.canada.ca/content/dam/canada/tbs-sct/migration/hgw-cgf/oversight-surveillance/communications/fip-pcim/images/spec/T130-Canada.png"
+            alt="Canada" />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo hide_above">
+          <div class="logo">
+            <img src="https://i.imgur.com/zlLh1kK.png" alt="logo" />
+          </div>
+        </div>
+        <div class="footer__contact">
+          <ul>
+            <li>514-495-1287</li>
+            <li>contact@clownssansfrontieres.ca</li>
+            <li>
+              <a href="https://goo.gl/maps/iH5Vkq1M3WKGAsa5A" target="_blank">105 Ontario St E, Montreal, Quebec
+                H2X1G9</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__logo hide_below">
+          <div class="logo">
+            <a href="https://www.clownssansfrontieres.ca/donner/" target="_blank"><img
+                src="https://i.imgur.com/zlLh1kK.png" alt="logo" /></a>
+          </div>
+        </div>
+        <div class="footer__icone">
+          <div class="icone vimeo">
+            <a href="https://vimeo.com/user2650793" target="_blank"><img src="https://i.imgur.com/KYmiXWt.png"
+                alt="vimeo" /></a>
+          </div>
+          <div class="icone ig">
+            <a href="https://www.instagram.com/clownssansfrontieres/?hl=fr-ca" target="_blank"><img
+                src="https://i.imgur.com/XTxkOex.png" alt="ig" /></a>
+          </div>
+          <div class="icone fb">
+            <a href="https://www.facebook.com/ClownsSansFrontieres/" target="_blank"><img
+                src="https://i.imgur.com/shaEfMy.png" alt="fb" /></a>
+          </div>
+          <div class="icone yt">
+            <a href="https://www.youtube.com/channel/UCQWUO8JZx69GPWRInazRPMw" target="_blank"><img
+                src="https://i.imgur.com/np6pULK.png" alt="yt" /></a>
+          </div>
+          <div class="icone twt">
+            <a href="https://twitter.com/csf_canada" target="_blank"><img src="https://i.imgur.com/1GCUrIn.png"
+                alt="twt" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- DETAILS NOUVELLE 1-->
+
+  <section>
+    <title>Hub de Nouvelles</title>
+    <h2>Nouvelles</h2>
+    <div class="nouvelle">
+      <div class="container__nouvelle__hero">
+
+        <div class="hero__nouvelle">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <div class="card bg-primary card__details">
+                  <img
+                    src="https://image.shutterstock.com/image-vector/under-construction-industrial-sign-vector-260nw-333015377.jpg"
+                    class="card-img-top card__img__details" />
+
+                  <div class="card-body card__body__details">
+                    <h5 class="card-title card__title__details">
+                      Nom de l'article
+                    </h5>
+                    <p class="card-text card__desc__details">Catégorie</p>
+                    <p class="card-text card__desc__details">Fate</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <h4 class="nouvelle__description soustitre__nouvelle">Plan de soutien aux organismes de coopération internationale</h4>
-    
-        <div class="nouvelle__description titreNouvelle">
-          Plan de soutien aux organismes de coopération internationale – Plus de
-          3,7 M$ accordés à 30 organismes québécois de coopération
-          internationale afin d’appuyer la réalisation de projets visant à
-          réduire les effets de la COVID-19
-        </div>
-        <div class="blueLine"></div>
-        <div class="nouvelle__description">
-          <p1>
-            NOUVELLES FOURNIES PAR
-            <br />
-            Cabinet de la ministre des Relations internationales et de la
-            Francophonie
-          </p1>
-        </div>
-        <div class="blueLine"></div>
+      <h4 class="nouvelle__description soustitre__nouvelle">Plan de soutien aux organismes de coopération internationale
+      </h4>
 
-        <div class="nouvelle__description">
-          <p1
-            >QUÉBEC, le 12 nov. 2020 /CNW Telbec/ – La ministre des Relations
-            internationales et de la Francophonie et ministre de l’Immigration,
-            de la Francisation et de l’Intégration, Nadine Girault, annonce
-            qu’une somme de 3 713 745 $ est accordée à la réalisation des
-            demandes de 30 organismes québécois de coopération
-            internationale(OCI), dans le cadre de l’appel à projets exceptionnel
-            du Plan de soutien aux organismes de coopération
-            internationale(PSOCI).<br /><br />
-            Ce soutien financier contribuera à la lutte contre la pandémie
-            mondiale de COVID-19 et ses effets dans 16 pays d’Afrique
-            francophone et d’Amérique latine ainsi qu’en Haïti.<br /><br />
-            Une part importante des subventions octroyées permettra de procurer
-            un appui institutionnel aux OCI,soit le maintien de dizaines
-            d’emplois dans 10 régions administratives du Québec, l’appui aux
-            frais indirects des organisations et aux activités d’éducation à la
-            citoyenneté mondiale au Québec.<br /><br />
-            Rappelons que le PSOCI a été lancé le 18 juin dernier afin
-            d’apporter un soutien institutionnel aux OCI du Québec et d’appuyer
-            la réalisation de projets visant à réduire les effets de la
-            COVID-19, notamment dans les pays vulnérables.<br /><br />
-            Citation :<br /><br />
-            « La pandémie de COVID-19 nous rappelle que les crises ne
-            connaissent pas de frontières et quel’on se doit de demeurer
-            solidaires et engagés. Le Québec ne fait pas exception à la règle.
-            Le Plan de soutien constitue un appui important du gouvernement du
-            Québec aux OCI, dont la plupart sont de petites et moyennes
-            organisations dans plusieurs régions du Québec. De plus, cet appui
-            aidera à accroître la résilience de nos partenaires locaux, situés
-            dans plusieurs pays, afin de traverser la crise de la COVID-19. »<br /><br />
-            Nadine Girault, ministre des Relations internationales et de la
-            Francophonie, ministre de l’Immigration, de la Francisation et de
-            l’Intégration et ministre responsable de la région des
-            Laurentides<br /><br />
-            Faits saillants et projets retenus:<br /><br />
-            Treize des 30 OCI appuyés(43,3 %)son tsitués à l’extérieur de
-            Montréal, soit dans neuf régions administratives du Québec. La
-            majorité des OCI appuyés sont des petites et moyennes organisations
-            ayant un budget annuel de moins de 1,5 million de dollars.Une partie
-            des sommes(13,2 %) a été allouée pour assurer un soutien
-            institutionnel à des OCI ayant des actions exclusivement au Québec.
-            Les sommes restantes(86,8 %) ont été octroyées pour le soutien à des
-            OCI ayant des actions au Québec et dans 16 pays d’Afrique
-            francophone etd’Amérique latine ainsi qu’en Haïti.<br />
-            Les propositions soutenues touchent particulièrement les enjeux des
-            droits de la personne, de santé, de sécurité alimentaire, de
-            développement économique inclusif ainsi que des actions d’éducation
-            à la citoyenneté mondiale.<br />
-            ANNEXE<br /><br />
-            La subvention accordée aux organismes ci-dessous permettra un appui
-            institutionnel et la réalisation d’activités d’éducation à la
-            citoyenneté mondiale au Québec :<br /><br />
-            Aide internationale pour l’enfance;<br />
-            Carrefour d’éducation à la solidarité internationale de Québec;<br />
-            Carrefour international bas-laurentien pour l’engagement social;<br />
-            Centre de solidarité internationale Corcovado;<br />
-            Clowns Sans Frontières;<br />
-            Comité pour les droits humainsen Amérique latine;<br />
-            Connexion justice sociale;<br />
-            Micro-Recyc-Coopération;<br />
-            Projet Accompagnement Québec-Guatemala.<br />
-            La subvention accordée aux organismes ci-dessous permettra un appui
-            institutionnel et la réalisation d’activités d’éducation à la
-            citoyenneté mondiale au Québec. Elle offrira également un appui
-            institutionnel et aux activités de partenaires locaux en Afrique
-            francophone, en Amérique latine et aux Antilles :<br /><br />
-            Alternatives;<br />
-            Audition mondiale;<br />
-            Avocats sans frontières;<br />
-            Carrefour International;<br />
-            Carrefour de solidarité internationale de Sherbrooke;<br />
-            Centre de solidarité internationale du Saguenay-Lac-Saint-Jean;<br />
-            Centre international de solidarité ouvrière;<br />
-            Comité régional d’éducation pour le développement international de
-            Lanaudière;<br />
-            Développement et Paix;<br />
-            Equitas;<br />
-            Fondation Paul Gérin-Lajoie;<br />
-            Fondation KANPE;<br />
-            Ingénieurs Sans Frontières Québec (ISFQ);<br />
-            L’AMIE – Aide internationale à l’enfance;<br />
-            Mer et Monde;<br />
-            Partenariat pour le développement des communautés;<br />
-            Solidarité Laurentides Amérique centrale;<br />
-            Solidarité Montérégie Amérique centrale;<br />
-            Solidarité Nord-Sud des Bois-Francs;<br />
-            Solidarité Union Coopération;<br />
-            L’Union des producteursagricoles – développement international.<br />
-            Lien utile :<br /><br />
-            https://www.mrif.gouv.qc.ca/fr/appels-a-projets/plan-de-relance/actions-solidarite-internationale<br /><br />
-            https://www.facebook.com/MRIQuebec<br /><br />
-            https://twitter.com/MRIF_Quebec<br /><br />
-            https://www.linkedin.com/company/minist-re-des-relations-internationales-de-la-francophonie-et-du-commerce-ext-rieur/about/<br /><br />
-            SOURCE Cabinet de la ministre des Relations internationales et de la
-            Francophonie<br /><br />
-            Renseignements: Source: FloreBouchon, Attachée de presse,Cabinet de
-            la ministre des Relations internationales et de la Francophonie et
-            ministre de l’Immigration, de la Francisation et de l’Intégration,
-            Tél. : 418 649-2319; Information :PatriciaLeopoldino, Conseillère en
-            communication, Direction des communications et des affaires
-            publiques, Ministère des Relations internationales et de la
-            Francophonie, Tél. : 418 559-1298, mrif.gouv.qc.ca,
-            Québec.ca/international<br />
-          </p1>
+      <div class="nouvelle__description titreNouvelle">
+        Plan de soutien aux organismes de coopération internationale – Plus de
+        3,7 M$ accordés à 30 organismes québécois de coopération
+        internationale afin d’appuyer la réalisation de projets visant à
+        réduire les effets de la COVID-19
+      </div>
+      <div class="blueLine"></div>
+      <div class="nouvelle__description">
+        <p1>
+          NOUVELLES FOURNIES PAR
+          <br />
+          Cabinet de la ministre des Relations internationales et de la
+          Francophonie
+        </p1>
+      </div>
+      <div class="blueLine"></div>
+
+      <div class="nouvelle__description">
+        <p1>QUÉBEC, le 12 nov. 2020 /CNW Telbec/ – La ministre des Relations
+          internationales et de la Francophonie et ministre de l’Immigration,
+          de la Francisation et de l’Intégration, Nadine Girault, annonce
+          qu’une somme de 3 713 745 $ est accordée à la réalisation des
+          demandes de 30 organismes québécois de coopération
+          internationale(OCI), dans le cadre de l’appel à projets exceptionnel
+          du Plan de soutien aux organismes de coopération
+          internationale(PSOCI).<br /><br />
+          Ce soutien financier contribuera à la lutte contre la pandémie
+          mondiale de COVID-19 et ses effets dans 16 pays d’Afrique
+          francophone et d’Amérique latine ainsi qu’en Haïti.<br /><br />
+          Une part importante des subventions octroyées permettra de procurer
+          un appui institutionnel aux OCI,soit le maintien de dizaines
+          d’emplois dans 10 régions administratives du Québec, l’appui aux
+          frais indirects des organisations et aux activités d’éducation à la
+          citoyenneté mondiale au Québec.<br /><br />
+          Rappelons que le PSOCI a été lancé le 18 juin dernier afin
+          d’apporter un soutien institutionnel aux OCI du Québec et d’appuyer
+          la réalisation de projets visant à réduire les effets de la
+          COVID-19, notamment dans les pays vulnérables.<br /><br />
+          Citation :<br /><br />
+          « La pandémie de COVID-19 nous rappelle que les crises ne
+          connaissent pas de frontières et quel’on se doit de demeurer
+          solidaires et engagés. Le Québec ne fait pas exception à la règle.
+          Le Plan de soutien constitue un appui important du gouvernement du
+          Québec aux OCI, dont la plupart sont de petites et moyennes
+          organisations dans plusieurs régions du Québec. De plus, cet appui
+          aidera à accroître la résilience de nos partenaires locaux, situés
+          dans plusieurs pays, afin de traverser la crise de la COVID-19. »<br /><br />
+          Nadine Girault, ministre des Relations internationales et de la
+          Francophonie, ministre de l’Immigration, de la Francisation et de
+          l’Intégration et ministre responsable de la région des
+          Laurentides<br /><br />
+          Faits saillants et projets retenus:<br /><br />
+          Treize des 30 OCI appuyés(43,3 %)son tsitués à l’extérieur de
+          Montréal, soit dans neuf régions administratives du Québec. La
+          majorité des OCI appuyés sont des petites et moyennes organisations
+          ayant un budget annuel de moins de 1,5 million de dollars.Une partie
+          des sommes(13,2 %) a été allouée pour assurer un soutien
+          institutionnel à des OCI ayant des actions exclusivement au Québec.
+          Les sommes restantes(86,8 %) ont été octroyées pour le soutien à des
+          OCI ayant des actions au Québec et dans 16 pays d’Afrique
+          francophone etd’Amérique latine ainsi qu’en Haïti.<br />
+          Les propositions soutenues touchent particulièrement les enjeux des
+          droits de la personne, de santé, de sécurité alimentaire, de
+          développement économique inclusif ainsi que des actions d’éducation
+          à la citoyenneté mondiale.<br />
+          ANNEXE<br /><br />
+          La subvention accordée aux organismes ci-dessous permettra un appui
+          institutionnel et la réalisation d’activités d’éducation à la
+          citoyenneté mondiale au Québec :<br /><br />
+          Aide internationale pour l’enfance;<br />
+          Carrefour d’éducation à la solidarité internationale de Québec;<br />
+          Carrefour international bas-laurentien pour l’engagement social;<br />
+          Centre de solidarité internationale Corcovado;<br />
+          Clowns Sans Frontières;<br />
+          Comité pour les droits humainsen Amérique latine;<br />
+          Connexion justice sociale;<br />
+          Micro-Recyc-Coopération;<br />
+          Projet Accompagnement Québec-Guatemala.<br />
+          La subvention accordée aux organismes ci-dessous permettra un appui
+          institutionnel et la réalisation d’activités d’éducation à la
+          citoyenneté mondiale au Québec. Elle offrira également un appui
+          institutionnel et aux activités de partenaires locaux en Afrique
+          francophone, en Amérique latine et aux Antilles :<br /><br />
+          Alternatives;<br />
+          Audition mondiale;<br />
+          Avocats sans frontières;<br />
+          Carrefour International;<br />
+          Carrefour de solidarité internationale de Sherbrooke;<br />
+          Centre de solidarité internationale du Saguenay-Lac-Saint-Jean;<br />
+          Centre international de solidarité ouvrière;<br />
+          Comité régional d’éducation pour le développement international de
+          Lanaudière;<br />
+          Développement et Paix;<br />
+          Equitas;<br />
+          Fondation Paul Gérin-Lajoie;<br />
+          Fondation KANPE;<br />
+          Ingénieurs Sans Frontières Québec (ISFQ);<br />
+          L’AMIE – Aide internationale à l’enfance;<br />
+          Mer et Monde;<br />
+          Partenariat pour le développement des communautés;<br />
+          Solidarité Laurentides Amérique centrale;<br />
+          Solidarité Montérégie Amérique centrale;<br />
+          Solidarité Nord-Sud des Bois-Francs;<br />
+          Solidarité Union Coopération;<br />
+          L’Union des producteursagricoles – développement international.<br />
+          Lien utile :<br /><br />
+          https://www.mrif.gouv.qc.ca/fr/appels-a-projets/plan-de-relance/actions-solidarite-internationale<br /><br />
+          https://www.facebook.com/MRIQuebec<br /><br />
+          https://twitter.com/MRIF_Quebec<br /><br />
+          https://www.linkedin.com/company/minist-re-des-relations-internationales-de-la-francophonie-et-du-commerce-ext-rieur/about/<br /><br />
+          SOURCE Cabinet de la ministre des Relations internationales et de la
+          Francophonie<br /><br />
+          Renseignements: Source: FloreBouchon, Attachée de presse,Cabinet de
+          la ministre des Relations internationales et de la Francophonie et
+          ministre de l’Immigration, de la Francisation et de l’Intégration,
+          Tél. : 418 649-2319; Information :PatriciaLeopoldino, Conseillère en
+          communication, Direction des communications et des affaires
+          publiques, Ministère des Relations internationales et de la
+          Francophonie, Tél. : 418 559-1298, mrif.gouv.qc.ca,
+          Québec.ca/international<br />
+        </p1>
+      </div>
+
+      <div class="nouvelle__pied">
+        <div class="texte__debut"></div>
+        <div class="nouvelle__info">
+          <div class="nouvelle__auteur">Par Katel Le Fustec</div>
+          <div class="nouvelle__date">10 décembre 2020</div>
+          <div class="nouvelle__csf">Clown Sans Frontière</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="nouvelle__apercu">
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="plus__bouton">Voir plus</button>
+    </div>
+  </section>
+
+  <br />
+  <section>
+
+    <div class="cartes">
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="colNouvelle">
+        <div class="cardNouvelle">
+          <div class="card-headerNouvelle">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+          </div>
+          <div class="card-bodyNouvelle">
+            <div class="alignment">
+              <p1 class="cardNameArticle">Nom de l'article</p1>
+              <p1 class="cardAuteur">Auteur</p1>
+              <p1 class="card-titleNouvelle">date</p1>
+            </div>
+            <p class="card-textNouvelle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
+              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
+              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
+              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
+              tellus scelerisque non.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="hubServices">
+
+      <div class="heroGenerique">
+
+      </div>
+      <h1 class="hubServices__description">
+        Actuellement, nous offrons plusieurs services pour réaliser notre mission!
+      </h1>
+      <div class="card card__hubServices">
+        <div class="card-body body__hubServices">
+          <h5 class="card-title title_hubServices">Mr Kim</h5>
+
+        </div>
+        <div class="card-header header_hubServices">
+          <img src="https://thispersondoesnotexist.com/image" class="card-img-overlay overlayServices" alt="image" />
         </div>
 
-        <div class="nouvelle__pied">
-          <div class="texte__debut"></div>
-          <div class="nouvelle__info">
-            <div class="nouvelle__auteur">Par Katel Le Fustec</div>
-            <div class="nouvelle__date">10 décembre 2020</div>
-            <div class="nouvelle__csf">Clown Sans Frontière</div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <title>Équipe</title>
+    <h2>Équipe</h2>
+    <header>
+      <div class="photo-groupe" id="header">
+
+        <img src="sources/medias/equipe/group.jpg" class="card-img-top" alt="groupe">
+      </div>
+    </header>
+    <div class='direction'>
+      <br>
+      <h3>Direction & Bénévoles</h3>
+
+      <div class="card-group ">
+        <div class="card text-center border__none" data-toggle="modal" data-target="#modalKlefustec">
+          <div class="circle circle-sea-green"><img src="sources/medias/equipe/katel_01.png" class="card-img-top" alt="katel">
+          </div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe">Katel Le Fustec</h4>
+            <p class="card-text-equipe">Directrice générale & artistique</p>
+          </div>
+        </div>
+
+        <div class="card text-center border__none" data-toggle="modal" data-target="#modalMdargenio">
+          <div class="circle circle-red"><img src="sources/medias/equipe/argenio_01.png" class="card-img-top" alt="argenio">
+          </div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe">Michèle D'Argenio</h4>
+            <p class="card-text-equipe">Adjointe à la direction</p>
+          </div>
+        </div>
+
+        <div class="card text-center border__none" data-toggle="modal" data-target="#modalMeaubry">
+          <div class="circle circle-navy"><img src="sources/medias/equipe/aubry_01.png" class="card-img-top " alt="aubry"></div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe">Marie-Ève Aubry</h4>
+            <p class="card-text-equipe">Responsable du Comité du Réseau International</p>
           </div>
         </div>
       </div>
 
- 
-  
-        <div class="nouvelle__apercu">
-          <div class="colNouvelle">
-            <div class="cardNouvelle">
-              <div class="card-headerNouvelle">
-                <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-              </div>
-              <div class="card-bodyNouvelle">
-                <div class="alignment">
-                  <p1 class="cardNameArticle">Nom de l'article</p1>
-                  <p1 class="cardAuteur">Auteur</p1>
-                  <p1 class="card-titleNouvelle">date</p1>
-                </div>
-                <p class="card-textNouvelle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                        libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                        condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                        leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                        tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button class="plus__bouton">Voir plus</button>
-        </div>
-    </section>
 
-    <br />
-    <section>
 
-      <div class="cartes">
-        <div class="colNouvelle">
-          <div class="cardNouvelle">
-            <div class="card-headerNouvelle">
-              <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-            </div>
-            <div class="card-bodyNouvelle">
-              <div class="alignment">
-                <p1 class="cardNameArticle">Nom de l'article</p1>
-                <p1 class="cardAuteur">Auteur</p1>
-                <p1 class="card-titleNouvelle">date</p1>
-              </div>
-              <p class="card-textNouvelle">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                      libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                      condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                      leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                      tellus scelerisque non.
-              </p>
-            </div>
+      <div class="card-group">
+
+        <div class="card text-center border__none" data-toggle="modal" data-target="#modalHcollin">
+          <div class="circle circle-red"><img src="sources/medias/equipe/collin_01.png" class="card-img-top" alt="collin"></div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe">Handrien Collin</h4>
+            <p class="card-text-equipe">Administrateur du site web</p>
           </div>
         </div>
-        <div class="colNouvelle">
-          <div class="cardNouvelle">
-            <div class="card-headerNouvelle">
-              <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-            </div>
-            <div class="card-bodyNouvelle">
-              <div class="alignment">
-                <p1 class="cardNameArticle">Nom de l'article</p1>
-                <p1 class="cardAuteur">Auteur</p1>
-                <p1 class="card-titleNouvelle">date</p1>
-              </div>
-              <p class="card-textNouvelle">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                      libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                      condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                      leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                      tellus scelerisque non.
-              </p>
-            </div>
+
+        <div class="card text-center border__none" data-toggle="modal" data-target="#modalJfpare">
+          <div class="circle circle-navy"><img src="sources/medias/equipe/pare_01.png" class="card-img-top" alt="jf"></div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe">Jean-Françcois Paré </h4>
+            <p class="card-text-equipe">Soutien technique - information</p>
           </div>
         </div>
-        <div class="colNouvelle">
-          <div class="cardNouvelle">
-            <div class="card-headerNouvelle">
-              <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-            </div>
-            <div class="card-bodyNouvelle">
-              <div class="alignment">
-                <p1 class="cardNameArticle">Nom de l'article</p1>
-                <p1 class="cardAuteur">Auteur</p1>
-                <p1 class="card-titleNouvelle">date</p1>
-              </div>
-              <p class="card-textNouvelle">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                      libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                      condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                      leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                      tellus scelerisque non.
-              </p>
-            </div>
+
+        <div class="card text-center border__none" data-toggle="modal" data-target="#modalBilly">
+          <div class="circle circle-sea-green"><img src="sources/medias/equipe/billy_01.png" class="card-img-top" alt="billy">
+          </div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe">Billy Maude</h4>
+            <p class="card-text-equipe">Responsable du Comité du Réseau International</p>
           </div>
         </div>
-        <div class="colNouvelle">
-          <div class="cardNouvelle">
-            <div class="card-headerNouvelle">
-              <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+      </div>
+
+
+
+      <!-- Button trigger modal 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button>
+    -->
+
+      <!-- modal Kartel Le Fustec-->
+      <div class="modal fade" id="modalKlefustec" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Kartel Le Fustec</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="card-bodyNouvelle">
-              <div class="alignment">
-                <p1 class="cardNameArticle">Nom de l'article</p1>
-                <p1 class="cardAuteur">Auteur</p1>
-                <p1 class="card-titleNouvelle">date</p1>
-              </div>
-              <p class="card-textNouvelle">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                      libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                      condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                      leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                      tellus scelerisque non.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="colNouvelle">
-          <div class="cardNouvelle">
-            <div class="card-headerNouvelle">
-              <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-            </div>
-            <div class="card-bodyNouvelle">
-              <div class="alignment">
-                <p1 class="cardNameArticle">Nom de l'article</p1>
-                <p1 class="cardAuteur">Auteur</p1>
-                <p1 class="card-titleNouvelle">date</p1>
-              </div>
-              <p class="card-textNouvelle">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                      libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                      condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                      leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                      tellus scelerisque non.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="colNouvelle">
-          <div class="cardNouvelle">
-            <div class="card-headerNouvelle">
-              <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-            </div>
-            <div class="card-bodyNouvelle">
-              <div class="alignment">
-                <p1 class="cardNameArticle">Nom de l'article</p1>
-                <p1 class="cardAuteur">Auteur</p1>
-                <p1 class="card-titleNouvelle">date</p1>
-              </div>
-              <p class="card-textNouvelle">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                      libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                      condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                      leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                      tellus scelerisque non.
-              </p>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+              <br>
             </div>
           </div>
         </div>
       </div>
 
-    </section>
-
-    <section>
-      <div class="hubServices">
-        
-        <div class="heroGenerique">
-
-        </div>
-        <h1 class="hubServices__description">
-          Actuellement, nous offrons plusieurs services pour réaliser notre mission!
-        </h1>
-        <div class="card card__hubServices">
-          <div class="card-body body__hubServices">
-            <h5 class="card-title title_hubServices">Mr Kim</h5>
-        
+      <!-- modal Michèle D'Argenio-->
+      <div class="modal fade" id="modalMdargenio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Michèle D'Argenio</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+              <br>
+            </div>
           </div>
-          <div class="card-header header_hubServices">
-            <img
-              src="https://thispersondoesnotexist.com/image"
-              class="card-img-overlay overlayServices"
-              alt="image"
-            />
-          </div>
-         
         </div>
       </div>
 
-    </section>
+      <!-- modal Marie-Ève Aubry-->
+      <div class="modal fade" id="modalMeaubry" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Marie-Ève Aubry</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <section>
+      <!-- modal j-f paré -->
+      <div class="modal fade" id="modalHcollin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Handrien Collin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal j-f paré -->
+      <div class="modal fade" id="modalJfpare" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Jean-François Paré</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal billy -->
+      <div class="modal fade" id="modalBilly" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Billy Maude</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-    </section>
+    </div>
+    <br><br>
+    <h3>Conseil d'administration</h3>
+    <div class="conseil">
+      <div class="conseil-admin">
 
-    
-    <script type="module" src="/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  </body>
+        <div class="card mb-3" style="max-width: 720px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sources/medias/equipe/ferland.png" class="img-fluid rounded-start" alt="ferland_portrait">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="card-title-equipe">François Ferland</div>
+                <div class="card-sub-title-equipe">Président</div>
+                <div class="card-role-title-equipe">Avocat et médiateur - Jolicoeur Lacasse</div>
+                <div class="card-text-equipe">Le droit des affaires domine la pratique de Me Ferland qui s'oriente avant
+                  tout auprès des entreprises d'éconimie sociale, les industries culturelles et les entreprises issues
+                  de la nouvelle économie.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 720px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sources/medias/equipe/crevier.png" class="img-fluid rounded-start" alt="crevier_portrait">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="card-title-equipe">Jean Crevier</div>
+                <div class="card-sub-title-equipe">Secrétaire-trésorier</div>
+                <div class="card-role-title-equipe">Technicien - Héroux Devtek</div>
+                <div class="card-text-equipe">Jean Crevier est impliqué dans la restruction des activités et du Conseil
+                  d'administration de Clowns Sans Frontières depuis 2008.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 720px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sources/medias/equipe/leclerc.jpg" class="img-fluid rounded-start" alt="leclerc_portrait">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="card-title-equipe">Richard Leclerc</div>
+                <div class="card-sub-title-equipe">Administrateur-trésorier</div>
+                <div class="card-text-equipe">Chargé de cours à l'UDM et président et concepteur-réalisateur de
+                  publicité à Publici-Terre.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 720px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sources/medias/equipe/aubry.jpg" class="img-fluid rounded-start" alt="aubry_portrait">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="card-title-equipe">Marie-Eve Aubry</div>
+                <div class="card-sub-title-equipe">Administratrice</div>
+                <div class="card-text-equipe">Marie-Eve Aubry évolue dans la domaine de l'enfance et des communications.
+                  Au cours des années 2000, elle a été émue par l'action de Clowns Sans Frontières en effectuant un
+                  reportage sur l'organisme.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 720px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sources/medias/equipe/voltaire.png" class="img-fluid rounded-start" alt="voltaire_portrait">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="card-title-equipe">Frantz Voltaire</div>
+                <div class="card-sub-title-equipe">Administrateur</div>
+                <div class="card-role-title-equipe">Directeur - Centre international de documentation et d'information
+                  Haïtienne, Caraïbéenne et Afro-Canadienne (CIDIHCA) </div>
+                <div class="card-text-equipe">Frantz Voltaire est aussi un historien et politologue qui a travaillé à la
+                  production et à la réalisation de plusieurs documentaires dont « Potoprens se pam » (1999) sur le
+                  bicentenaire de la ville de Port-au-Prince et « Les chemins de la mémoire » (2002). </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="remerciements">
+          <div class="merci-title">Merci</div> <br>
+          <div class="merci-text"> Merci à nos précieux partenaires.<br> Nos partenaires sont précieux pour la réussite
+            de nos activités ici et ailleurs.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+
 </html>

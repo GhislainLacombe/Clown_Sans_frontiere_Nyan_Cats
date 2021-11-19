@@ -1,0 +1,27 @@
+@import "./styles/nouvelles.scss";
+@import "./styles/dons.scss";
+@import "./styles/erreur.scss";
+@import "./styles/footer.scss";
+@import "./styles/formatages.scss";
+@import "./styles/header.scss";
+@import "./styles/heros.scss";
+@import "./styles/services.scss";
+@import "./styles/swipers.scss";
+@import "./styles/equipe.scss";
+@import "./styles/temoignages.scss";
+@import "./styles/variables.scss";
+
+html,
+body{
+    width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /**font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;**/
+  position: relative;
+}
+

@@ -1,6 +1,4 @@
-import './styles.scss'
-
-
+import './main.scss'
 
 
   // init Swiper:

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-moz-selection {
+    background: #366284;
+    color: white;
+  }
+  
+  ::selection {
+    background: #366284;
+    color: white;
+  }
+  
+  article{
+    width: 100%;
+    position: relative;
+  }
+
+  header {
+    width: 100%;
+  }
+  
+  mark {
+    background-color: transparent;
+    color: #2b2d42;
+  }
+  
+  mark:hover {
+    background-color: transparent;
+    color: #dd0426;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+    
+  }
+  
+  .navbar-collapse {
+    justify-content: space-between;
+    align-items:space-between; 
+    
+    width: 100%;
+    position: relative;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 20px auto;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2b2d42;
+  }
+  
+  nav{
+    position: relative;
+    width: 100%;
+  }
+  .nav-link:hover {
+    color: #26b6ad;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .d-flex {
+    align-items: center;
+  }
+  
+  .donner {
+    background-color: #ef233c;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 46px;
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration-line: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 180px;
+    margin: 5px auto;
+    
+  }
+  
+  .donner:hover {
+    color: #ffffff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  nav img {
+    height: 120px;
+    width: auto;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 20px;
+  }
+  
+  nav img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .button-donner {
+    height: 200px;
+    width: auto;
+    padding-top: 20px;
+  }
+  
+  .nav-item {
+    text-align: center;
+  }
+  

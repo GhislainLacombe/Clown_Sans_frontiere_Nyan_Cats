@@ -1,0 +1,139 @@
+//ACCUEIL SERVICES//
+
+.service {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  
+  .titleService{
+    font-size: 48px;
+    text-align: center;
+    color: #DD0426;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Signika Negative', sans-serif;
+    position: relative;
+    text-align: center;
+    grid-area: titleS;
+    padding-bottom: 20px;
+  }
+  
+  .gridService {
+    display: grid;
+    margin: 0 auto;
+    padding: 0px 60px;
+    min-width: 700px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    grid-template-areas:
+      "titleS titleS"
+      "saa ep";
+  }
+  
+  .saaService {
+    grid-area: saa;
+    position: relative;
+    &__image {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    
+    &__text{
+      font-size: 30px;
+      color: white;
+      font-weight: regular;
+      font-family: Yanone Kaffeesatz;
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: left;
+      padding-left: 20px;
+      filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.3));
+    }
+  }
+  .epService {
+    grid-area: ep;
+    position: relative;
+    
+    &__image {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    &__text{
+      font-size: 30px;
+      color: white;
+      font-weight: regular;
+      font-family: Yanone Kaffeesatz;
+      text-align: right;
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: left;
+      padding-left: 20px;
+      width: 100%;
+      filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.3));
+    }
+  }
+  
+  @media (max-width: 900px) { 
+    .gridOrganisme {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+      width:100%;
+      grid-template-areas:
+        " title"
+        "hero"
+        "description"
+        "information";
+    }
+    .gridService {
+      display: grid;
+      
+      gap: 10px;
+      grid-template-columns: 1fr;
+      width:100%;
+      justify-items: center;
+      grid-template-areas:
+        "titleS"
+        "saa"
+        "ep";
+    }
+    .descriptionOrganisme {
+      grid-area: description;
+      background-color: transparent;
+      border: none;
+      border-radius: 15px;
+      position: relative;
+      width: 100%;
+    }
+    
+    .informationOrganisme {
+      color: transparent;
+      cursor: none;
+      border: solid transparent;
+      display: none;
+    }
+    
+    .ligne {
+      width: 33%;
+      height: 5px;
+      background-color: white;
+      margin-top: 5px;
+    }
+    
+  }
+  
+
+  // HUB //
+
+  .hubServices__description{
+    padding-top: 150px;
+    padding-left: 5%;
+    text-align: left;
+  }
