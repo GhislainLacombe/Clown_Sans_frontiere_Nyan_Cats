@@ -294,6 +294,8 @@ width: 100%;
     background-color: #273043;
     border-radius: 15px;
     display: inline-block;
+    transition-duration: 0.2s; 
+    transition-timing-function: ease;
   
     &:hover {
       transform: scale(1.01);
@@ -362,3 +364,8 @@ width: 100%;
     justify-content: center;
   }
 
+
+
+  .detailsNouvelle{
+    margin-top: 100px;
+  }

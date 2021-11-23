@@ -133,7 +133,77 @@
   // HUB //
 
   .hubServices__description{
-    padding-top: 150px;
-    padding-left: 5%;
+    padding-top: 100px;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .hubServices{
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+  }
+  .cartesHubServices{
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    
+  }
+  
+  .card-hubServices{
+    width: 500px;
+    height: 500px;
+    transition-property: transform; 
+    transition-duration: 0.2s; 
+    transition-timing-function: ease;
+    filter: drop-shadow(0 1mm 0.5em rgba(0,0,0, 0.5 ));
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+
+  .card-hubServices:hover{
+    transform: scale(1.1);
+  }
+
+  .hubServices-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(#DD0426, #273043);
+    opacity: 0.5;
+  }
+
+  .card-title-hubServices{
+    font-family: var(--title);
+    padding-top: 45%;
+    font-size: 2em;
+  }
+
+  .card-img-hubServices{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+    .cartesHubServices{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-hubServices{
+      margin-bottom: 100px;
+  
+    }
+    .hubServices__description{
+      text-align: center;
+    } 
+  }
+  
