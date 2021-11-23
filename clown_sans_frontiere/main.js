@@ -1,5 +1,7 @@
 import './main.scss'
 
+//import './styles/styles.scss'
+
 
   // init Swiper:
   var swiper = new Swiper(".mySwiper", {
