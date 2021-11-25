@@ -114,6 +114,7 @@ p1 {
 .cartes {
   width: 100%;
   background-color: #3a5a90;
+  justify-content: center;
   &:nth-child(7){
     display:none;
   }
