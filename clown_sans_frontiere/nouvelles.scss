@@ -114,7 +114,12 @@ p1 {
 .cartes {
   width: 100%;
   background-color: #3a5a90;
-  
+  &:nth-child(7-12){
+    display:none;
+  }
+  &:nth-child(13-18){
+    display:none;
+  }
 }
 
 .colNouvelle {
@@ -190,4 +195,13 @@ font-family: "Yanone Kaffeesatz", sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.voirPlusBtn {
+  border-radius: 25px;
+  border:#26B6AD 1px solid;
+}
+
+.flex {
+  display: flex;
 }
