@@ -556,15 +556,12 @@
 
   <br />
   <section>
-
-    <div class="cartes">
-      <div>
-        <select>
-          <option value="plus récente" onclick="recenteNouvelle()">Nouvelles les plus récentes</option>
-          <option value="plus ancienne" onclick="ancienneNouvelle()">Nouvelles les plus anciennes</option>
-        </select>
-      </div>
-      <div class="colNouvelle colNouvelle_1">
+  <select id="Selector">
+      <option value="plusRecente" onclick="recenteNouvelle()">Nouvelles les plus récentes</option>
+      <option value="plusAncienne" onclick="ancienneNouvelle()">Nouvelles les plus anciennes</option>
+    </select>
+    <div class="cartes" id="cartes">
+      <div class="colNouvelle" id="1Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -586,7 +583,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_2">
+      <div class="colNouvelle" id="2Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -608,7 +605,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_3">
+      <div class="colNouvelle" id="3Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -630,7 +627,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_4">
+      <div class="colNouvelle" id="4Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -652,7 +649,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_5">
+      <div class="colNouvelle" id="5Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -674,7 +671,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_6">
+      <div class="colNouvelle" id="6Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -696,7 +693,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_7">
+      <div class="colNouvelle" id="7Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -718,7 +715,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_8">
+      <div class="colNouvelle" id="8Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -740,7 +737,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_9">
+      <div class="colNouvelle" id="9Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -762,7 +759,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_10">
+      <div class="colNouvelle" id="10Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -784,7 +781,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_11">
+      <div class="colNouvelle" id="11Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -806,7 +803,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_12">
+      <div class="colNouvelle" id="12Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -828,7 +825,7 @@
           </div>
         </div>
       </div>
-      <div class="colNouvelle colNouvelle_13">
+      <div class="colNouvelle" id="13Nouvelle">
         <div class="cardNouvelle">
           <div class="card-headerNouvelle">
             <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
@@ -837,7 +834,7 @@
             <div class="alignment">
               <p1 class="cardNameArticle">Nom de l'article</p1>
               <p1 class="cardAuteur">Auteur</p1>
-              <p1 class="card-titleNouvelle">date</p1>
+              <p1 class="card-titleNouvelle">1234</p1>
             </div>
             <p class="card-textNouvelle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -851,7 +848,7 @@
         </div>
       </div>
       <div class="btnModification">
-        <button class="voirPlusBtn" onclick="showNouvelle()">Voir plus de nouvelles</button>
+        <button class="plus__bouton" onclick="showNouvelle()">Voir plus</button>
       </div>
     </div>
 
@@ -1235,6 +1232,7 @@
 
 
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/nouvelles.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>

@@ -277,7 +277,14 @@ width: 100%;
   .cartes {
     width: 100%;
     background-color: #3a5a90;
-    
+    display: inline-flex;
+    flex-wrap: wrap;
+    &:nth-child(7){
+      display:none;
+    }
+    &:nth-child(13){
+      display:none;
+    }
   }
   
   .colNouvelle {
@@ -295,21 +302,22 @@ width: 100%;
       background-color: #183e7d;
       cursor: pointer;
     }
-    &:first-child{
-      background-color: #26B6AD;
-      
-      &:hover {
-      transform: scale(1.01);
-      background-color: #3ECDC4;
-      cursor: pointer;
-    }
-    }
   }
   
   .card-bodyNouvelle {
     text-align: center;
   font-family: "Yanone Kaffeesatz", sans-serif;
     
+  }
+
+  .firstElementNouvelle{
+    background-color: #26B6AD;
+    
+    &:hover {
+      transform: scale(1.01);
+      background-color: #3ECDC4;
+      cursor: pointer;
+    }
   }
   
   .alignment {
@@ -362,3 +370,4 @@ width: 100%;
   .detailsNouvelle{
     margin-top: 100px;
   }
+

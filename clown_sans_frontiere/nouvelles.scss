@@ -114,10 +114,10 @@ p1 {
 .cartes {
   width: 100%;
   background-color: #3a5a90;
-  &:nth-child(7-12){
+  &:nth-child(7){
     display:none;
   }
-  &:nth-child(13-18){
+  &:nth-child(13){
     display:none;
   }
 }
@@ -134,15 +134,6 @@ p1 {
     transform: scale(1.01);
     background-color: #183e7d;
     cursor: pointer;
-  }
-  &:first-child{
-    background-color: #26B6AD;
-    
-    &:hover {
-    transform: scale(1.01);
-    background-color: #3ECDC4;
-    cursor: pointer;
-  }
   }
 }
 
@@ -199,9 +190,19 @@ font-family: "Yanone Kaffeesatz", sans-serif;
 
 .voirPlusBtn {
   border-radius: 25px;
-  border:#26B6AD 1px solid;
+  border:#26B6AD 10px solid;
 }
 
 .flex {
   display: flex;
+}
+
+.firstElementNouvelle{
+  background-color: #26B6AD;
+  
+  &:hover {
+    transform: scale(1.01);
+    background-color: #3ECDC4;
+    cursor: pointer;
+  }
 }
