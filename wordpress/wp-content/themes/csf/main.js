@@ -1,1 +1,43 @@
-import"https://cdn.skypack.dev/bootstrap@5.1.3";const u=function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&r(n)}).observe(document,{childList:!0,subtree:!0});function d(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(e){if(e.ep)return;e.ep=!0;const t=d(e);fetch(e.href,t)}};u();new Swiper(".mySwiper",{slidesPerView:"auto",spaceBetween:40,slidesPerGroup:3,loop:!0,loopFillGroupWithBlank:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination"}});new Swiper(".swiper-organisme",{slidesPerView:"auto",spaceBetween:40,slidesPerGroup:3,loop:!0,loopFillGroupWithBlank:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination"}});document.getElementById("1Nouvelle").classList.add("firstElementNouvelle");document.getElementById("Selector").onchange=s;function s(){var l=this.value;l=="plusRecente"?(document.getElementById("1Nouvelle").style.order="1",document.getElementById("2Nouvelle").style.order="2",document.getElementById("3Nouvelle").style.order="3",document.getElementById("4Nouvelle").style.order="4",document.getElementById("5Nouvelle").style.order="5",document.getElementById("6Nouvelle").style.order="6",document.getElementById("7Nouvelle").style.order="7",document.getElementById("8Nouvelle").style.order="8",document.getElementById("9Nouvelle").style.order="9",document.getElementById("10Nouvelle").style.order="10",document.getElementById("11Nouvelle").style.order="11",document.getElementById("12Nouvelle").style.order="12",document.getElementById("13Nouvelle").style.order="13",document.getElementById("1Nouvelle").classList.add("firstElementNouvelle"),document.getElementById("13Nouvelle").classList.remove("firstElementNouvelle")):l=="plusAncienne"&&(document.getElementById("1Nouvelle").style.order="13",document.getElementById("2Nouvelle").style.order="12",document.getElementById("3Nouvelle").style.order="11",document.getElementById("4Nouvelle").style.order="10",document.getElementById("5Nouvelle").style.order="9",document.getElementById("6Nouvelle").style.order="8",document.getElementById("7Nouvelle").style.order="7",document.getElementById("8Nouvelle").style.order="6",document.getElementById("9Nouvelle").style.order="5",document.getElementById("10Nouvelle").style.order="4",document.getElementById("11Nouvelle").style.order="3",document.getElementById("12Nouvelle").style.order="2",document.getElementById("13Nouvelle").style.order="1",document.getElementById("1Nouvelle").classList.remove("firstElementNouvelle"),document.getElementById("13Nouvelle").classList.add("firstElementNouvelle"))}
+import './styles.scss'
+  // core version + navigation, pagination modules:
+  import Swiper, { Navigation, Pagination } from 'swiper';
+  // import Swiper and modules styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+
+
+
+
+  // init Swiper:
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+  var swiperOrgnisme = new Swiper(".swiper-organisme", {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
