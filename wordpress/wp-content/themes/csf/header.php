@@ -54,9 +54,7 @@
 		?>
 	</nav>
 -->
-	<nav class="navbar navbar-expand-xl">
-
-
+<nav class="navbar navbar-expand-xl">
     <div class="container-fluid">
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>">
         <img src="https://imgur.com/Gzoy3k7.png" alt="logo" />
@@ -66,24 +64,42 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <?php 
+        	<?php 
 
-          // Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
+          		// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
 
-            wp_nav_menu( array( 'theme_location' => 'main-menu',
+           		 wp_nav_menu( array( 'theme_location' => 'main-menu',
 
-              'container' => 'ul',
+              		'container' => 'ul',
 
-              'menu_class'=> 'navbar-nav',
+              		'menu_class'=> 'navbar-nav',
 
-                     ) );
+                ));
 
-?>
+			?>
 
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
+<div class="heros">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img class="gif-heros" src="https://imgur.com/g1TBBfG.png" alt="gif-heros" />
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="img-heros" src="https://imgur.com/o4wrrf4.png" alt="img-heros" />
+        </div>
+        <div class="col-12 justify-content-left bt-donner">
+          <a href="//www.clownssansfrontieres.ca/donner/">
+            <img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 	<?php 
 		// Affiche la description de site se trouvant dans "General Settings" dans l'admin WordPress
 		bloginfo( 'description' ); 
