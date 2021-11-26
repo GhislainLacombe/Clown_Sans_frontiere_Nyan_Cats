@@ -56,6 +56,10 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #2b2d42;
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
   }
   
   nav{

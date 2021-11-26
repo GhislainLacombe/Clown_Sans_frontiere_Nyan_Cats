@@ -58,7 +58,7 @@
 
 
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home">
+      <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>">
         <img src="https://imgur.com/Gzoy3k7.png" alt="logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,39 +66,20 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#accueil">Accueil</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#nouvelles">Nouvelles</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#equipe">Équipe</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#apropos">À propos</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#histoire">Histoire</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link donner" href="#donner">
-              FAITES UN DON
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#english">
-              <mark>EN</mark>
-            </a>
-          </li>
+        <?php 
+
+          // Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
+
+            wp_nav_menu( array( 'theme_location' => 'main-menu',
+
+              'container' => 'ul',
+
+              'menu_class'=> 'navbar-nav',
+
+                     ) );
+
+?>
+
         </ul>
       </div>
     </div>

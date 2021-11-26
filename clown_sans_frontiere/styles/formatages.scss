@@ -68,10 +68,12 @@ ul {
 }
 
 ul li::before {
-  content: "\2022";
-  color: #26b6ad;
+  //content: "\2022";
+  //color: #26b6ad; the dots in the nav and footer
+  list-style: none;
   font-weight: bold;
   display: inline-block;
   width: 1.2em;
   margin-left: -1em;
+
 }
