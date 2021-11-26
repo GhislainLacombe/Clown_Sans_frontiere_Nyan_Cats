@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Nouvelle
- *  Template Post Type: post, page, nouvelles
+ *  Template Post Type: post, page, nouvelle
  */
 
 get_header(); // Affiche header.php
@@ -51,7 +51,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                   <div class="card-body card__body__details">
                     <h5 class="card-title card__title__details">
-					<?php the_title(); // Titre de la page ?>
+					          <?php the_title(); // Titre de la page ?>
                     </h5>
                     <p class="card-text card__desc__details">Catégorie</p>
                     <p class="card-text card__desc__details">Fate</p>
@@ -63,7 +63,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         </div>
       </div>
 
-      <h4 class="nouvelle__description soustitre__nouvelle">Plan de soutien aux organismes de coopération internationale
+      <h4 class="nouvelle__description soustitre__nouvelle"><?php the_title(); // Titre de la page ?>
       </h4>
 
       <div class="nouvelle__description titreNouvelle">
