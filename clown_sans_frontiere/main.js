@@ -1,4 +1,5 @@
 import './main.scss'
+import * as bootstrap from "https://cdn.skypack.dev/bootstrap@5.1.3";
 
 //import './styles/styles.scss'
 
@@ -35,3 +36,5 @@ import './main.scss'
       el: '.swiper-pagination',
     },
   });
+
+  
