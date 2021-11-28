@@ -73,8 +73,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="card-bodyNouvelle">
             <div class="alignment">
               <p1 class="cardNameArticle">Nom de l'article</p1>
-              <p1 class="cardAuteur">Auteur</p1>
-              <p1 class="card-titleNouvelle">date</p1>
+              <p1 class="cardAuteur"><?php the_field('auteur'); ?></p1>
+              <p1 class="card-titleNouvelle"><?php the_field('date'); ?></p1>
             </div>
             <p class="card-textNouvelle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
