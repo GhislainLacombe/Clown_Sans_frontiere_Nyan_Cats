@@ -20,7 +20,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		
 		<?php the_content(); // Contenu principal de la page ?>
   
-    <div class="heros">
+    <!--<div class="heros">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-6">
@@ -49,7 +49,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
     <div class="bgGradient">
     <div class="gridOrganisme">
       <div class="titleOrganisme">
