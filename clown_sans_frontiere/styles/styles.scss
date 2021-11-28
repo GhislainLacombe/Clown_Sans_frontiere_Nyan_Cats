@@ -702,12 +702,12 @@ mark{
   background-color: white;
   color: #26b6ad;
   }
-ul {
+ul  {
   list-style: none;
 }
 
 ul li::before {
-    content: "\2022";
+  content: "\2022";
   color: #26b6ad;
   font-weight: bold;
   display: inline-block; 
