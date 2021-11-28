@@ -1,4 +1,3 @@
-import './nouvelles.scss'
 
 document.getElementById("1Nouvelle").classList.add("firstElementNouvelle");
 function showNouvelle(){
