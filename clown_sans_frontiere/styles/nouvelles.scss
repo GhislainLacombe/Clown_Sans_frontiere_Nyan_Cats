@@ -285,9 +285,11 @@ width: 100%;
   
   //HUB NOUVELLES//
   .cartes {
-    width: 100%;
+    width: 80%;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0% 10%;
     &:nth-child(7){
       display:none;
     }
