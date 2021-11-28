@@ -1,4 +1,4 @@
-import * as bootstrap from "https://cdn.skypack.dev/bootstrap@5.1.3";
+// import * as bootstrap from "https://cdn.skypack.dev/bootstrap@5.1.3";
 
 window.onscroll = function() {scrollFunction()};
 
