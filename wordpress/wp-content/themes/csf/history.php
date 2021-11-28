@@ -21,19 +21,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<title><?php the_title(); // Titre de la page ?></title>
   <div class='histoire'>
     <h4>Notre histoire</h4>
-    <p1>Clowns Sans Frontières est né de l’initiative du clown catalan <mark>Tortell Poltrona</mark>. En 1993,
-      des enfants d’une école de Barcelone en contact avec des enfants d’une « école » dans un camp de réfugiés en Croatie demandent à l’artiste d’aller jouer dans ce pays. Ils aimeraient que leurs correspondants vivent un moment de magie et de rêve pour oublier quelque peu leur quotidien. Le clown fait valoir que c’est loin … les enfants rétorquent qu’il n’a qu’à faire un plein d’essence ! <br><br>C’est ainsi que s’organise,
-      en plein conflit yougoslave,
-      la première mission de Payasos Sin Fronteras (Clowns Sans Frontières – Espagne) dans les camps de réfugiés de Veli Joseph. La réaction des enfants du camp démontre que le cirque et la poésie sont un remède et une thérapie humaine spectaculaire. Une deuxième expédition s’impose. Des équipes artistiques espagnoles (marionnettistes, danseurs, magiciens, musiciens et clowns) invitent des artistes du circuit international à se joindre pour cette deuxième mission en ex-Yougoslavie. <br><br>Quelques mois plus tard,
-      la balle est lancée et Clowns Sans Frontières Canada prend son envol. Au milieu du chaos en Bosnie-Herzégovine,
-      la première mission humanitaire canadienne,
-      accompagnée d’artistes français,
-      se déroule dans des conditions extrêmes alors que le conflit est en cours (Sarajevo, Tuzla et Mostar). </p1><br><br>
-    <p2>Officiellement,
-      Clowns Sans Frontières Canada né le 22 décembre 1994 et sa première mission internationale fait suite à l’invitation de FENIX – Bosnia and Herzegovia for Children. </p2>
+    <p>Clowns Sans Frontières est né de l’initiative du clown catalan <mark>Tortell Poltrona</mark>. En 1993, des enfants d’une école de Barcelone en contact avec des enfants d’une « école » dans un camp de réfugiés en Croatie demandent à l’artiste d’aller jouer dans ce pays. Ils aimeraient que leurs correspondants vivent un moment de magie et de rêve pour oublier quelque peu leur quotidien. Le clown fait valoir que c’est loin … les enfants rétorquent qu’il n’a qu’à faire un plein d’essence ! <br><br>C’est ainsi que s’organise, en plein conflit yougoslave, la première mission de Payasos Sin Fronteras (Clowns Sans Frontières – Espagne) dans les camps de réfugiés de Veli Joseph. La réaction des enfants du camp démontre que le cirque et la poésie sont un remède et une thérapie humaine spectaculaire. Une deuxième expédition s’impose. Des équipes artistiques espagnoles (marionnettistes, danseurs, magiciens, musiciens et clowns) invitent des artistes du circuit international à se joindre pour cette deuxième mission en ex-Yougoslavie. <br><br>
+    Quelques mois plus tard, la balle est lancée et Clowns Sans Frontières Canada prend son envol. Au milieu du chaos en Bosnie-Herzégovine, la première mission humanitaire canadienne, accompagnée d’artistes français, se déroule dans des conditions extrêmes alors que le conflit est en cours (Sarajevo, Tuzla et Mostar). </p><br><br>
+    <p2>Officiellement, Clowns Sans Frontières Canada né le 22 décembre 1994 et sa première mission internationale fait suite à l’invitation de FENIX – Bosnia and Herzegovia for Children.</p2>
   </div>
 </section>
-
 		<body>
 
      
