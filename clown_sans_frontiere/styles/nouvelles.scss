@@ -286,7 +286,6 @@ width: 100%;
   //HUB NOUVELLES//
   .cartes {
     width: 100%;
-    background-color: #3a5a90;
     display: inline-flex;
     flex-wrap: wrap;
     &:nth-child(7){
@@ -300,7 +299,7 @@ width: 100%;
   .colNouvelle {
     max-width: 350px;
     padding: 30px;
-    margin:5px;
+    margin:10px;
     background-color: #273043;
     border-radius: 15px;
     display: inline-block;
@@ -308,8 +307,8 @@ width: 100%;
     transition-timing-function: ease;
   
     &:hover {
-      transform: scale(1.01);
-      background-color: #183e7d;
+      transform: scale(1.05);
+      border: #4671bb solid 2px ;
       cursor: pointer;
     }
   }
@@ -324,9 +323,11 @@ width: 100%;
     background-color: #26B6AD;
     
     &:hover {
-      transform: scale(1.01);
+      transform: scale(1.05);
       background-color: #3ECDC4;
       cursor: pointer;
+      
+      border: #4671bb solid 1px;
     }
   }
   
@@ -375,7 +376,16 @@ width: 100%;
     justify-content: center;
   }
 
-
+#Selector {
+  border-radius: 10px;
+    margin: 20px;
+    color: #273043;
+    border: #273043 1px solid;
+    font-size: 25px;
+    border-width: 3px;
+    padding: 7px;
+    font-weight: 400;
+}
 
   .detailsNouvelle{
     margin-top: 100px;
