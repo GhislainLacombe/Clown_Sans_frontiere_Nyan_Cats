@@ -65,16 +65,17 @@ mark {
 
 ul .mission {
   list-style: none;
+  
 }
 
-ul li::before .mission {
-  content: "2022";
+.propos ul li::before {
+  content: "•";
   color: #26b6ad; 
   list-style: none;
   font-weight: bold;
   display: inline-block;
   width: 1.2em;
-  margin-left: -1em;
+  padding-right: 8px;
 
 }
 
