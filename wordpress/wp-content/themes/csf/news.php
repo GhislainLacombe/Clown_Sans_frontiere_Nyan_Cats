@@ -48,19 +48,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <h4 class="nouvelle__description soustitre__nouvelle"><?php the_title(); // Titre de la page ?>
       </h4>
 
-      <div class="nouvelle__description titreNouvelle">
-        
-      </div>
-      <div class="blueLine"></div>
-      <div class="nouvelle__description">
-        <p1>
-          
-          <br />
-          
-        </p1>
-      </div>
-      <div class="blueLine"></div>
-
       <div class="nouvelle__description">
 	  <?php the_content(); // Contenu principal de la page ?>
       </div>
