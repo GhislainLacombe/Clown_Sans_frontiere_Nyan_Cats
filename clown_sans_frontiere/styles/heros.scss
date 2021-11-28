@@ -128,10 +128,10 @@
   
   .descriptionOrganisme {
     grid-area: description;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     border: none;
     border-radius: 15px;
-    position: relative;
+    position: relative; 
     width: 100%;
     padding: 30px;
     filter: drop-shadow(5px 5px 1px rgba(0,0,0,0.1));
@@ -160,23 +160,23 @@
     word-spacing: 3px;
     line-height: 1.5;
     color: #273043;
-    text-align: justify; //trish
+    text-align: left; //becca
   }
   
   .informationOrganisme {
-    background-color: white;
+    background-color: transparent;
     grid-area: information;
     font-size: 25px;
-    color: #3679e8;
+    color: #183e7d;
     font-weight: bold;
     font-family: Yanone Kaffeesatz;
-    border: solid #3679e8 2px;
-    border-radius: 35px;
+    border: solid #183e7d 3px;
+    border-radius: 25px;
     position: relative;
     cursor: pointer;
     width: fit-content;
     text-align: center;
-    margin-top: 10px;
+    margin: 5px 20px;
     padding: 10px 20px 5px 20px;
     text-transform: uppercase;
   

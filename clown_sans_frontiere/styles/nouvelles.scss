@@ -273,14 +273,17 @@ width: 100%;
   
   .plus__bouton{
     background-color: var(--lighseagreen);
-    width: 150px;
-    height: 60px;
+    width: 140px;
+    height: 50px;
     border: none;
-    margin-top: 0.5vh;
+    padding-top: 5px;
     border-radius: 20px;
+    font-family: Yanone Kaffeesatz;
+    font-size: 30px;
     margin: 20px;
-    font-size: 2em;
+    text-transform: uppercase;
     color: white;
+  
   }
   
   //HUB NOUVELLES//
@@ -304,6 +307,7 @@ width: 100%;
     margin:10px;
     background-color: #273043;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px #bdbdbd;
     display: inline-block;
     transition-duration: 0.2s; 
     transition-timing-function: ease;
@@ -317,7 +321,7 @@ width: 100%;
   
   .card-bodyNouvelle {
     text-align: center;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     
   }
 
@@ -344,9 +348,11 @@ width: 100%;
   .cardNameArticle {
     margin: 0px auto 0px 0px;
     color: white;
+    transform: translateY(-8px);
   }
   
   .cardAuteur {
+    transform: translateY(-10px);
     text-align: center;
     background-color: #ececec;
     padding: 5px 10px;
@@ -357,14 +363,16 @@ width: 100%;
     font-size: 23px;
     color: white;
     border-left: 3px solid #DD0426;
-    padding: 0px 5px;
+    padding: 10px;
+    transform: translateY(-2px);
   }
   .card-textNouvelle {
-    color: white;
-    font-weight: 200;
-    font-size: 20px;
+    color: #ffffffc4;
+    font-weight: 300;
+    font-size: 19px;
     line-height: 1.5;
     text-align: left;
+
   }
   .card-img-topNouvelle {
     width: 350px;
