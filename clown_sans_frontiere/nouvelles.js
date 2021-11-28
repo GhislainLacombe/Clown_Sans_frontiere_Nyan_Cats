@@ -1,7 +1,9 @@
 
 document.getElementById("1Nouvelle").classList.add("firstElementNouvelle");
+
 function showNouvelle(){
-    var cartes = document.querySelectorAll('colNouvelle');
+    var second = document.querySelector(".cartes:nth-child(7)")
+    console.log(second)
     if (this == cartes[7]){
         this.classList.add('flex');
     }
