@@ -20,7 +20,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php the_content(); // Contenu principal de la page ?>
 		<div class="equipe"> 
 		
-    <title><?php the_title(); // Titre de la page ?></title>
+<h2><?php the_title(); // Titre de la page ?></h2>
     
     <header>
       <div class="photo-groupe" id="header">
