@@ -29,9 +29,31 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </div>
     </header>
     <div class="direction">
-      <br>
-      <h3>Notre équipe</h3>
+    <br>
+    <h3>Notre équipe</h3>
+      
+<?php $membre = new WP_Query('post_type=membre');
+while ($membre->have_posts()) : $membre->the_post(); 
+?>
 
+<div class="card-group">
+<div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
+          <div class="circle circle-<?php the_field('color'); ?>"><img src="sources/medias/equipe/katel_01.png" class="card-img-top" alt="katel">
+          </div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe1"><?php the_title(); // Titre de la page ?></h4>
+            <p class="card-text-equipe1" > <?php the_field('role'); ?> </p>
+          </div>
+        </div>
+        </div>
+
+
+<?php
+  endwhile; 
+  wp_reset_postdata(); 
+?>
       <div class="card-group">
 
         <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
@@ -41,7 +63,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="card-body">
             <div class="card__line"></div>
             <h4 class="card-title-equipe1">Katel Le Fustec</h4>
-          <?php class="card-text-equipe1" the_content('field') ?> 
+            <p class="card-text-equipe1" > <?php the_content('field') ?> </p>
           </div>
         </div>
 
