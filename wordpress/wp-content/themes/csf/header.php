@@ -57,7 +57,7 @@
 <nav class="navbar navbar-expand-xl">
     <div class="container-fluid">
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>">
-        <img src="https://imgur.com/Gzoy3k7.png" alt="logo" />
+        <img src="https://imgur.com/L4QPMUp.png" alt="logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="bi bi-list"></span>

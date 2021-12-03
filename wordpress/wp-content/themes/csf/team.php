@@ -17,28 +17,32 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php endif; ?>
 		
 		
-		<?php the_content(); // Contenu principal de la page ?>
-		<div class="equipe"> 
+
 		
 <h2><?php the_title(); // Titre de la page ?></h2>
+
+<?php the_content(); // Contenu principal de la page ?>
+		<div class="equipe"> 
     
     <header>
-      <div class="photo-groupe" id="header">
-
+    <div class="photo-groupe" id="header">
         <img src="sources/medias/equipe/group.jpg" class="card-img-top" alt="groupe">
       </div>
     </header>
     <div class="direction">
     <br>
     <h3>Notre équipe</h3>
+    
       
+
+
 <?php $membre = new WP_Query('post_type=membre');
 while ($membre->have_posts()) : $membre->the_post(); 
 ?>
 
-<div class="card-group">
+
 <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
-          <div class="circle circle-<?php the_field('color'); ?>"><img src="sources/medias/equipe/katel_01.png" class="card-img-top" alt="katel">
+          <div class="circle circle-<?php the_field('color'); ?>"><img src="<?php the_field('image'); ?>" class="image" >
           </div>
 
           <div class="card-body">
@@ -47,7 +51,7 @@ while ($membre->have_posts()) : $membre->the_post();
             <p class="card-text-equipe1" > <?php the_field('role'); ?> </p>
           </div>
         </div>
-        </div>
+      
 
 
 <?php
@@ -129,10 +133,6 @@ while ($membre->have_posts()) : $membre->the_post();
         </div>
       </div>
     </div>
-
-     
-
-
 
       <!-- Button trigger modal
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
