@@ -34,7 +34,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
        
         <div class="card bg-dark text-white card-hubServices">
           <img class="card-img card-img-hubServices" src="https://www.clownssansfrontieres.ca/wp-content/uploads/2014/04/CSF-milieu-scolaire-1024x413.jpg" alt="Card image">
-          <div class="hubServices-gradient"></div>
+          <div class="hubServices-gradient01"></div>
           <div class="card-img-overlay card-img-overlay-hubServices">
       
             <h1 class="card-title-hubServices">Spectacles, animations et ateliers</h1>
@@ -44,12 +44,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="card bg-dark text-white card-hubServices">
           
           <img class="card-img card-img-hubServices" src="https://www.clownssansfrontieres.ca/wp-content/uploads/2017/09/Katel_Le_Fustec_20170711_133500-1024x683.jpg" alt="Card image">
-          <div class="hubServices-gradient"></div>
+          <div class="hubServices-gradient02"></div>
           <div class="card-img-overlay card-img-overlay-hubServices">
       
             <h1 class="card-title-hubServices">Exposition <br>de photographies
             </h1>
-            
+            <article>
+    </article>
+
           </div>
         </div>
 
