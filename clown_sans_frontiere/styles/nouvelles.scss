@@ -5,7 +5,16 @@
   height: 100%;
 }
 
-.nouvelles .swiper-slide {
+
+.container__nouvelles{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nouvelles__apercu {
+  justify-content: center;
   text-align: center;
   font-size: 18px;
   font-family: var(--title);
@@ -24,18 +33,8 @@
   cursor: pointer;
 }
 
-
-
 .gradient1{
-  background-image: linear-gradient(#DD0426, #273043);
-}
-
-.gradient2{
   background-image: linear-gradient(#F02D34, #E0FC5C);
-}
-
-.gradient3{
-  background-image: linear-gradient(#26b6ad, #ea89b2);
 }
 
 .nouvelles .swiper-button{
