@@ -34,15 +34,15 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <h3>Notre équipe</h3>
     
       
-
+    <div class="card-group">
 
 <?php $membre = new WP_Query('post_type=membre');
 while ($membre->have_posts()) : $membre->the_post(); 
 ?>
 
 
-<div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
-          <div class="circle circle-<?php the_field('color'); ?>"><img src="<?php the_field('image'); ?>" class="image" >
+<div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modal<?php echo get_post_field( 'post_name' );?>">
+          <div class="circle circle-<?php the_field('color'); ?>"><img src="<?php the_field('image'); ?>" class="card-img-top" >
           </div>
 
           <div class="card-body">
@@ -51,13 +51,31 @@ while ($membre->have_posts()) : $membre->the_post();
             <p class="card-text-equipe1" > <?php the_field('role'); ?> </p>
           </div>
         </div>
-      
+
+        <div class="modal fade" id="modal<?php echo get_post_field( 'post_name' );?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">><?php the_title(); // Titre de la page ?></h5>
+             </div>
+            <div class="modal-body">
+            <?php the_field('description'); ?>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
 
 <?php
   endwhile; 
   wp_reset_postdata(); 
 ?>
+
+</div>
       <div class="card-group">
 
         <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
