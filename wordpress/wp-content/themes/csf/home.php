@@ -83,20 +83,32 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
   <div class="service">
     <h1 class="titres">Nos Services</h1>
-    <div class="gridService">
-    
-      <div class="saaService">
-        <img src="https://www.clownssansfrontieres.ca/wp-content/uploads/2014/04/CSF-milieu-scolaire-1024x413.jpg" class="saaService__image">
-        <div class="saaService__text">
-          Spectacles, animations et ateliers
-        </div>
-      </div>
-      <div class="epService">
-        <img src="https://www.clownssansfrontieres.ca/wp-content/uploads/2017/09/Katel_Le_Fustec_20170711_133500-1024x683.jpg" class="epService__image">
-        <div class="epService__text">
-          Exposition de photographies
-        </div>
-    </div>
+    <?php
+            $service = new WP_Query( array('post_type'=> 'service','order'   => 'DESC' ,'posts_per_page' => 2) ); // 👈 Utilisation
+            while ($service->have_posts()) : $service->the_post(); 
+            ?>
+              
+              <div class="cartesHubServices">
+ 
+			<div class="card bg-dark text-white card-hubServices">
+			<img class="card-img card-img-hubServices" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="Card image">
+			<div class="hubServices-gradient02"></div>
+			<div class="card-img-overlay card-img-overlay-hubServices">
+			<h1 class="card-title-hubServices"><?php the_title(); // Titre de la page ?>
+			</h1>
+
+			</div>
+			</div>
+
+		</div>
+
+
+
+            </div>
+              <?php
+              endwhile; 
+              wp_reset_postdata(); 
+              ?>
   </div>
   </div>
 
