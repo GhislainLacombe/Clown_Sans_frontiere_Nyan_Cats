@@ -41,7 +41,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="card-body">
             <div class="card__line"></div>
             <h4 class="card-title-equipe1">Katel Le Fustec</h4>
-            <p class="card-text-equipe1">Directrice générale & artistique</p>
+          <?php class="card-text-equipe1" the_content('field') ?> 
           </div>
         </div>
 
