@@ -1,5 +1,9 @@
   <div class="error_wrapper">
-  <div class="error__txt"><h1>ERREUR 404</h1></div>
+    <?php if(get_locale() == "en_US") { ?>
+  <div class="error__txt"><h1>ERROR 404</h1></div>
+      <?php }else{ ?>
+        <div class="error__txt"><h1>ERREUR 404</h1></div>
+  <?php }?>
   <div class="error">
     <div class="ball__wrapper">
       <div class="ball ball__one"><h3>0</h3></div>

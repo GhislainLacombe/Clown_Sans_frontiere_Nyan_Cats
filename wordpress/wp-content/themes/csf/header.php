@@ -87,7 +87,7 @@
       <div class="row">
         <div class="col-12 col-md-6">
 		<?php if(get_locale() == "en_US"){  ?>
-			<img class="gif-heros" src="https://imgur.com/g1TBBfG.png" alt="gif-en" />
+			<img class="gif-heros" src="https://i.imgur.com/tWry6WC.png" alt="gif-en" />
 			<?php }else{ ?>
           <img class="gif-heros" src="https://imgur.com/g1TBBfG.png" alt="gif-heros" />
 <?php }?>
@@ -98,7 +98,13 @@
         </div>
         <div class="col-12 justify-content-left bt-donner">
           <a href="//www.clownssansfrontieres.ca/donner/">
-            <img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" />
+            
+		  <?php if(get_locale() == "en_US") { ?>
+			<img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" /> 
+      		<?php }else{ ?>
+    		<img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" />    
+  			<?php }?>
+   
           </a>
         </div>
       </div>
