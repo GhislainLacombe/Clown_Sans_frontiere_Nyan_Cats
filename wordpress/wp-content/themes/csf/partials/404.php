@@ -1,5 +1,5 @@
   <div class="error_wrapper">
-  <div class="error__txt"><h1>ERREUR</h1></div>
+  <div class="error__txt"><h1>ERREUR 404</h1></div>
   <div class="error">
     <div class="ball__wrapper">
       <div class="ball ball__one"><h3>0</h3></div>

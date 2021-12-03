@@ -1,6 +1,7 @@
 <?php 
 /**
  * 	Template Name: Services
+ * 	Template Post Type: post, page, service
  * 	Identique à page, mais avec une barre latérale
  */
 
@@ -19,6 +20,33 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php endif; ?>
 		
 		<?php the_content(); // Contenu principal de la page ?>
+		<?php
+            $service = new WP_Query( array('post_type'=> 'service', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 1) ); // 👈 Utilisation
+            while ($service->have_posts()) : $service->the_post(); 
+            ?>
+              
+              <div class="cartesHubServices">
+ 
+			<div class="card bg-dark text-white card-hubServices">
+			<img class="card-img card-img-hubServices" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="Card image">
+			<div class="hubServices-gradient02"></div>
+			<div class="card-img-overlay card-img-overlay-hubServices">
+			<h1 class="card-title-hubServices"><?php the_title(); // Titre de la page ?>
+			</h1>
+
+			</div>
+			</div>
+
+		</div>
+
+
+
+            </div>
+              <?php
+              endwhile; 
+              wp_reset_postdata(); 
+              ?>
+
 	</article>
 <?php endwhile; // Fermeture de la boucle
 

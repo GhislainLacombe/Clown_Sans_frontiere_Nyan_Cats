@@ -107,44 +107,20 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <h1 class="titres">Nouvelles</h1>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide gradient1">
-              Plan de soutien aux organismes de coopération internationale
+            
+            <?php
+            $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
+            while ($nouvelle->have_posts()) : $nouvelle->the_post(); 
+            ?>
+              <div class="swiper-slide gradient1">
+              <?php the_title(); // Titre de la page ?>
             </div>
-            <div class="swiper-slide gradient2">
-              Communiqué pour publication immédiate
-            </div>
-            <div class="swiper-slide gradient3">
-              Journée Mondiale du nettoyage de notre planète
-            </div>
-            <div class="swiper-slide gradient1">Appel à la mobilisation !</div>
-            <div class="swiper-slide gradient2">
-              Appel de Clowns Without Borders International (CWBI) à la
-              solidarité et au respect des droits humains aux frontières de
-              l’Union Européenne
-            </div>
-            <div class="swiper-slide gradient3">
-              HAÏTI « ON EST DANS UNE CRISE HUMANITAIRE »
-            </div>
-            <div class="swiper-slide gradient1">
-              ANNONCE : Projet de Coopération Québec-Haïti 2020
-            </div>
-            <div class="swiper-slide gradient2">
-              Retour en image sur les ateliers artistiques et culturels à
-              Kitcisakik
-            </div>
-            <div class="swiper-slide gradient3">
-              Retour en image sur notre soirée témoignage !
-            </div>
-            <div class="swiper-slide gradient1">
-              En piste! 16 jours d’activisme en Haïti
-            </div>
-            <div class="swiper-slide gradient2">
-              Clowns Sans Frontières lance sa 19e campagne Jour Nez!
-            </div>
-            <div class="swiper-slide gradient3">
-              Entrevue avec Katel Le Fustec sur les ondes de Radio Canada
-              International
-            </div>
+              <?php
+              endwhile; 
+              wp_reset_postdata(); 
+              ?>
+            
+          
           </div>
           <div class="swiper-button swiper-button-next"></div>
           <div class="swiper-button swiper-button-prev"></div>
