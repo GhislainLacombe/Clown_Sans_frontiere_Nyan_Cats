@@ -92,6 +92,9 @@
         "description"
         "information";
     }
+    .heroOrganisme {
+      min-height: 300px;
+    }
     .gridService {
       display: grid;
       
@@ -129,7 +132,22 @@
     
   }
   
-
+  @media (max-width: 600px) {
+    .descriptionOrganisme {
+      padding-top: 40%;
+      padding-left: 0%;
+      padding-right: 0%;
+      margin: 0%;
+    }
+  }
+  @media (max-width: 382px) {
+    .descriptionOrganisme {
+      padding-top: 30%;
+    }
+    .descriptionOrganisme2 {
+      font-size: 18px;
+    }
+  }
   // HUB //
 
   .hubServices__description{
