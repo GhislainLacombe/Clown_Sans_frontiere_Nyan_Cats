@@ -24,12 +24,7 @@
     vertical-align: center;
     transform: translate(-50%, 0);
     color: #26b6ad;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-direction: alternate;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
-    
+
     > h1 {
       font-size: 1.5em;
       filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.5));
@@ -38,7 +33,6 @@
   
     &__one {
       transform: translate(-50%, 40%);
-      animation-name: anim__one;
       z-index: -1;
     }
   
@@ -48,7 +42,6 @@
     }
     &__three {
       transform: translate(-50%, -35%);
-      animation-name: anim__three;
       z-index: -1; 
     }
     &__cursor {
@@ -58,48 +51,14 @@
       padding-bottom: 50%;
       transform: rotateZ(-45deg) translateY(-200px);
       filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.5));
-      animation-name: anim__cursor;
       padding: 0;
       margin: 0;
-  
-      animation-iteration-count: infinite;
-      animation-timing-function: ease;
-      animation-direction: alternate;
-      animation-duration: 0.5s;
-      animation-delay: 1s;
     }
   }
   
   .hide {
     &__big {
       display: none;
-    }
-  }
-  
-  @keyframes anim__one {
-    from {
-      transform: translate(-50%, 40%);
-    }
-    to {
-      transform: translate(-50%, 105%);
-    }
-  }
-  
-  @keyframes anim__three {
-    from {
-      transform: translate(-50%, -35%);
-    }
-    to {
-      transform: translate(-50%, -105%);
-    }
-  }
-  
-  @keyframes anim__cursor {
-    from {
-      transform:rotateZ(-45deg) translateY(-200px);
-    }
-    to {
-      transform: rotateZ(-45deg) translateY(-190px);
     }
   }
   
