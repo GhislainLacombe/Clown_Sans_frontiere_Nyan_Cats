@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .error_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  
+  }
+  
+  .error__txt {
+    color: #273043;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+  }
+  
+  .error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .ball__wrapper {
+    position: absolute;
+    overflow: hidden;
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    top: 25%;
+    opacity: 0.9;
+  }
+  
+  .ball {
+    position: relative;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ball > h3 {
+    position: absolute;
+    display: block;
+    font-size: 7vh;
+    color: #273043;
+  }
+  
+  .ball__one {
+    background-color: #EA89B2;
+  }
+  
+  .ball__two {
+    background-color: #26B6AD;
+  }
+  
+  .ball__three {
+    background-color: #3679E8;
+  }
+  
+  .ball__four {
+    background-color: #E0FC5C;
+  }
+  
+  .error__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    overflow: hidden;
+  }
+  
+  .error__image > .clown__arms {
+    position: absolute;
+    width: 90vh;
+    left: 50%;
+    transform: translate(-50%, 150%) rotateZ(-5deg);
+  }
+  
+  .error__image > .clown__hair {
+    position: absolute;
+    width: 50vh;
+    left: 50%;
+    transform: translate(-50%, 120%);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+  }
+  
+  .error__txt {
+    color: #273043;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+  }
+  
+  .error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .ball__wrapper {
+    position: absolute;
+    overflow: hidden;
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    top: 25%;
+    opacity: 0.9;
+  }
+  
+  .ball {
+    position: relative;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ball > h3 {
+    position: absolute;
+    display: block;
+    font-size: 7vh;
+    color: #273043;
+  }
+  
+  .ball__one {
+    background-color: #EA89B2;
+  }
+  
+  .ball__two {
+    background-color: #26B6AD;
+  }
+  
+  .ball__three {
+    background-color: #3679E8;
+  }
+  
+  .ball__four {
+    background-color: #E0FC5C;
+  }
+  
+  .error__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    overflow: hidden;
+  }
+  
+  .error__image > .clown__arms {
+    position: absolute;
+    width: 90vh;
+    left: 50%;
+    transform: translate(-50%, 150%) rotateZ(-5deg);
+  }
+  
+  .error__image > .clown__hair {
+    position: absolute;
+    width: 50vh;
+    left: 50%;
+    transform: translate(-50%, 120%);
+  }
+  
