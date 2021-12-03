@@ -172,6 +172,31 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <!--- NOUVELLES-->
     <!--- <section>-->
   
+<?php if(get_locale() == "en_US"){ ?>
+  <div class="word_wrapper">
+    <a href="https://www.clownssansfrontieres.ca/donner/">
+      <div class="word word__one hide__small">
+        <h1>Donate</h1>
+      </div>
+      <div class="word word__two hide__small">
+        <h1>Donate</h1>
+      </div>
+      <div class="word word__three hide__small">
+        <h1>Donate</h1>
+      </div>
+      <div class="word word__one hide__big">
+        <h1>Make a donation</h1>
+      </div>
+      <div class="word word__two hide__big">
+        <h1>Make a donation</h1>
+      </div>
+      <div class="word word__three hide__big">
+        <h1>Make a donation</h1>
+      </div>
+      <img src="https://freesvg.org/img/1302118210.png" alt="cursor" class="word__cursor">
+    </a>
+  </div> 
+<?php }else{ ?>
   <div class="word_wrapper">
     <a href="https://www.clownssansfrontieres.ca/donner/">
       <div class="word word__one hide__small">
@@ -195,6 +220,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <img src="https://freesvg.org/img/1302118210.png" alt="cursor" class="word__cursor">
     </a>
   </div>
+<?php }?>
 	
 <?php endwhile; // Fermeture de la boucle
 
