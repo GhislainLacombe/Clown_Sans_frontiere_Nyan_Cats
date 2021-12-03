@@ -105,54 +105,30 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
         <h1 class="titres">Nouvelles</h1>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            
+        
+        <div class="container__nouvelles">
             <?php
             $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
             while ($nouvelle->have_posts()) : $nouvelle->the_post(); 
             ?>
-              <div class="swiper-slide gradient1">
+            
+              
+              <div class="nouvelles__apercu gradient1">
               <?php the_title(); // Titre de la page ?>
-            </div>
+              </div>
               <?php
               endwhile; 
               wp_reset_postdata(); 
               ?>
-            
-          
           </div>
-          <div class="swiper-button swiper-button-next"></div>
-          <div class="swiper-button swiper-button-prev"></div>
-        </div>
+         
       </div>
     </section>
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
         <h1 class="titres">Témoignages</h1>
         <div class="row justify-content-center">
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow1"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Kim</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
+          
           <div class="col">
             <div class="card">
               <div class="card-header">
@@ -175,28 +151,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow3"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Min</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

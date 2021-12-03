@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.nouvelles__apercu {
+.apercu__nouvelle__accueil {
   justify-content: center;
   text-align: center;
   font-size: 18px;
@@ -31,6 +31,10 @@
   transition-timing-function: ease;
   margin: 20px;
   cursor: pointer;
+}
+
+.nouvelles__apercu:hover {
+  transform: scale(1.2)
 }
 
 .gradient1{
