@@ -60,7 +60,7 @@
         <img src="https://imgur.com/L4QPMUp.png" alt="logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bi bi-list"></span>
+	  	<img class="hamburger" src="https://icons.veryicon.com/png/o/miscellaneous/digital-workshop-console-general-icon/hamburger-menu-fold.png" alt="menu hamburger">
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
