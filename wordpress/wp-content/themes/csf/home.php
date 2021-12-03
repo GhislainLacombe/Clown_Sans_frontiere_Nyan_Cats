@@ -105,78 +105,30 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
         <h1 class="titres">Nouvelles</h1>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide gradient1">
-              Plan de soutien aux organismes de coopération internationale
-            </div>
-            <div class="swiper-slide gradient2">
-              Communiqué pour publication immédiate
-            </div>
-            <div class="swiper-slide gradient3">
-              Journée Mondiale du nettoyage de notre planète
-            </div>
-            <div class="swiper-slide gradient1">Appel à la mobilisation !</div>
-            <div class="swiper-slide gradient2">
-              Appel de Clowns Without Borders International (CWBI) à la
-              solidarité et au respect des droits humains aux frontières de
-              l’Union Européenne
-            </div>
-            <div class="swiper-slide gradient3">
-              HAÏTI « ON EST DANS UNE CRISE HUMANITAIRE »
-            </div>
-            <div class="swiper-slide gradient1">
-              ANNONCE : Projet de Coopération Québec-Haïti 2020
-            </div>
-            <div class="swiper-slide gradient2">
-              Retour en image sur les ateliers artistiques et culturels à
-              Kitcisakik
-            </div>
-            <div class="swiper-slide gradient3">
-              Retour en image sur notre soirée témoignage !
-            </div>
-            <div class="swiper-slide gradient1">
-              En piste! 16 jours d’activisme en Haïti
-            </div>
-            <div class="swiper-slide gradient2">
-              Clowns Sans Frontières lance sa 19e campagne Jour Nez!
-            </div>
-            <div class="swiper-slide gradient3">
-              Entrevue avec Katel Le Fustec sur les ondes de Radio Canada
-              International
-            </div>
+        
+        <div class="container__nouvelles">
+            <?php
+            $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
+            while ($nouvelle->have_posts()) : $nouvelle->the_post(); 
+            ?>
+            
+              
+              <div class="nouvelles__apercu gradient1">
+              <?php the_title(); // Titre de la page ?>
+              </div>
+              <?php
+              endwhile; 
+              wp_reset_postdata(); 
+              ?>
           </div>
-          <div class="swiper-button swiper-button-next"></div>
-          <div class="swiper-button swiper-button-prev"></div>
-        </div>
+         
       </div>
     </section>
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
         <h1 class="titres">Témoignages</h1>
         <div class="row justify-content-center">
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow1"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Kim</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
+          
           <div class="col">
             <div class="card">
               <div class="card-header">
@@ -199,28 +151,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                <img
-                  src="https://thispersondoesnotexist.com/image"
-                  class="card-img-top cardshadow3"
-                  alt="image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Mr Min</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
-                </p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

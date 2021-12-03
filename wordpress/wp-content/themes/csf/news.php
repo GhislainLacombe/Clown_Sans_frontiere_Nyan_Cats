@@ -27,16 +27,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="row justify-content-center">
               <div class="col-8">
                 <div class="card bg-primary card__details">
-                  <img
-                    src="https://image.shutterstock.com/image-vector/under-construction-industrial-sign-vector-260nw-333015377.jpg"
-                    class="card-img-top card__img__details" />
+                  
+                <img src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" class="card-img-top card__img__details">
+               
 
                   <div class="card-body card__body__details">
                     <h5 class="card-title card__title__details">
 					          <?php the_title(); // Titre de la page ?>
                     </h5>
                     <p class="card-text card__desc__details"><?php the_field('categorie'); ?></p>
-                    <p class="card-text card__desc__details"><?php the_field('fate'); ?></p>
+                    <p class="card-text card__desc__details"><?php the_field('date'); ?></p>
                   </div>
                 </div>
               </div>

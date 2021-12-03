@@ -17,94 +17,124 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php endif; ?>
 		
 		
-		<?php the_content(); // Contenu principal de la page ?>
-		<div class="equipe"> 
+
 		
 <h2><?php the_title(); // Titre de la page ?></h2>
+
+<?php the_content(); // Contenu principal de la page ?>
+		<div class="equipe"> 
     
     <header>
-      <div class="photo-groupe" id="header">
-
+    <div class="photo-groupe" id="header">
         <img src="sources/medias/equipe/group.jpg" class="card-img-top" alt="groupe">
       </div>
     </header>
     <div class="direction">
-      <br>
-      <h3>Direction & Bénévoles</h3>
+    <br>
+    <h3>Notre équipe</h3>
+    
+      
 
-      <div class="card-group ">
-        <div class="card text-center border__none" data-toggle="modal" data-target="#modalKlefustec">
+
+<?php $membre = new WP_Query('post_type=membre');
+while ($membre->have_posts()) : $membre->the_post(); 
+?>
+
+
+<div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
+          <div class="circle circle-<?php the_field('color'); ?>"><img src="<?php the_field('image'); ?>" class="image" >
+          </div>
+
+          <div class="card-body">
+            <div class="card__line"></div>
+            <h4 class="card-title-equipe1"><?php the_title(); // Titre de la page ?></h4>
+            <p class="card-text-equipe1" > <?php the_field('role'); ?> </p>
+          </div>
+        </div>
+      
+
+
+<?php
+  endwhile; 
+  wp_reset_postdata(); 
+?>
+      <div class="card-group">
+
+        <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalKlefustec">
           <div class="circle circle-sea-green"><img src="sources/medias/equipe/katel_01.png" class="card-img-top" alt="katel">
           </div>
 
           <div class="card-body">
             <div class="card__line"></div>
-            <h4 class="card-title-equipe">Katel Le Fustec</h4>
-            <p class="card-text-equipe">Directrice générale & artistique</p>
+            <h4 class="card-title-equipe1">Katel Le Fustec</h4>
+            <p class="card-text-equipe1" > <?php the_content('field') ?> </p>
           </div>
         </div>
 
-        <div class="card text-center border__none" data-toggle="modal" data-target="#modalMdargenio">
+        <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalMdargenio">
           <div class="circle circle-red"><img src="sources/medias/equipe/argenio_01.png" class="card-img-top" alt="argenio">
           </div>
 
+
           <div class="card-body">
             <div class="card__line"></div>
-            <h4 class="card-title-equipe">Michèle D'Argenio</h4>
-            <p class="card-text-equipe">Adjointe à la direction</p>
+            <h4 class="card-title-equipe1">Michèle D'Argenio</h4>
+            <p class="card-text-equipe1">Adjointe à la direction</p>
           </div>
         </div>
 
-        <div class="card text-center border__none" data-toggle="modal" data-target="#modalMeaubry">
+
+        
+
+        <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalMeaubry">
           <div class="circle circle-navy"><img src="sources/medias/equipe/aubry_01.png" class="card-img-top " alt="aubry"></div>
+
 
           <div class="card-body">
             <div class="card__line"></div>
-            <h4 class="card-title-equipe">Marie-Ève Aubry</h4>
-            <p class="card-text-equipe">Responsable du Comité du Réseau International</p>
+            <h4 class="card-title-equipe1">Marie-Ève Aubry</h4>
+            <p class="card-text-equipe1">Responsable du Comité du Réseau International</p>
           </div>
         </div>
       </div>
-
-
+    </div>
 
       <div class="card-group">
 
-        <div class="card text-center border__none" data-toggle="modal" data-target="#modalHcollin">
+        <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalHcollin">
           <div class="circle circle-red"><img src="sources/medias/equipe/collin_01.png" class="card-img-top" alt="collin"></div>
 
           <div class="card-body">
             <div class="card__line"></div>
-            <h4 class="card-title-equipe">Handrien Collin</h4>
-            <p class="card-text-equipe">Administrateur du site web</p>
+            <h4 class="card-title-equipe1">Handrien Collin</h4>
+            <p class="card-text-equipe1">Administrateur du site web</p>
           </div>
         </div>
 
-        <div class="card text-center border__none" data-toggle="modal" data-target="#modalJfpare">
+        <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalJfpare">
           <div class="circle circle-navy"><img src="sources/medias/equipe/pare_01.png" class="card-img-top" alt="jf"></div>
 
           <div class="card-body">
             <div class="card__line"></div>
-            <h4 class="card-title-equipe">Jean-Françcois Paré </h4>
-            <p class="card-text-equipe">Soutien technique - information</p>
+            <h4 class="card-title-equipe1">Jean-Françcois Paré </h4>
+            <p class="card-text-equipe1">Soutien technique - information</p>
           </div>
         </div>
 
-        <div class="card text-center border__none" data-toggle="modal" data-target="#modalBilly">
+        <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalBilly">
           <div class="circle circle-sea-green"><img src="sources/medias/equipe/billy_01.png" class="card-img-top" alt="billy">
           </div>
 
           <div class="card-body">
             <div class="card__line"></div>
-            <h4 class="card-title-equipe">Billy Maude</h4>
-            <p class="card-text-equipe">Responsable du Comité du Réseau International</p>
+            <h4 class="card-title-equipe1">Billy Maude</h4>
+            <p class="card-text-equipe1">Responsable du Comité du Réseau International</p>
           </div>
         </div>
       </div>
+    </div>
 
-
-
-      <!-- Button trigger modal 
+      <!-- Button trigger modal
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Launch demo modal
     </button>
@@ -117,10 +147,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Kartel Le Fustec</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+             </div>
             <div class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -140,9 +167,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Michèle D'Argenio</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+             
             </div>
             <div class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -163,14 +188,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Marie-Ève Aubry</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              
             </div>
             <div class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
               <br>
@@ -186,9 +209,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Handrien Collin</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              
             </div>
             <div class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -209,9 +230,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Jean-François Paré</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            
             </div>
             <div class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -232,9 +251,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Billy Maude</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              
             </div>
             <div class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -249,108 +266,137 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </div>
 
 
-    </div>
+
     <br><br>
+     <h3>Conseil d'administration</h3>
+ 
+  <div class="card-group">
     
-    <h3>Conseil d'administration</h3>
-    <div class="conseil">
-      <div class="conseil-admin">
+    <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalFvoltaire">
+      <div class="circle circle-sea-green"><img src="sources/medias/equipe/voltaire_01.png" class="card-img-top" alt="voltaire"></div>
+  
+      <div class="card-body">
+        <div class="card__line"></div>
+        <h4 class="card-title-equipe1">Frantz Voltaire</h4>
+        <p class="card-text-equipe1">Administrateur</p>
+      </div>
+    </div>
 
-        <div class="card mb-3" style="max-width: 720px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="sources/medias/equipe/ferland.png" class="img-fluid rounded-start" alt="ferland_portrait">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="card-title-equipe">François Ferland</div>
-                <div class="card-sub-title-equipe">Président</div>
-                <div class="card-role-title-equipe">Avocat et médiateur - Jolicoeur Lacasse</div>
-                <div class="card-text-equipe">Le droit des affaires domine la pratique de Me Ferland qui s'oriente avant
-                  tout auprès des entreprises d'éconimie sociale, les industries culturelles et les entreprises issues
-                  de la nouvelle économie.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 720px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="sources/medias/equipe/crevier.png" class="img-fluid rounded-start" alt="crevier_portrait">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="card-title-equipe">Jean Crevier</div>
-                <div class="card-sub-title-equipe">Secrétaire-trésorier</div>
-                <div class="card-role-title-equipe">Technicien - Héroux Devtek</div>
-                <div class="card-text-equipe">Jean Crevier est impliqué dans la restruction des activités et du Conseil
-                  d'administration de Clowns Sans Frontières depuis 2008.</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalJcrevier">
+      <div class="circle circle-red"><img src="sources/medias/equipe/crevier_01.png" class="card-img-top" alt="crevier">
+      </div>
 
-        <div class="card mb-3" style="max-width: 720px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="sources/medias/equipe/leclerc.jpg" class="img-fluid rounded-start" alt="leclerc_portrait">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="card-title-equipe">Richard Leclerc</div>
-                <div class="card-sub-title-equipe">Administrateur-trésorier</div>
-                <div class="card-text-equipe">Chargé de cours à l'UDM et président et concepteur-réalisateur de
-                  publicité à Publici-Terre.</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="card-body">
+        <div class="card__line"></div>
+        <h4 class="card-title-equipe1">Jean Crevier</h4>
+        <p class="card-text-equipe1">Secrétaire-trésorier</p>
+      </div>
+    </div>
 
-        <div class="card mb-3" style="max-width: 720px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="sources/medias/equipe/aubry.jpg" class="img-fluid rounded-start" alt="aubry_portrait">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="card-title-equipe">Marie-Eve Aubry</div>
-                <div class="card-sub-title-equipe">Administratrice</div>
-                <div class="card-text-equipe">Marie-Eve Aubry évolue dans la domaine de l'enfance et des communications.
-                  Au cours des années 2000, elle a été émue par l'action de Clowns Sans Frontières en effectuant un
-                  reportage sur l'organisme.</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalRleclerc">
+      <div class="circle circle-navy"><img src="sources/medias/equipe/richard_01.png" class="card-img-top " alt="leclerc"></div>
 
-        <div class="card mb-3" style="max-width: 720px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="sources/medias/equipe/voltaire.png" class="img-fluid rounded-start" alt="voltaire_portrait">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="card-title-equipe">Frantz Voltaire</div>
-                <div class="card-sub-title-equipe">Administrateur</div>
-                <div class="card-role-title-equipe">Directeur - Centre international de documentation et d'information
-                  Haïtienne, Caraïbéenne et Afro-Canadienne (CIDIHCA) </div>
-                <div class="card-text-equipe">Frantz Voltaire est aussi un historien et politologue qui a travaillé à la
-                  production et à la réalisation de plusieurs documentaires dont « Potoprens se pam » (1999) sur le
-                  bicentenaire de la ville de Port-au-Prince et « Les chemins de la mémoire » (2002). </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="card-body">
+        <div class="card__line"></div>
+        <h4 class="card-title-equipe1">Richard Leclerc</h4>
+        <p class="card-text-equipe1">Administrateur-trésorier</p>
+      </div>
+    </div>
 
-        <div class="remerciements">
-          <div class="merci-title">Merci</div> <br>
-          <div class="merci-text"> Merci à nos précieux partenaires.<br> Nos partenaires sont précieux pour la réussite
-            de nos activités ici et ailleurs.</div>
-        </div>
+  </div>
+ 
 
+  <div class="card-group">
+    <div class="card text-center border__none" data-bs-toggle="modal" data-bs-target="#modalFferland">
+      <div class="circle circle-sea-green"><img src="sources/medias/equipe/ferland_01.png" class="card-img-top" alt="ferland">
+      </div>
+
+      <div class="card-body">
+        <div class="card__line"></div>
+        <h4 class="card-title-equipe1">François Ferland</h4>
+        <p class="card-text-equipe1">Président</p>
+      </div>
+    </div>
+
+  
+</div>
+
+<div class="remerciements">
+  <div class="merci-title">Merci</div> 
+  <div class="merci-text"> Merci à nos précieux partenaires.<br> Nos partenaires sont précieux pour la réussite de nos activités ici et ailleurs.</div>
+</div>
+
+
+  <!-- modal François Ferland-->
+  <div class="modal fade" id="modalFferland" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">François Ferland</h5>
+      
+      </div>
+      <div class="modal-body">
+        Avocat et médiateur - Jolicoeur Lacasse <br><br>
+        Le droit des affaires domine la pratique de Me Ferland qui s'oriente avant tout auprès des entreprises d'éconimie sociale, les industries culturelles et les entreprises issues de la nouvelle économie.
+      <br>
       </div>
     </div>
   </div>
+</div>
+
+<!-- modal Jean Crevier-->
+<div class="modal fade" id="modalJcrevier" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Jean Crevier</h5>
+       
+      </div>
+      <div class="modal-body">
+        Technicien - Héroux Devtek <br><br>
+Jean Crevier est impliqué dans la restruction des activités et du Conseil d'administration de Clowns Sans Frontières depuis 2008.
+<br>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- modal Richard Leclerc-->
+<div class="modal fade" id="modalRleclerc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Richard Leclerc</h5>
+      
+      </div>
+      <div class="modal-body">
+        Chargé de cours à l'UDM et président et concepteur-réalisateur de publicité à Publici-Terre.
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal Frantz Voltaire -->
+<div class="modal fade" id="modalFvoltaire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Frantz Voltaire</h5>
+        
+      </div>
+      <div class="modal-body">
+        Directeur - Centre international de documentation et d'information Haïtienne, Caraïbéenne et Afro-Canadienne (CIDIHCA) <br><br>
+Frantz Voltaire est aussi un historien et politologue qui a travaillé à la production et à la réalisation de plusieurs documentaires dont « Potoprens se pam » (1999) sur le bicentenaire de la ville de Port-au-Prince et « Les chemins de la mémoire » (2002).
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
 	</article>
 <?php endwhile; // Fermeture de la boucle
 

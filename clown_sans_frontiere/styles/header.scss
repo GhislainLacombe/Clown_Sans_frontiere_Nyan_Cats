@@ -48,6 +48,12 @@
     width: 100%;
     position: relative;
   }
+
+  .narbar-toggler {
+    width: 35px;
+    height: 2px;
+    background-color: #2b2d42;
+  }
   
   .nav-link {
     font-size: 16px;
@@ -91,7 +97,7 @@
     font-weight: 600;
     text-transform: uppercase;
     width: 180px;
-    margin: 5px auto;
+    margin: 5px 0;
     text-align: center;
     
   }
@@ -131,3 +137,18 @@
     text-align: center;
   }
   
+.hamburger {
+  object-fit: cover;
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+}
+.navbar-toggler {
+  position: relative;
+  width: min-content;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+}
+

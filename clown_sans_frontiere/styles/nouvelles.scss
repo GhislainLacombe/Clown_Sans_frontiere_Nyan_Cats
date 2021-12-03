@@ -5,7 +5,16 @@
   height: 100%;
 }
 
-.nouvelles .swiper-slide {
+
+.container__nouvelles{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.apercu__nouvelle__accueil {
+  justify-content: center;
   text-align: center;
   font-size: 18px;
   font-family: var(--title);
@@ -24,18 +33,12 @@
   cursor: pointer;
 }
 
-
+.nouvelles__apercu:hover {
+  transform: scale(1.2)
+}
 
 .gradient1{
-  background-image: linear-gradient(#DD0426, #273043);
-}
-
-.gradient2{
   background-image: linear-gradient(#F02D34, #E0FC5C);
-}
-
-.gradient3{
-  background-image: linear-gradient(#26b6ad, #ea89b2);
 }
 
 .nouvelles .swiper-button{
@@ -135,7 +138,7 @@ width: 100%;
   }
   
   .nouvelle__description{
-    width: 70%;
+    width: 85%;
     text-align: justify;
     padding: 30px;
     margin-right: auto;
@@ -170,11 +173,10 @@ width: 100%;
     padding-right: 20px
   }
   
-  
   .card .card__img__details{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
     border-radius: 0;
   }
   
@@ -210,15 +212,15 @@ width: 100%;
   }
   
   .nouvelle__auteur{
-    margin-right: 40px;;
+    margin-right: 40px;
   }
   
   .nouvelle__date{
-    margin-right: 40px;;
+    margin-right: 40px;
   }
   
   .nouvelle__csf{
-    margin-right: 40px;;
+    margin-right: 40px;
   }
   
   
@@ -235,7 +237,9 @@ width: 100%;
   }
   
   .nouvelle__apercu{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: var(--spacecadet);
@@ -248,7 +252,6 @@ width: 100%;
     width: 30vw;
     height: 45vh;
     margin: auto;
-      
   }
   
   .card__titles__apercu{
