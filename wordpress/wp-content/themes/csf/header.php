@@ -82,11 +82,16 @@
       </div>
     </div>
 </nav>
-<div class="heros">
+<div class="heros" >
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-6">
+		<?php if(get_locale() == "en_US"){  ?>
+			<img class="gif-heros" src="https://imgur.com/g1TBBfG.png" alt="gif-en" />
+			<?php }else{ ?>
           <img class="gif-heros" src="https://imgur.com/g1TBBfG.png" alt="gif-heros" />
+<?php }?>
+
         </div>
         <div class="col-12 col-md-6">
           <img class="img-heros" src="https://imgur.com/o4wrrf4.png" alt="img-heros" />
