@@ -19,6 +19,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php endif; ?>
 		
 		<?php the_content(); // Contenu principal de la page ?>
+		<select id="Selector">
+      		<option value="plusRecente">Nouvelles les plus récentes</option>
+      		<option value="plusAncienne">Nouvelles les plus anciennes</option>
+    	</select>
+    	<div class="cartes" id="cartes">
+      
+    	</div>
+    	<div class="btnModification">
+      		<button class="plus__bouton"  id="btnVoirPlus">Voir plus</button>
+    	</div>
 	</article>
 <?php endwhile; // Fermeture de la boucle
 

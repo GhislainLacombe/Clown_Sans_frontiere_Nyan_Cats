@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.nouvelles__apercu {
+.apercu__nouvelle__accueil {
   justify-content: center;
   text-align: center;
   font-size: 18px;
@@ -31,6 +31,10 @@
   transition-timing-function: ease;
   margin: 20px;
   cursor: pointer;
+}
+
+.nouvelles__apercu:hover {
+  transform: scale(1.2)
 }
 
 .gradient1{
@@ -285,6 +289,13 @@ width: 100%;
   
   }
   
+
+
+
+
+
+
+
   //HUB NOUVELLES//
   .cartes {
     width: 80%;
@@ -292,14 +303,31 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0% 10%;
-    &:nth-child(7){
-      display:none;
+  }
+    .colNouvelle{
+    &:first-child{
+      background-color: #26B6AD;
+      &:hover {
+        transform: scale(1.05);
+        background-color: #3ECDC4;
+        cursor: pointer;
+        
+        border: #4671bb solid 1px;
+      }
     }
-    &:nth-child(13){
-      display:none;
-    }
+  
   }
   
+
+
+
+
+
+
+
+
+
+
   .colNouvelle {
     max-width: 350px;
     padding: 30px;
@@ -323,18 +351,6 @@ width: 100%;
     font-family: "Yanone Kaffeesatz", sans-serif;
     
   }
-
-  .firstElementNouvelle{
-    background-color: #26B6AD;
-    
-    &:hover {
-      transform: scale(1.05);
-      background-color: #3ECDC4;
-      cursor: pointer;
-      
-      border: #4671bb solid 1px;
-    }
-  }
   
   .alignment {
     display: flex;
@@ -356,29 +372,34 @@ width: 100%;
     background-color: #ececec;
     padding: 5px 10px;
     margin: 0px 5px;
+    color: black;
   }
   
   .card-titleNouvelle {
     font-size: 23px;
-    color: white;
+    color: white; 
     border-left: 3px solid #DD0426;
     padding: 10px;
     transform: translateY(-2px);
   }
+
   .card-textNouvelle {
     color: #ffffffc4;
     font-weight: 300;
     font-size: 19px;
     line-height: 1.5;
     text-align: left;
-
+    height: 200px;
+    overflow: hidden;
   }
+
   .card-img-topNouvelle {
     width: 350px;
     height: 250px;
     border: 1px solid white;
     padding: 1px;
   }
+
   .card-headerNouvelle {
     width: 100%;
     display: flex;
@@ -396,7 +417,7 @@ width: 100%;
     font-weight: 400;
 }
 
-  .detailsNouvelle{
-    margin-top: 100px;
-  }
+.detailsNouvelle{
+  margin-top: 100px;
+}
 

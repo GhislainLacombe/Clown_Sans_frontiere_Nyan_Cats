@@ -1,82 +1,126 @@
+var changeNewsOrder = "desc";
+var result = 6;
+showNouvelle(result)
+document.getElementById("btnVoirPlus").addEventListener('click',function(){
+    result += 6; 
+    showNouvelle(result)
+});
 
-document.getElementById("1Nouvelle").classList.add("firstElementNouvelle");
+function showNouvelle(result) {
+    fetch(`http://www.clownsansfrontierenyancats.com/wp/wp-json/wp/v2/nouvelle?orderby=date&order=${changeNewsOrder}&per_page=100`)
+    .then(response => response.json())
+    .then(data => {
+        console.log("result = " + result + " Nouvelles")
+        var limit = result;
+        if (limit > data.length) {
+            limit = data.length;
+        }
+        var html = '';
+        for (let index = 0; index < limit; index++) {
+            console.log(data[index]);
+            html +=`
+            <div class="colNouvelle" id="carteNouvelle">
+                <a href=" ${data[index].link} " style="text-decoration:none; color:white;">
+                    <div class="cardNouvelle">
+                        <div class="card-headerNouvelle">
+                            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+                        </div>
+                        <div class="card-bodyNouvelle">
+                            <div class="alignment">
+                                <p class="cardNameArticle"> ${data[index].title.rendered} </p>
+                                <p class="cardAuteur"> ${data[index].acf.auteur} </p>
+                                <p class="card-titleNouvelle"> ${data[index].date} </p>
+                            </div>
+                            <div class="card-textNouvelle">
+                                ${data[index].content.rendered}...
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>`
+        }
+        var cartes = document.querySelector('.cartes');
+        cartes.innerHTML = html;
 
-function showNouvelle(){
-    var second = document.querySelector(".cartes:nth-child(7)")
-    console.log(second)
-    if (this == cartes[7]){
-        this.classList.add('flex');
-    }
-    if (this == cartes[8]){
-        this.classList.add('flex');
-    }
-    if (this == cartes[9]){
-        this.classList.add('flex');
-    }
-    if (this == cartes[10]){
-        this.classList.add('flex');
-    }
-    if (this == cartes[11]){
-        this.classList.add('flex');
-    }
-    if (this == cartes[12]){
-        this.classList.add('flex');
-    }
-    const btn = document.querySelector('.btnModification');
-
-    btn.innerHTML = '<button class="voirPlusBtn" onclick="showNouvelle2()">Voir plus de nouvelles</button>';
+        /*console.log(data.length)*/
+        if (result > data.length) {
+            var btnDead = document.querySelector('.btnModification');
+            btnDead.innerHTML = '';
+        }
+    });
 }
 
 document.getElementById("Selector").onchange = changeListener;
 function changeListener(){
     var value = this.value
-
+    console.log(value)
 
     if (value == "plusRecente"){
-        
-        document.getElementById("1Nouvelle").style.order = "1";
-        document.getElementById("2Nouvelle").style.order = "2";
-        document.getElementById("3Nouvelle").style.order = "3";
-        document.getElementById("4Nouvelle").style.order = "4";
-        document.getElementById("5Nouvelle").style.order = "5";
-        document.getElementById("6Nouvelle").style.order = "6";
-        document.getElementById("7Nouvelle").style.order = "7";
-        document.getElementById("8Nouvelle").style.order = "8";
-        document.getElementById("9Nouvelle").style.order = "9";
-        document.getElementById("10Nouvelle").style.order = "10";
-        document.getElementById("11Nouvelle").style.order = "11";
-        document.getElementById("12Nouvelle").style.order = "12";
-        document.getElementById("13Nouvelle").style.order = "13";
-        document.getElementById("1Nouvelle").classList.add("firstElementNouvelle");
-        document.getElementById("13Nouvelle").classList.remove("firstElementNouvelle");
-
+        console.log("plusRecente")
+        fetch("http://www.clownsansfrontierenyancats.com/wp/wp-json/wp/v2/nouvelle?orderby=date&order=desc")
+        .then(response => response.json())
+        .then(data => {
+            var html = '';
+            changeNewsOrder = "desc";
+            for (let index = 0; index <= 5; index++) {
+                console.log(data[index]);
+                html +=`
+                <div class="colNouvelle" id="carteNouvelle">
+                    <a href=" ${data[index].link} " style="text-decoration:none; color:white;">
+                        <div class="cardNouvelle">
+                            <div class="card-headerNouvelle">
+                                <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+                            </div>
+                            <div class="card-bodyNouvelle">
+                                <div class="alignment">
+                                    <p class="cardNameArticle"> ${data[index].title.rendered} </p>
+                                    <p class="cardAuteur"> ${data[index].acf.auteur} </p>
+                                    <p class="card-titleNouvelle"> ${data[index].date} </p>
+                                </div>
+                                <div class="card-textNouvelle">
+                                    ${data[index].content.rendered}...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>`
+            }
+            console.log(html)
+            var cartes = document.querySelector('.cartes');
+            cartes.innerHTML = html;
+        });
     }else if (value == "plusAncienne"){
-        
-        document.getElementById("1Nouvelle").style.order = "13";
-        document.getElementById("2Nouvelle").style.order = "12";
-        document.getElementById("3Nouvelle").style.order = "11";
-        document.getElementById("4Nouvelle").style.order = "10";
-        document.getElementById("5Nouvelle").style.order = "9";
-        document.getElementById("6Nouvelle").style.order = "8";
-        document.getElementById("7Nouvelle").style.order = "7";
-        document.getElementById("8Nouvelle").style.order = "6";
-        document.getElementById("9Nouvelle").style.order = "5";
-        document.getElementById("10Nouvelle").style.order = "4";
-        document.getElementById("11Nouvelle").style.order = "3";
-        document.getElementById("12Nouvelle").style.order = "2";
-        document.getElementById("13Nouvelle").style.order = "1";
-        document.getElementById("1Nouvelle").classList.remove("firstElementNouvelle");
-        document.getElementById("13Nouvelle").classList.add("firstElementNouvelle");
-
-    }
+        console.log("plusAncienne")
+        fetch("http://www.clownsansfrontierenyancats.com/wp/wp-json/wp/v2/nouvelle?orderby=date&order=asc")
+        .then(response => response.json())
+        .then(data => {
+            var html = '';
+            changeNewsOrder = "asc";
+            for (let index = 0; index <= 5; index++) {
+                html +=`
+                <div class="colNouvelle" id="carteNouvelle">
+                    <a href=" ${data[index].link} " style="text-decoration:none; color:white;">
+                        <div class="cardNouvelle">
+                            <div class="card-headerNouvelle">
+                                <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+                            </div>
+                            <div class="card-bodyNouvelle">
+                                <div class="alignment">
+                                    <p class="cardNameArticle"> ${data[index].title.rendered} </p>
+                                    <p class="cardAuteur"> ${data[index].acf.auteur} </p>
+                                    <p class="card-titleNouvelle"> ${data[index].date} </p>
+                                </div>
+                                <div class="card-textNouvelle">
+                                    ${data[index].content.rendered}...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>`
+            }
+        console.log(html)
+        var cartes = document.querySelector('.cartes');
+        cartes.innerHTML = html;
+    });
 }
-function showNouvelle2(){
-    var cartes = document.querySelectorAll('colNouvelle');
-    if (this == cartes[13]){
-        this.classList.add('flex');
-    }
-    const btn = document.querySelector('.btnModification');
-
-    btn.innerHTML = '';
 }
-
