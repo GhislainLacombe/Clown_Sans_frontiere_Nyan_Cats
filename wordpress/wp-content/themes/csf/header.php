@@ -100,7 +100,7 @@
           <a href="//www.clownssansfrontieres.ca/donner/">
             
 		  <?php if(get_locale() == "en_US") { ?>
-			<img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" /> 
+			<img class="donner-heros" href="#donner" src="https://imgur.com/uNdi2DB.png" alt="donner-heros" /> 
       		<?php }else{ ?>
     		<img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" />    
   			<?php }?>

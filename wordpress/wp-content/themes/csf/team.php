@@ -26,7 +26,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     
     <header>
     <div class="photo-groupe" id="header">
-        <img src="sources/medias/equipe/group.jpg" class="card-img-top" alt="groupe">
+        <img class= "photo-groupe" src="https://imgur.com/rMwt3t9.jpg" class="card-img-top" alt="groupe">
       </div>
     </header>
     <div class="direction">
