@@ -23,11 +23,11 @@ function showNouvelle(result) {
                 <a href=" ${data[index].link} " style="text-decoration:none; color:white;">
                     <div class="cardNouvelle">
                         <div class="card-headerNouvelle">
-                            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+                            <img src="${data[index].acf.image}" class="card-img-topNouvelle" alt="image">
                         </div>
                         <div class="card-bodyNouvelle">
                             <div class="alignment">
-                                <p class="cardNameArticle"> ${data[index].title.rendered} </p>
+                                <p class="cardNameArticle" style="font-family:Signika Negative;"> ${data[index].title.rendered} </p>
                                 <p class="cardAuteur"> ${data[index].acf.auteur} </p>
                                 <p class="card-titleNouvelle"> ${data[index].date} </p>
                             </div>
@@ -69,11 +69,11 @@ function changeListener(){
                     <a href=" ${data[index].link} " style="text-decoration:none; color:white;">
                         <div class="cardNouvelle">
                             <div class="card-headerNouvelle">
-                                <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+                                <img src="${data[index].acf.image}" class="card-img-topNouvelle" alt="image">
                             </div>
                             <div class="card-bodyNouvelle">
                                 <div class="alignment">
-                                    <p class="cardNameArticle"> ${data[index].title.rendered} </p>
+                                    <p class="cardNameArticle"  style="font-family:Signika Negative;"> ${data[index].title.rendered} </p>
                                     <p class="cardAuteur"> ${data[index].acf.auteur} </p>
                                     <p class="card-titleNouvelle"> ${data[index].date} </p>
                                 </div>
@@ -102,11 +102,11 @@ function changeListener(){
                     <a href=" ${data[index].link} " style="text-decoration:none; color:white;">
                         <div class="cardNouvelle">
                             <div class="card-headerNouvelle">
-                                <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
+                                <img src="${data[index].acf.image}" class="card-img-topNouvelle" alt="image">
                             </div>
                             <div class="card-bodyNouvelle">
                                 <div class="alignment">
-                                    <p class="cardNameArticle"> ${data[index].title.rendered} </p>
+                                    <p class="cardNameArticle" style="font-family:Signika Negative;"> ${data[index].title.rendered} </p>
                                     <p class="cardAuteur"> ${data[index].acf.auteur} </p>
                                     <p class="card-titleNouvelle"> ${data[index].date} </p>
                                 </div>
@@ -124,3 +124,6 @@ function changeListener(){
     });
 }
 }
+
+
+
