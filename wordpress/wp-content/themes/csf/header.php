@@ -97,7 +97,7 @@
 
         </div>
         <div class="col-12 col-md-6">
-          <img class="img-heros" src="https://imgur.com/o4wrrf4.png" alt="img-heros" />
+          <img class="img-heros" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="img-heros" />
         </div>
         <div class="col-12 justify-content-left bt-donner">
           <a href="//www.clownssansfrontieres.ca/donner/">
