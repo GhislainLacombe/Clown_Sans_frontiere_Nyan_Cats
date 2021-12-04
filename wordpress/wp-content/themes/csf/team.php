@@ -26,7 +26,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     
     <header>
     <div class="photo-groupe" id="header">
-        <img src="sources/medias/equipe/group.jpg" class="card-img-top" alt="groupe">
+        <img class= "photo-groupe" src="https://imgur.com/rMwt3t9.jpg" class="card-img-top" alt="groupe">
       </div>
     </header>
     <div class="direction">
@@ -72,15 +72,17 @@ while ($membre->have_posts()) : $membre->the_post();
   endwhile; 
   wp_reset_postdata(); 
 ?>
-
+	</article>
 <div class="remerciements">
   <div class="merci-title">Merci</div> 
   <div class="merci-text"> Merci à nos précieux partenaires.<br> Nos partenaires sont précieux pour la réussite de nos activités ici et ailleurs.</div>
 </div>
 
 
-	</article>
+
 <?php endwhile; // Fermeture de la boucle
+
+
 
 else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php

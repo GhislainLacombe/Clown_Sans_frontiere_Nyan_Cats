@@ -9,6 +9,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta property="og:title" content="<?php the_field('title'); ?>">
+<meta property="og:image" content="<?php the_field('image'); ?>">
+<meta property="og:description" content="<?php the_field('description'); ?>">
 <title>
 	<?php bloginfo('name'); // Affiche le nom du blog ?> | 
 	<?php is_front_page() ? bloginfo('description') : wp_title(''); // si nous sommes sur la page d'accueil, affichez la description à partir des paramètres du site - sinon, affichez le titre du post ou de la page. ?>
@@ -94,13 +97,13 @@
 
         </div>
         <div class="col-12 col-md-6">
-          <img class="img-heros" src="https://imgur.com/o4wrrf4.png" alt="img-heros" />
+          <img class="img-heros" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="img-heros" />
         </div>
         <div class="col-12 justify-content-left bt-donner">
           <a href="//www.clownssansfrontieres.ca/donner/">
             
 		  <?php if(get_locale() == "en_US") { ?>
-			<img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" /> 
+			<img class="donner-heros" href="#donner" src="https://imgur.com/uNdi2DB.png" alt="donner-heros" /> 
       		<?php }else{ ?>
     		<img class="donner-heros" href="#donner" src="https://imgur.com/e7PMfzR.png" alt="donner-heros" />    
   			<?php }?>
