@@ -83,13 +83,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
   <div class="service">
     <h1 class="titres">Nos Services</h1>
-    <?php
-            $service = new WP_Query( array('post_type'=> 'service','order'   => 'DESC' ,'posts_per_page' => 2) ); // 👈 Utilisation
-            while ($service->have_posts()) : $service->the_post(); 
-            ?>
+    <div class="cartesHubServices">
+    <?php $service = new WP_Query( array('post_type'=> 'service','order'   => 'DESC' ,'posts_per_page' => 2) ); // 👈 Utilisation
+      while ($service->have_posts()) : $service->the_post(); 
+      ?>
               
-              <div class="cartesHubServices">
- 
+              
 			<div class="card bg-dark text-white card-hubServices">
 			<img class="card-img card-img-hubServices" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="Card image">
 			<div class="hubServices-gradient02"></div>
@@ -101,6 +100,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			</div>
 
 		</div>
+    
+
 
 
 
@@ -133,6 +134,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               wp_reset_postdata(); 
               ?>
           </div>
+          
          
       </div>
     </section>
