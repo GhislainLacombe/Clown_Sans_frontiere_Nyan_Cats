@@ -133,6 +133,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               wp_reset_postdata(); 
               ?>
           </div>
+
+          
          
       </div>
     </section>
