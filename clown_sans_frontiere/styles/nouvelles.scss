@@ -35,7 +35,7 @@
   transition-timing-function: ease;
   margin: 20px;
   cursor: pointer;
-  background-image: linear-gradient(#F02D34, #E0FC5C);
+  background-image: linear-gradient(#F02D34, #26b6ad);
 }
 
 .nouvelles .swiper-button{
@@ -167,7 +167,8 @@ width: 100%;
   
   .card__desc__details{
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+    display: block;
   }
   
   .card .card__img__details{
@@ -285,13 +286,6 @@ width: 100%;
     color: white;
   
   }
-  
-
-
-
-
-
-
 
   //HUB NOUVELLES//
   .cartes {
