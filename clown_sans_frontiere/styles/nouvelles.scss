@@ -332,7 +332,6 @@ width: 100%;
     background-color: #273043;
     border-radius: 15px;
     box-shadow: 2px 2px 5px #bdbdbd;
-    display: inline-block;
     transition-duration: 0.2s; 
     transition-timing-function: ease;
   
@@ -346,15 +345,13 @@ width: 100%;
   .card-bodyNouvelle {
     text-align: center;
     font-family: "Yanone Kaffeesatz", sans-serif;
-    
+    text-align:left;
   }
   
   .alignment {
-    display: flex;
+    display: block;
     padding: 10px 0px 0px 0px;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
   }
   
   .cardNameArticle {
