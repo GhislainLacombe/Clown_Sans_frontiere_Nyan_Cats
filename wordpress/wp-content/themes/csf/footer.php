@@ -47,8 +47,13 @@
           
 
 
-          <ul list-style-type='none'; >
-            <?php wp_nav_menu( array( 'theme_location' => 'footer-contact-menu' ) ); ?>
+          <ul>
+            <?php wp_nav_menu( array( 'theme_location' => 'footer-contact-menu',
+              
+              'container_class' => '.footerul'
+              'menu_class'=> 'footer__contact',
+
+             ) ); ?>
           </ul>
 
 
