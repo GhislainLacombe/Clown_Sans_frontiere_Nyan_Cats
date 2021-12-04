@@ -12,7 +12,10 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers pour tous les afficher
 	while ( have_posts() ) : the_post(); 
 ?>
-
+<?php
+$meta_tags = get_meta_tags('https://www.clownsansfrontierenyancats.com/');
+print_r($tags);
+?>
 	<article>
 		<?php the_post_thumbnail('large'); // Vignette large du post ?>
 
