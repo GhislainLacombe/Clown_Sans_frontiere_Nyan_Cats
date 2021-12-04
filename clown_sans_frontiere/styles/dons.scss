@@ -11,6 +11,7 @@
     margin:  0 auto;
     margin-bottom: 20px;
     text-transform: uppercase;
+    overflow: hidden;
     > a {
       text-decoration: none;
     }
@@ -69,6 +70,7 @@
       min-width: 700px;
       margin-bottom: 50px;
       cursor: pointer;
+      overflow: visible;
         .word {
           width: 100%;
         }
