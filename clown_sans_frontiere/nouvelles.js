@@ -127,3 +127,19 @@ function changeListener(){
 
 
 
+//Couleurs selon catégories des nouvelles
+    //Ne fonctionne pas pour l'instant, balise ${data[index].acf.categorie} brise tout
+fetch(`http://www.clownsansfrontierenyancats.com/wp/wp-json/wp/v2/nouvelle`)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        var heroNouvelle = document.querySelector('.hero__nouvelle');
+        var categorie = data[index].acf.categorie;
+        if (  categorie == "Retour" ) {
+            heroNouvelle.classList.add('.couleurRetour');
+        }else if (  categorie == "Événement" ) {
+            heroNouvelle.classList.add('.couleurEvenement');
+        }else if (  categorie == "Haïti" ) {
+            heroNouvelle.classList.add('.couleurHaiti');
+        }
+    });

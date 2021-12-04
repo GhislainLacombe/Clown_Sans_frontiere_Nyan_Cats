@@ -167,7 +167,8 @@ width: 100%;
   
   .card__desc__details{
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+    display: block;
   }
   
   .card .card__img__details{
@@ -286,11 +287,17 @@ width: 100%;
   
   }
   
+.couleurRetour {
+  background-color:navy ;
+}
 
+.couleurEvenement {
+  background-color: lightslategray;
+}
 
-
-
-
+.couleurHaiti {
+  background-color: midnightblue;
+}
 
 
   //HUB NOUVELLES//
