@@ -101,6 +101,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 		</div>
     
+		</div>
+    
+    
 
 
 
