@@ -9,6 +9,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta property="og:title" content="<?php the_field('title'); ?>">
+<meta property="og:image" content="<?php the_field('image'); ?>">
+<meta property="og:description" content="<?php the_field('description'); ?>">
 <title>
 	<?php bloginfo('name'); // Affiche le nom du blog ?> | 
 	<?php is_front_page() ? bloginfo('description') : wp_title(''); // si nous sommes sur la page d'accueil, affichez la description à partir des paramètres du site - sinon, affichez le titre du post ou de la page. ?>
