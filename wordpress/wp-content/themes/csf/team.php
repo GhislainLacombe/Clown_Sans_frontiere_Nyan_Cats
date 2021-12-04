@@ -22,11 +22,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 <h2><?php the_title(); // Titre de la page ?></h2>
 
 <?php the_content(); // Contenu principal de la page ?>
-		<div class="equipe"> 
+		 
     
     <header>
-    <div class="photo-groupe" id="header">
-        <img class= "photo-groupe" src="https://imgur.com/rMwt3t9.jpg" class="card-img-top" alt="groupe">
+  
+      
       </div>
     </header>
     <div class="direction">
