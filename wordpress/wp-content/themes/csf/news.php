@@ -28,7 +28,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               <div class="col-8">
                 <div class="card bg-primary card__details">
                   
-                <img src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" class="card-img-top card__img__details">
+                <img src="<?php the_field('image'); ?>" class="card-img-top card__img__details">
                
 
                   <div class="card-body card__body__details">

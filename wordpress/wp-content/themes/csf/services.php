@@ -22,10 +22,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php the_content(); // Contenu principal de la page ?>
 		<?php
             $service = new WP_Query( array('post_type'=> 'service', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 1) ); // 👈 Utilisation
-            while ($service->have_posts()) : $service->the_post(); 
+            while ($service->have_posts()) : $service->the_post();  $service->the_permalink(); // Lien du post
             ?>
               
-              <div class="cartesHubServices">
+              <div class="cartesHubServices" >
  
 			<div class="card bg-dark text-white card-hubServices">
 			<img class="card-img card-img-hubServices" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="Card image">

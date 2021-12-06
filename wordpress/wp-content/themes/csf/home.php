@@ -125,11 +125,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="container__nouvelles">
             <?php
             $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
-            while ($nouvelle->have_posts()) : $nouvelle->the_post(); 
+            while ($nouvelle->have_posts()) : $nouvelle->the_post(); $nouvelle->the_permalink();
             ?>
             
               
-              <div class="nouvelles__apercu gradient1">
+              <div class="nouvelles__apercu gradient1" href="<?php the_permalink(); ?>">
               <?php the_title(); // Titre de la page ?>
               </div>
               <?php
