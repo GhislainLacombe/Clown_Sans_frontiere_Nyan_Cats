@@ -119,10 +119,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             while ($nouvelle->have_posts()) : $nouvelle->the_post(); $nouvelle->the_permalink();
             ?>
             
+            <a href="<?php echo get_permalink() ?>" class="nouvelles__apercu gradient1">
               
-              <div class="nouvelles__apercu gradient1" href="<?php the_permalink(); ?>">
               <?php the_title(); // Titre de la page ?>
-              </div>
+    </a>
               <?php
               endwhile; 
               wp_reset_postdata(); 
