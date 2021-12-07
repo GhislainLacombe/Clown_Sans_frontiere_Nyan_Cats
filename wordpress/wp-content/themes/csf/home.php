@@ -82,7 +82,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   </div>
 
   <div class="service">
-    <h1 class="titres">Nos Services</h1>
+    
+    <?php if(get_locale() == "en_US"){ ?>
+        <h1 class="titres">Services</h1>
+        <?php }else{ ?>
+          <h1 class="titres">Services</h1>
+        <?php }?>
     <div class="cartesHubServices">
     <?php $service = new WP_Query( array('post_type'=> 'service','order'   => 'DESC' ,'posts_per_page' => 2) ); // 👈 Utilisation
       while ($service->have_posts()) : $service->the_post(); 
@@ -111,8 +116,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
-        <h1 class="titres">Nouvelles</h1>
-        
+        <?php if(get_locale() == "en_US"){ ?>
+        <h1 class="titres">News</h1>
+        <?php }else{ ?>
+          <h1 class="titres">Nouvelles</h1>
+        <?php }?>
         <div class="container__nouvelles">
             <?php
             $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
@@ -134,30 +142,33 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     </section>
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
-        <h1 class="titres">Témoignages</h1>
+        <h1 class="titres">Témoignage</h1>
         <div class="row justify-content-center">
           
           <div class="col">
+
+          <?php $temoignage = new WP_Query( array('post_type'=> 'temoignage') ); // 👈 Utilisation
+      while ($temoignage->have_posts()) : $temoignage->the_post(); 
+      ?>
             <div class="card">
               <div class="card-header">
                 <img
-                  src="https://thispersondoesnotexist.com/image"
+                  src="https://clowns-sans-frontieres-france.org/wp-content/uploads/2020/04/aloisesauvage-5-rvb-hd-shelby-duncan-e1590499440204-1097x1024.png"
                   class="card-img-top cardshadow2"
                   alt="image"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Mr Jeon</h5>
+                <h5 class="card-title"><?php the_title(); // Titre de la page ?></h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-                  libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-                  condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-                  leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-                  tellus scelerisque non.
+                <?php the_content(); // Titre de la page ?>
                 </p>
               </div>
             </div>
+            <?php
+              endwhile; 
+              wp_reset_postdata(); 
+              ?>
           </div>
           
         </div>

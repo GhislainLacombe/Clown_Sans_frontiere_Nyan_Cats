@@ -21,8 +21,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		
 		<?php the_content(); // Contenu principal de la page ?>
 		<?php
-            $service = new WP_Query( array('post_type'=> 'service', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 1) ); // 👈 Utilisation
-            while ($service->have_posts()) : $service->the_post();  $service->the_permalink(); // Lien du post
+            $service = new WP_Query( array('post_type'=> 'service', 'post__not_in' => array (get_the_ID())) ); // 👈 Utilisation
+            while ($service->have_posts()) : $service->the_post();  // Lien du post
             ?>
               
             <div class="cartesHubServices" >
