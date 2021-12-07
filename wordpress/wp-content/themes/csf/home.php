@@ -82,7 +82,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   </div>
 
   <div class="service">
-    <h1 class="titres">Nos Services</h1>
+    
+    <?php if(get_locale() == "en_US"){ ?>
+        <h1 class="titres">Services</h1>
+        <?php }else{ ?>
+          <h1 class="titres">Services</h1>
+        <?php }?>
     <div class="cartesHubServices">
     <?php $service = new WP_Query( array('post_type'=> 'service','order'   => 'DESC' ,'posts_per_page' => 2) ); // 👈 Utilisation
       while ($service->have_posts()) : $service->the_post(); 
@@ -111,8 +116,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
-        <h1 class="titres">Nouvelles</h1>
-        
+        <?php if(get_locale() == "en_US"){ ?>
+        <h1 class="titres">News</h1>
+        <?php }else{ ?>
+          <h1 class="titres">Nouvelles</h1>
+        <?php }?>
         <div class="container__nouvelles">
             <?php
             $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
