@@ -35,8 +35,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 						<h1 class="card-title-hubServices"><?php the_title(); // Titre de la page ?>
 						</h1>
 					</div>
-		</a>
+
 			</div>
+			</a>
 
 
               <?php

@@ -1,196 +1,202 @@
 //ACCUEIL//
 
 .gif-heros {
-    display: flex;
-    align-self: center;
-    height: auto;
-    width: 90%;
-    margin: 0 auto;
-    
-    }
-  
-  .img-heros {
-    display: flex;
-    height: auto;
-    width: 85%;
-    align-self: left;
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 7px 7px 7px #f02d3a;
-  }
+  display: flex;
+  align-self: center;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
 
-  .img .img-heros{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .donner-heros {
-    position: relative;
-    height: 65%;
-    margin-left: 4%;
-    align-self: left;
-    text-align: left;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-  }
+.img-heros {
+  display: flex;
+  height: auto;
+  width: 85%;
+  align-self: left;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px #f02d3a;
+}
 
-  .donner-heros:hover {
+.img .img-heros {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.donner-heros {
+  position: relative;
+  height: 65%;
+  margin-left: 4%;
+  align-self: left;
+  text-align: left;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.donner-heros:hover {
+  transform: scale(1.1);
+}
+
+.bt-donner {
+  text-align: left;
+  padding: 30px;
+}
+
+//QUI SOMMME-NOUS//
+
+.bgGradient {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(38, 182, 173, 0.5),
+    #26b6ad
+  );
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.gridOrganisme {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  padding: 10%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  justify-items: end;
+  grid-template-areas:
+    ". . . title title title "
+    "hero hero hero description description description"
+    "hero hero hero description description description"
+    ". . . . . information";
+}
+
+.titleOrganisme {
+  font-size: 48px;
+  color: white;
+  font-weight: regular;
+  font-family: Yanone Kaffeesatz;
+  grid-area: title;
+  position: relative;
+  justify-self: flex-start;
+  padding-bottom: 20px;
+}
+
+.heroOrganisme {
+  grid-area: hero;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.heroOrganisme .size-swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.heroOrganisme .swiper-slide {
+  width: 100%;
+}
+
+.heroOrganisme .swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.heroOrganisme .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.heroOrganisme .swiper-pagination {
+  position: absolute;
+  bottom: 15px;
+}
+
+.heroOrganisme .swiper-button-prev {
+  color: white;
+  font-weight: bold;
+}
+
+.heroOrganisme .swiper-button-prev::after {
+  font-size: 15px;
+}
+
+.heroOrganisme .swiper-button-next {
+  color: white;
+  font-weight: bold;
+  width: 15px;
+}
+
+.heroOrganisme .swiper-button-next::after {
+  font-size: 15px;
+}
+
+.descriptionOrganisme {
+  grid-area: description;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.1));
+
+  //trish
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 60px;
+}
+.descriptionOrganisme1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #273043;
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 0px 15px 0px;
+}
+.descriptionOrganisme2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5;
+  color: #273043;
+  text-align: left; //becca
+}
+
+.informationOrganisme {
+  background-color: transparent;
+  grid-area: information;
+  font-size: 25px;
+  color: #183e7d;
+  font-weight: bold;
+  font-family: Yanone Kaffeesatz;
+  border: solid #183e7d 3px;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  margin: 5px 20px;
+  padding: 10px 20px 5px 20px;
+  text-transform: uppercase;
+
+  .informationOrganisme :hover {
     transform: scale(1.1);
   }
-  
-  .bt-donner{ 
-    text-align: left;
-    padding: 30px;
-  }
 
-  //QUI SOMMME-NOUS//
-
-  .bgGradient {
-    background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(38, 182, 173, 0.5), #26B6AD);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 0;
-  }
-  
-  .gridOrganisme {
-    position: relative;
-    margin: 0 auto;
-    height: 100%;
-    display: grid;
-    gap: 10px;
-    padding: 10%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
-    justify-items: end;
-    grid-template-areas:
-      ". . . title title title "
-      "hero hero hero description description description"
-      "hero hero hero description description description"
-      ". . . . . information";
-  }
-  
-  .titleOrganisme{
-    font-size: 48px;
-    color: white;
-    font-weight: regular;
-    font-family: Yanone Kaffeesatz;
-    grid-area: title;
-    position: relative;
-    justify-self: flex-start;
-    padding-bottom: 20px;
-  }
-  
-  .heroOrganisme {
-    grid-area: hero;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    overflow: hidden;
-  }
-  
-  .heroOrganisme .size-swiper {
-    width:100%;
-    height:100%;
-    border-radius: 15px;
-    position: relative;
-  }
-  
-  .heroOrganisme .swiper-slide {
-      width:100%;
-    }
-  
-  .heroOrganisme .swiper-slide img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .heroOrganisme .swiper-pagination-bullet-active { 
-    background-color: white; 
-  }
-  
-  .heroOrganisme .swiper-pagination {
-    position: absolute;
-    bottom: 15px;
-  }
-  
-  .heroOrganisme .swiper-button-prev {
-    color: white;
-    font-weight: bold;
-    
-  }
-  
-  .heroOrganisme .swiper-button-prev::after {
-    font-size: 15px;
-  }
-  
-  .heroOrganisme .swiper-button-next {
-    color: white;
-    font-weight: bold;
-    width:15px;
-  }
-  
-  .heroOrganisme .swiper-button-next::after {
-    font-size: 15px;
-  }
-  
-  .descriptionOrganisme {
-    grid-area: description;
-    background-color: rgba(255, 255, 255, 0.95);
-    border: none;
-    border-radius: 15px;
-    position: relative; 
-    width: 100%;
-    padding: 30px;
-    filter: drop-shadow(5px 5px 1px rgba(0,0,0,0.1));
-  
-    //trish
-    min-height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 60px;
-    
-  }
-  .descriptionOrganisme1 {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    color: #273043;
-    font-size: 30px;
-    letter-spacing: -1px;
-   font-weight: 400;
-    text-transform: uppercase;
-    padding: 10px 0px 15px 0px;
-  }
-  .descriptionOrganisme2 {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    font-weight: 300;
-    font-size: 23px;
-    word-spacing: 3px;
-    line-height: 1.5;
-    color: #273043;
-    text-align: left; //becca
-  }
-  
-  .informationOrganisme {
-    background-color: transparent;
-    grid-area: information;
-    font-size: 25px;
-    color: #183e7d;
-    font-weight: bold;
-    font-family: Yanone Kaffeesatz;
-    border: solid #183e7d 3px;
-    border-radius: 25px;
-    position: relative;
-    cursor: pointer;
-    width: fit-content;
-    text-align: center;
-    margin: 5px 20px;
-    padding: 10px 20px 5px 20px;
-    text-transform: uppercase;
-  
-    //trish
-    min-width: 170px;
-  }
+  //trish
+  min-width: 170px;
+}
