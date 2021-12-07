@@ -31,7 +31,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     </header>
     <div class="direction">
     <br>
-    <h3>Notre équipe</h3>
+    <?php if(get_locale() == "en_US"){ ?> <h3>Meet our team members!</h3> <?php }else{ ?>
+      <h3>Notre équipe</h3>
+    <?php }?>
     
       
     <div class="card-group">
