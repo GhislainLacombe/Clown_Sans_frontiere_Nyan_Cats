@@ -25,23 +25,20 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             while ($service->have_posts()) : $service->the_post();  $service->the_permalink(); // Lien du post
             ?>
               
-              <div class="cartesHubServices" >
- 
-			<div class="card bg-dark text-white card-hubServices">
-			<img class="card-img card-img-hubServices" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="Card image">
-			<div class="hubServices-gradient02"></div>
-			<div class="card-img-overlay card-img-overlay-hubServices">
-			<h1 class="card-title-hubServices"><?php the_title(); // Titre de la page ?>
-			</h1>
+            <div class="cartesHubServices" >
 
+			           
+			<a href="<?php echo get_permalink() ?>" class="card bg-dark text-white card-hubServices">
+					<img class="card-img card-img-hubServices" src="<?php echo the_post_thumbnail_url(); // Vignette large du post ?>" alt="Card image">
+					<div class="hubServices-gradient02"></div>
+					<div class="card-img-overlay card-img-overlay-hubServices">
+						<h1 class="card-title-hubServices"><?php the_title(); // Titre de la page ?>
+						</h1>
+					</div>
+		</a>
 			</div>
-			</div>
-
-		</div>
 
 
-
-            </div>
               <?php
               endwhile; 
               wp_reset_postdata(); 
