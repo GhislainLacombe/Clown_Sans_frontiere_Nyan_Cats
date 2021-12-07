@@ -5,8 +5,7 @@
   height: 100%;
 }
 
-
-.container__nouvelles{
+.container__nouvelles {
   width: 100%;
   height: auto;
   display: flex;
@@ -14,10 +13,10 @@
 }
 
 .nouvelles__apercu:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
-.gradient1{
+.gradient1 {
   justify-content: center;
   text-align: center;
   font-size: 18px;
@@ -35,377 +34,350 @@
   transition-timing-function: ease;
   margin: 20px;
   cursor: pointer;
-  background-image: linear-gradient(#F02D34, #26b6ad);
+  background-image: linear-gradient(#183e7d, #26b6ad);
 }
 
-.nouvelles .swiper-button{
-color: var(--bg);
-top: 40%;
-filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
-
-
+.nouvelles .swiper-button {
+  color: var(--bg);
+  top: 40%;
+  filter: drop-shadow(0 1mm 0.1em rgba(0, 0, 0, 0.2));
 }
 
-.nouvelles .swiper-slide:hover{
-transform: scale(1.1);
+.nouvelles .swiper-slide:hover {
+  transform: scale(1.1);
 }
 
-.nouvelles{
-position: relative;
-margin-bottom: 100px;
-display: flex;
-width: 100%;
+.nouvelles {
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+  width: 100%;
 }
 
-
-.titres{
-justify-content: center;
-font-family: var(--title);
-color: var(--amaranth);
-text-transform: uppercase;
-margin-top: 30px;
-font-size: 4.5em;
-font-weight: bold;
-text-align: center;
-
+.titres {
+  justify-content: center;
+  font-family: var(--title);
+  color: var(--amaranth);
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 4.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
-
-
-.col { max-width: 450px;
-margin: 30px;}
-
-.card .card__temoignage{
-filter: drop-shadow(0 1mm 0.1em rgba(0,0,0, 0.2));
-border-radius: 15px;
-height: 650px;
+.col {
+  max-width: 450px;
+  margin: 30px;
 }
 
-.card-body{
-text-align: center;
-font-family: var(--regular);
+.card .card__temoignage {
+  filter: drop-shadow(0 1mm 0.1em rgba(0, 0, 0, 0.2));
+  border-radius: 15px;
+  height: 650px;
 }
 
-
-.card-title{
-font-size: 50px;
+.card-body {
+  text-align: center;
+  font-family: var(--regular);
 }
 
-.card-text{
-font-size: 20px;
+.card-title {
+  font-size: 50px;
 }
 
-.card-img-top .Nouvelle{
-border-radius: 140px;
-width: 250px;
-height: 250px;
+.card-text {
+  font-size: 20px;
 }
 
-.card-header{
-width: 100%;
-display: flex;
-justify-content: center;
+.card-img-top .Nouvelle {
+  border-radius: 140px;
+  width: 250px;
+  height: 250px;
 }
 
-.cardshadow1{
-filter: drop-shadow(0 1.5mm 0.1em var(--lighseagreen))
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.cardshadow2{
-filter: drop-shadow(0 1.5mm 0.1em var(--amaranth))
+.cardshadow1 {
+  filter: drop-shadow(0 1.5mm 0.1em var(--lighseagreen));
 }
 
-.cardshadow3{
-filter: drop-shadow(0 1.5mm 0.1em var(--basicblue))
+.cardshadow2 {
+  filter: drop-shadow(0 1.5mm 0.1em var(--amaranth));
 }
 
-
-section{
-width: 100%;
+.cardshadow3 {
+  filter: drop-shadow(0 1.5mm 0.1em var(--basicblue));
 }
-  //DÉTAILS NOUVELLES //
 
-  .hero__nouvelle{
-    width: 100%;
-    padding: 80px;
-    background-color: var(--spacecadet);
-    display: flex; 
-    margin-top: 60px;
-    height: 20%;
-  }
-  
-  .nouvelle__description{
-    width: 85%;
-    text-align: justify;
-    padding: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    
-  }
+section {
+  width: 100%;
+}
+//DÉTAILS NOUVELLES //
 
-  .titreNouvelle {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    position: relative;
-    font-weight: 300;
-    font-size: 23px;
-    word-spacing: 3px;
-    line-height: 1.5; 
-    color: #26B6AD;
-  }
-  
-  .card .card__details{
-    width: 50%;
-    
-  }
-  
-  .card__body__details{
-    display: flex;
-    padding: 20px;
-  }
-  
-  .card__desc__details{
-    padding-left: 20px;
-    padding-right: 20px;
-    display: block;
-  }
-  
-  .card .card__img__details{
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 0;
-  }
-  
-  .titres__nouvelle{
-    justify-content: center;
-    font-family: var(--title);
-    color: var(--spacecadet);
-    text-transform: uppercase;
-    margin-top: 30px;
-    font-size: 4.5em;
-    font-weight: bold;
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .ligne__nouvelle{
-    position: absolute;
-    width: 10em;
-    height: 0.3em;
-    background-color: var(--amaranth);
-    transform: translateX(5em) translateY(9.2em)
-  }
-  
-  .nouvelle__info{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    font-size: 25px;
-    position: relative;
-    
-    
-  }
-  
-  .nouvelle__auteur{
-    margin-right: 40px;
-  }
-  
-  .nouvelle__date{
-    margin-right: 40px;
-  }
-  
-  .nouvelle__csf{
-    margin-right: 40px;
-  }
-  
-  
-  
-  .nouvelle__pied{
-    margin: auto;
-    width: 90%;
-    height: 2px;
-    background-color: var(--spacecadet);
-  }
-  
-  .texte__debut{
-    color: var(--lighseagreen)
-  }
-  
-  .nouvelle__apercu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: var(--spacecadet);
-    margin-top: 120px;
-    padding: 50px;
-  }
-  
-  
-  .card__apercu__nouvelle{
-    width: 30vw;
-    height: 45vh;
-    margin: auto;
-  }
-  
-  .card__titles__apercu{
-    display: flex;
-  
-  }
-  
-  .nom__apercu1{
-    font-size: 30px;
-    padding-right: 35px;
-  }
-  
-  .nom__apercu2{
-    font-size: 30px;
-    padding-right: 35px;
-    color: var(--amaranth)
-  }
-  
-  .description__apercu{
-    text-align: justify
-  }
-  
-  .plus__bouton{
-    background-color: var(--lighseagreen);
-    width: 140px;
-    height: 50px;
-    border: none;
-    padding-top: 5px;
-    border-radius: 20px;
-    font-family: Yanone Kaffeesatz;
-    font-size: 30px;
-    margin: 20px;
-    text-transform: uppercase;
-    color: white;
-  
-  }
+.hero__nouvelle {
+  width: 100%;
+  padding: 80px;
+  background-color: var(--spacecadet);
+  display: flex;
+  margin-top: 60px;
+  height: 20%;
+}
 
-  //HUB NOUVELLES//
-  .cartes {
-    width: 80%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0% 10%;
-  }
-    .colNouvelle{
-    &:first-child{
-      background-color: #26B6AD;
-      &:hover {
-        transform: scale(1.05);
-        background-color: #3ECDC4;
-        cursor: pointer;
-        
-        border: #4671bb solid 1px;
-      }
-    }
-  
-  }
-  
+.nouvelle__description {
+  width: 85%;
+  text-align: justify;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
+.titreNouvelle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  position: relative;
+  font-weight: 300;
+  font-size: 23px;
+  word-spacing: 3px;
+  line-height: 1.5;
+  color: #26b6ad;
+}
 
+.card .card__details {
+  width: 50%;
+}
 
+.card__body__details {
+  display: flex;
+  padding: 20px;
+}
 
+.card__desc__details {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+}
 
+.card .card__img__details {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 0;
+}
 
+.titres__nouvelle {
+  justify-content: center;
+  font-family: var(--title);
+  color: var(--spacecadet);
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 4.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
 
+.ligne__nouvelle {
+  position: absolute;
+  width: 10em;
+  height: 0.3em;
+  background-color: var(--amaranth);
+  transform: translateX(5em) translateY(9.2em);
+}
 
+.nouvelle__info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 25px;
+  position: relative;
+}
 
+.nouvelle__auteur {
+  margin-right: 40px;
+}
 
-  .colNouvelle {
-    max-width: 350px;
-    padding: 30px;
-    margin:10px;
-    background-color: #273043;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px #bdbdbd;
-    transition-duration: 0.2s; 
-    transition-timing-function: ease;
-  
+.nouvelle__date {
+  margin-right: 40px;
+}
+
+.nouvelle__csf {
+  margin-right: 40px;
+}
+
+.nouvelle__pied {
+  margin: auto;
+  width: 90%;
+  height: 2px;
+  background-color: var(--spacecadet);
+}
+
+.texte__debut {
+  color: var(--lighseagreen);
+}
+
+.nouvelle__apercu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--spacecadet);
+  margin-top: 120px;
+  padding: 50px;
+}
+
+.card__apercu__nouvelle {
+  width: 30vw;
+  height: 45vh;
+  margin: auto;
+}
+
+.card__titles__apercu {
+  display: flex;
+}
+
+.nom__apercu1 {
+  font-size: 30px;
+  padding-right: 35px;
+}
+
+.nom__apercu2 {
+  font-size: 30px;
+  padding-right: 35px;
+  color: var(--amaranth);
+}
+
+.description__apercu {
+  text-align: justify;
+}
+
+.plus__bouton {
+  background-color: var(--lighseagreen);
+  width: 140px;
+  height: 50px;
+  border: none;
+  padding-top: 5px;
+  border-radius: 20px;
+  font-family: Yanone Kaffeesatz;
+  font-size: 30px;
+  margin: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+//HUB NOUVELLES//
+.cartes {
+  width: 80%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0% 10%;
+}
+.colNouvelle {
+  &:first-child {
+    background-color: #26b6ad;
     &:hover {
       transform: scale(1.05);
-      border: #4671bb solid 2px ;
+      background-color: #3ecdc4;
       cursor: pointer;
+
+      border: #4671bb solid 1px;
     }
   }
-  
-  .card-bodyNouvelle {
-    text-align: center;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    text-align:left;
-  }
-  
-  .alignment {
-    display: block;
-    padding: 10px 0px 0px 0px;
-    width: 100%;
-  }
-  
-  .cardNameArticle {
-    margin: 0px auto 0px 0px;
-    color: white;
-    transform: translateY(-8px);
-  }
-  
-  .cardAuteur {
-    transform: translateY(-10px);
-    text-align: center;
-    background-color: #ececec;
-    padding: 5px 10px;
-    margin: 0px 5px;
-    color: black;
-  }
-  
-  .card-titleNouvelle {
-    font-size: 23px;
-    color: white; 
-    border-left: 3px solid #DD0426;
-    padding: 10px;
-    transform: translateY(-2px);
-  }
+}
 
-  .card-textNouvelle {
-    color: #ffffffc4;
-    font-weight: 300;
-    font-size: 19px;
-    line-height: 1.5;
-    text-align: left;
-    height: 200px;
-    overflow: hidden;
-  }
+.colNouvelle {
+  max-width: 350px;
+  padding: 30px;
+  margin: 10px;
+  background-color: #273043;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #bdbdbd;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 
-  .card-img-topNouvelle {
-    width: 350px;
-    height: 250px;
-    border: 1px solid white;
-    padding: 1px;
+  &:hover {
+    transform: scale(1.05);
+    border: #4671bb solid 2px;
+    cursor: pointer;
   }
+}
 
-  .card-headerNouvelle {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.card-bodyNouvelle {
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: left;
+}
+
+.alignment {
+  display: block;
+  padding: 10px 0px 0px 0px;
+  width: 100%;
+}
+
+.cardNameArticle {
+  margin: 0px auto 0px 0px;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.cardAuteur {
+  transform: translateY(-10px);
+  text-align: center;
+  background-color: #ececec;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  color: black;
+}
+
+.card-titleNouvelle {
+  font-size: 23px;
+  color: white;
+  border-left: 3px solid #dd0426;
+  padding: 10px;
+  transform: translateY(-2px);
+}
+
+.card-textNouvelle {
+  color: #ffffffc4;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: left;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img-topNouvelle {
+  width: 350px;
+  height: 250px;
+  border: 1px solid white;
+  padding: 1px;
+}
+
+.card-headerNouvelle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 #Selector {
   border-radius: 10px;
-    margin: 20px;
-    color: #273043;
-    border: #273043 1px solid;
-    font-size: 25px;
-    border-width: 2px;
-    padding: 7px;
-    font-weight: 400;
+  margin: 20px;
+  color: #273043;
+  border: #273043 1px solid;
+  font-size: 25px;
+  border-width: 2px;
+  padding: 7px;
+  font-weight: 400;
 }
 
-.detailsNouvelle{
+.detailsNouvelle {
   margin-top: 100px;
 }
-
