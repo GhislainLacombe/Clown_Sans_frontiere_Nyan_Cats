@@ -53,9 +53,15 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
     <div class="bgGradient">
     <div class="gridOrganisme">
+    <?php if(get_locale() == "en_US"){ ?>
       <div class="titleOrganisme">
+        Who are we?
+        <div class="ligne"></div>
+        <?php }else{ ?>
+          <div class="titleOrganisme">
         Qui sommes-nous?
         <div class="ligne"></div>
+          <?php }?>
       </div>
       <div class="heroOrganisme">
         <!-- Slider here -->
@@ -72,12 +78,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         </div>
         <!-- end of slider -->
       </div>
+      <?php if(get_locale() == "en_US"){ ?>
       <div class="descriptionOrganisme">
+        <div class="descriptionOrganisme1">Our Mission</div>
+        <div class="descriptionOrganisme2">Since 1994, the artistic and humanitarian association ClownsSansFrontières has been organizing free shows and workshops to offer moral and emotional support to populations that are victims of war, poverty or exclusion. Without political, ethnic or religious discrimination, the artists bring moments of laughter and dreams to refugee camps, slums, juvenile detention centers, orphanages, indigenous communities, centers
+    youth and other places where culture struggles to breathe.
+</div>
+      </div>
+      <div class="informationOrganisme">Find out more</div>
+      <?php }else{ ?>
+        <div class="descriptionOrganisme">
         <div class="descriptionOrganisme1">Notre Mission</div>
         <div class="descriptionOrganisme2">Depuis 1994, l’association artistique et humanitaire ClownsSansFrontières organise des spectacles et des ateliers gratuits pour ofrir un soutien moral et émotionnel aux populations victimes de la guerre, de la misère ou de l’exclusion. Sans discrimination politique, ethnique ou religieuse, les artistes apportent des moments de rire et de rêve dans les camps de réfugiés, les bidonvilles, les centres de détention pour mineurs, les orphelinats, les communautés autochtones, les centres
     jeunesses et autres lieux où la culture peine à respirer.</div>
       </div>
       <div class="informationOrganisme">En savoir plus</div>
+        <?php }?>
     </div>
   </div>
 
@@ -123,7 +139,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <?php }?>
         <div class="container__nouvelles">
             <?php
-            $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order'   => 'DESC' ,'posts_per_page' => 3) ); // 👈 Utilisation
+            $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'orderby' => 'date','order' => 'DESC','posts_per_page' => 3) ); // 👈 Utilisation
             while ($nouvelle->have_posts()) : $nouvelle->the_post(); $nouvelle->the_permalink();
             ?>
             
@@ -142,7 +158,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     </section>
     <section class="nouvelles" id="nouvelles">
       <div class="container-fluid">
-        <h1 class="titres">Témoignage</h1>
+      <?php if(get_locale() == "en_US"){ ?>
+        <h1 class="titres">Testimony</h1>
+        <?php }else{ ?>
+          <h1 class="titres">Témoignage</h1>
+          <?php }?>
         <div class="row justify-content-center">
           
           <div class="col">

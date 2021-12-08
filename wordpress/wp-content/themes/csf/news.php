@@ -65,28 +65,36 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 
     <div class="nouvelle__apercu">
-      <div class="colNouvelle">
-        <div class="cardNouvelle">
-          <div class="card-headerNouvelle">
-            <img src="https://thispersondoesnotexist.com/image" class="card-img-topNouvelle" alt="image">
-          </div>
-          <div class="card-bodyNouvelle">
-            <div class="alignment">
-              <p1 class="cardNameArticle">Nom de l'article</p1>
-              <p1 class="cardAuteur"><?php the_field('auteur'); ?></p1>
-              <p1 class="card-titleNouvelle"><?php the_field('date'); ?></p1>
+      
+      <div class="colNouvelle" id="carteNouvelle">
+      <?php
+            $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'post__not_in' => array (get_the_ID()), 'posts_per_page' => 1 ); // 👈 Utilisation
+            while ($nouvelle->have_posts()) : $nouvelle->the_post();  // Lien du post
+            ?>
+                <a href="<?php echo get_permalink() ?>" style="text-decoration:none; color:white;">
+                    <div class="cardNouvelle">
+                        <div class="card-headerNouvelle">
+                            <img src="<?php the_field('image'); ?>" class="card-img-topNouvelle" alt="image">
+                        </div>
+                        <div class="card-bodyNouvelle">
+                            <div class="alignment">
+                                <p class="cardNameArticle" style="font-family:Signika Negative;"> <?php the_title(); // Titre de la page ?></p>
+                                <p class="cardAuteur"> <?php the_field('auteur'); ?> </p>
+                                <p class="card-titleNouvelle"> <?php the_field('date'); ?></p>
+                            </div>
+                            <div class="card-textNouvelle">
+                            <?php the_content(); // Titre de la page ?>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <?php
+              endwhile; 
+              wp_reset_postdata(); 
+              ?>
             </div>
-            <p class="card-textNouvelle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent laoreet ante vitae eros rhoncus fermentum. Proin at
-              libero vitae libero imperdiet laoreet id eu dui. Donec dapibus
-              condimentum euismod. Morbi tincidunt lacus ante, et bibendum
-              leo volutpat quis. Sed rhoncus rhoncus lacus, vel pulvinar
-              tellus scelerisque non.
-            </p>
-          </div>
-        </div>
-      </div>
+
+
       <button class="plus__bouton">Voir plus</button>
     </div>
   </div>

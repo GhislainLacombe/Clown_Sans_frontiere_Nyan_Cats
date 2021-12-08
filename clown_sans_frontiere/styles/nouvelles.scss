@@ -279,6 +279,15 @@ section {
   justify-content: space-around;
   margin: 0% 10%;
 }
+.cartes__detailsNouvelle{
+width: 80%;
+display: inline-flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 0% 10%;
+}
+
+
 .colNouvelle {
   &:first-child {
     background-color: #26b6ad;
