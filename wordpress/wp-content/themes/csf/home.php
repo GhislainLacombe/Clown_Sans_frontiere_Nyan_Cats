@@ -92,7 +92,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="descriptionOrganisme2">Depuis 1994, l’association artistique et humanitaire ClownsSansFrontières organise des spectacles et des ateliers gratuits pour ofrir un soutien moral et émotionnel aux populations victimes de la guerre, de la misère ou de l’exclusion. Sans discrimination politique, ethnique ou religieuse, les artistes apportent des moments de rire et de rêve dans les camps de réfugiés, les bidonvilles, les centres de détention pour mineurs, les orphelinats, les communautés autochtones, les centres
     jeunesses et autres lieux où la culture peine à respirer.</div>
       </div>
-      <div class="informationOrganisme">En savoir plus</div>
+      <div class="informationOrganisme" href= "http://www.clownsansfrontierenyancats.com/wp/a-propos/">En savoir plus</div>
         <?php }?>
     </div>
   </div>
@@ -156,7 +156,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
          
       </div>
     </section>
-    <section class="nouvelles" id="nouvelles">
+    <section class="temoignage" id="temoignage">
       <div class="container-fluid">
       <?php if(get_locale() == "en_US"){ ?>
         <h1 class="titres">Testimony</h1>
