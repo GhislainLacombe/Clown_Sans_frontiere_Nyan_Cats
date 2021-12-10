@@ -44,27 +44,21 @@
           </div>
         </div>
         <div class="footer__contact">
-          
-
-
           <ul>
-            <?php wp_nav_menu( array( 'theme_location' => 'footer-contact-menu',
-              
-              'container_class' => '.footerul'
-              'menu_class'=> 'footer__contact',
-
-             ) ); ?>
+            <li>514-495-1287</li>
+            <li>contact@clownssansfrontieres.ca</li>
+            <li>
+              <a href="https://goo.gl/maps/iH5Vkq1M3WKGAsa5A" target="_blank">105 Ontario St E, Montreal, Quebec
+                H2X1G9</a>
+            </li>
           </ul>
-
-
-
         </div>
         <div class="footer__logo hide_below">
           <div class="logo">
             <a href="https://www.clownssansfrontieres.ca/donner/" target="_blank">
               <img src="https://i.imgur.com/UyKa9rS.png" alt="btn donner" />
             </a>
-            <a href="https://www.clownssansfrontieres.ca/" target="_blank">
+            <a href="http://www.clownsansfrontierenyancats.com/wp/" target="_blank">
               <img src="https://i.imgur.com/zlLh1kK.png" alt="logo" />
             </a>
           </div>
