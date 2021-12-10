@@ -76,8 +76,14 @@ while ($membre->have_posts()) : $membre->the_post();
 ?>
 	</article>
 <div class="remerciements">
+  <?php if(get_locale) == "en_US"){ ?>
   <div class="merci-title">Merci</div> 
   <div class="merci-text"> Merci à nos précieux partenaires.<br> Nos partenaires sont précieux pour la réussite de nos activités ici et ailleurs.</div>
+  <?php }else{ ?>
+    <div class="merci-title">Thank you</div> 
+  <div class="merci-text"> Thank you to all our partners.<br> Our partners are essentiel for our success in our activities here and around the world.</div>
+<?php }?>
+
 </div>
 
 
