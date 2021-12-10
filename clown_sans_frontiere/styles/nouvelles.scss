@@ -231,11 +231,6 @@ section {
   padding: 50px;
 }
 
-.colNouvelle{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .card__apercu__nouvelle {
   width: 30vw;
@@ -256,24 +251,10 @@ section {
   font-size: 30px;
   padding-right: 35px;
   color: var(--amaranth);
-}
+} 
 
 .description__apercu {
   text-align: justify;
-}
-
-.plus__bouton {
-  background-color: var(--lighseagreen);
-  width: 140px;
-  height: 50px;
-  border: none;
-  padding-top: 5px;
-  border-radius: 20px;
-  font-family: Yanone Kaffeesatz;
-  font-size: 30px;
-  margin: 20px;
-  text-transform: uppercase;
-  color: white;
 }
 
 //HUB NOUVELLES//
@@ -396,6 +377,41 @@ margin: 0% 10%;
 
 
 a:hover{
-  color: var(--basicblue);
+  color: white;
   text-decoration: none;
+}
+
+//APERCU NOUVELLE
+
+.cardApercuDNouvelle{
+  width: 100%;
+  background-color: var(--lighseagreen);
+  
+}
+
+.row__apercuDNouvelle{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+
+.card-textApercu{
+  text-align: left;
+}
+
+.colNouvelle .card-subtitle{
+  color: white;
+}
+
+.plus__bouton{
+  background-color:var(--lighseagreen);
+  width:140px;
+  height:50px;border:none;
+  padding-top:5px;
+  border-radius:20px;
+  font-family:Yanone Kaffeesatz;
+  font-size:30px;
+  margin:20px;
+  text-transform:uppercase;
+  color:#fff
 }

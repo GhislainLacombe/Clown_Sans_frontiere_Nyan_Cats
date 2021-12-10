@@ -65,37 +65,29 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 
     <div class="nouvelle__apercu">
-      
-      <div class="colNouvelle" id="carteNouvelle">
-      <?php
-            $nouvelle = new WP_Query( array('post_type'=> 'nouvelle', 'post__not_in' => array (get_the_ID()), 'posts_per_page' => 1 ); // 👈 Utilisation
-            while ($nouvelle->have_posts()) : $nouvelle->the_post();  // Lien du post
-            ?>
+    <div class="row row__apercuDNouvelle"> 
+      <div class="colNouvelle">
+      <?php $nouvelle = new WP_Query( array('post_type'=> 'nouvelle' ,'posts_per_page' => 1 )); // 👈 Utilisation
+      while ($nouvelle->have_posts()) : $nouvelle->the_post(); 
+      ?>
                 <a href="<?php echo get_permalink() ?>" style="text-decoration:none; color:white;">
-                    <div class="cardNouvelle">
-                        <div class="card-headerNouvelle">
-                            <img src="<?php the_field('image'); ?>" class="card-img-topNouvelle" alt="image">
-                        </div>
-                        <div class="card-bodyNouvelle">
-                            <div class="alignment">
-                                <p class="cardNameArticle" style="font-family:Signika Negative;"> <?php the_title(); // Titre de la page ?></p>
-                                <p class="cardAuteur"> <?php the_field('auteur'); ?> </p>
-                                <p class="card-titleNouvelle"> <?php the_field('date'); ?></p>
-                            </div>
-                            <div class="card-textNouvelle">
-                            <?php the_content(); // Titre de la page ?>
-                            </div>
-                        </div>
-                    </div>
+                    
+                <div class="card cardApercuDNouvelle" style="width: 100%;">
+          <div class="card-body">
+            <h4 class="card-title"><?php the_title(); // Titre de la page ?></h4>
+            <h6 class="card-subtitle"><?php the_field('date'); ?> - <?php the_field('auteur'); ?></h6>
+          </div>
+        </div>
+                   
+    
                 </a>
-                <?php
-              endwhile; 
-              wp_reset_postdata(); 
-              ?>
+                <?php endwhile; wp_reset_postdata(); ?>
+               
+            </div>
             </div>
 
 
-      <button class="plus__bouton">Voir plus</button>
+
     </div>
   </div>
   </section>
